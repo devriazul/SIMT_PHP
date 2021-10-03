@@ -1,0 +1,276 @@
+body { margin: 0; padding: 0; font-family:Verdana; font-size:15px }
+a
+{
+text-decoration:none;
+color:#666666;
+
+}
+
+a:hover
+{
+
+color:#999999;
+text-decoration:underline;
+
+}
+#loading {
+	width: 801px;
+	position:absolute;
+}
+
+#pagination
+{
+text-align:center;
+margin-left:250px;
+
+}
+#pagination li{	
+list-style: none; 
+float: left; 
+margin-right: 16px; 
+padding:5px; 
+border:solid 1px #dddddd;
+background-color:#98F1EF;
+color:#0063DC; 
+}
+li:hover
+{ 
+color:#FF0084; 
+cursor: pointer; 
+}
+
+
+
+
+.style1 {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+.style3 {color: #000000}
+.style4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.style5 {
+	font-family: Calibri;
+	font-size: 12px;
+	font-weight: bold;
+    color:#666666;
+}
+#tblborder{
+  border:1px solid #DFF6FE;
+}
+#tblleft{
+  border:1px solid #DFF6FE;
+}
+#stdtbl{
+  border:1px solid #DFF6FE;
+  padding:5px;
+  margin:9px;
+  }
+.class-tbl-style{
+  border:1px solid #DFF6FE;
+  padding:5px;
+  margin:9px;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:10px;
+  }  
+.headline{
+  font-size:12px;
+  padding:5px;
+  background-color:#CCCCFF;
+  
+
+}  
+.record-headline{
+  font-size:12px;
+  padding:5px;
+  border-bottom:1px solid #F7F7F7;
+  color:#333333;
+  
+
+} 
+.record-headline a{
+ color:#333333;
+} 
+.sttd{
+   border-bottom:1px solid #DFF6FE;
+   }
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.style11 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.stars{
+    font:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FF0000;
+}
+#msgerr{
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:12px;
+   color:#FF0000;
+}
+#msgs{
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:12px;
+   color:#009900;
+}
+.formhead{
+ font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+ font-size:14px;
+ padding:3px;
+ font-weight:bold;
+ }
+ 
+ .style12 {font-size: 10px}
+.style15 {
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.style16 {font-size: 12px}
+
+#top-search-div{
+  width:97%;
+  border:1px solid #ACF3F9;
+  font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+  margin:5px;
+  padding:10px;
+  height:25px;
+}
+.input{
+  width:700px;
+  float:right;
+  margin-left:150px;
+  margin-top:-5px;
+}   
+.input form{
+	width:700px;
+}  
+#submit-btn{
+  color: #999999; 
+  font-size: 8pt; 
+  font-family: Verdana; 
+  border: 1px solid #C0C0C0; 
+  background-color: #D9F0FB;
+  height:20px;
+}  
+.button-class{
+  color: #999999; 
+  font-size: 8pt; 
+  font-family: Verdana; 
+  border: 1px solid #C0C0C0; 
+  background-color: #D9F0FB;
+  height:20px;
+
+
+} 
+
+.button-class-big{
+  color: #999999; 
+  width:100px;
+  font-size: 8pt; 
+  font-family: Verdana; 
+  border: 1px solid #C0C0C0; 
+  background-color: #D9F0FB;
+  height:40px;
+  margin-bottom:10px;
+
+
+} 
+.inputtext-large input[type="text"]{
+   margin:3px;
+   padding:2px;
+   width:250px;
+   height:15px;
+}
+.inputtext-medium input[type="text"]{
+   margin:3px;
+   padding:2px;
+   width:100px;
+   height:15px;
+}
+.inputtext-small input[type="text"]{
+   margin:3px;
+   padding:2px;
+   width:50px;
+   height:15px;
+}
+
+#submit-btn,a{
+   text-decoration:none;
+}
+#submit-btn,a:hover{
+   text-decoration:none;
+} 
+input[type="text"]{
+   margin:3px;
+   padding:3px;
+   width:140px;
+   height:15px;
+   border:1px solid #CCCCCC;
+}
+
+
+input[type=password]{
+   margin:3px;
+   padding:3px;
+   width:140px;
+   height:15px;
+   border:1px solid #CCCCCC;
+
+}
+
+input[type="file"]{
+   margin:3px;
+   padding:3px;
+   width:300px;
+   height:25px;
+}
+
+select{
+   margin:3px;
+   padding:3px;
+   width:180px;
+   height:25px;
+   border:1px solid #CCCCCC;
+   font-family:Verdana, Arial, Helvetica, sans-serif;
+   font-size:12px;
+
+}
+textarea{
+   margin:3px;
+   padding:3px;
+   width:300px;
+   height:100px;
+   border:1px solid #CCCCCC;
+
+} 
+label{
+   font-family:Verdana, Arial, Helvetica, sans-serif;
+   font-size:12px;
+
+}
+.search-form{
+  float:left;
+  width:auto;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:10px;
+  padding:3px;
+}  
+.search-form input[type="text"]{
+  width:120px;
+}
+.search-form input[type="date"]{
+  width:140px;
+}

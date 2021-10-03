@@ -1,0 +1,1 @@
+1. add a new field "mealcharge(int)" in tbl_hostelseatdetails after "Price"

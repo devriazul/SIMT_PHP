@@ -1,0 +1,137 @@
+-- phpMyAdmin SQL Dump
+-- version 3.3.9
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Apr 20, 2013 at 09:39 AM
+-- Server version: 5.5.8
+-- PHP Version: 5.3.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `simtdb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `eventer_admin`
+--
+
+CREATE TABLE IF NOT EXISTS `eventer_admin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `events_per_page` int(11) NOT NULL DEFAULT '10',
+  `status` tinyint(4) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `eventer_admin`
+--
+
+INSERT INTO `eventer_admin` (`id`, `username`, `password`, `email`, `events_per_page`, `status`) VALUES
+(1, 'admin', '$1$Ij4.x31.$cFgXuBRZs08W3wZnSMh.A.', '', 10, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `eventer_events`
+--
+
+CREATE TABLE IF NOT EXISTS `eventer_events` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `start_date` varchar(10) NOT NULL,
+  `end_date` varchar(10) NOT NULL,
+  `start_time` varchar(25) NOT NULL,
+  `end_time` varchar(25) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` text,
+  `venue` varchar(100) NOT NULL,
+  `link` varchar(255) NOT NULL,
+  `icon` varchar(100) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  `image_alignment` varchar(6) NOT NULL DEFAULT 'left',
+  `status` tinyint(4) NOT NULL DEFAULT '1',
+  `departmentid` int(10) NOT NULL,
+  `session` varchar(50) NOT NULL,
+  `semester` varchar(20) NOT NULL,
+  `coursecode` varchar(50) NOT NULL,
+  `facultyid` varchar(50) NOT NULL,
+  `dayname` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `start_date` (`start_date`,`end_date`,`start_time`,`end_time`,`title`,`venue`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+
+--
+-- Dumping data for table `eventer_events`
+--
+
+INSERT INTO `eventer_events` (`id`, `start_date`, `end_date`, `start_time`, `end_time`, `title`, `description`, `venue`, `link`, `icon`, `image`, `image_alignment`, `status`, `departmentid`, `session`, `semester`, `coursecode`, `facultyid`, `dayname`) VALUES
+(6, '2013-04-21', '', '11:15:00', '13:15:00', 'sadf adsf asddf asf sdfa sdf', '<p>sa sdasadf sdf sd</p>', 'asf asf sadf sdaffsadf sadsfsadfsd f', '', '', '', 'left', 1, 23, '1314', '12', '173', 'F 002', 'Sunday'),
+(7, '2013-04-20', '', '10:15:00', '12:15:00', 'as asdf sadf asf saf saf', '', 'asf sadf sadf dsf', '', '', '', 'left', 1, 25, '1314', '12', '75', '', 'Saturday'),
+(9, '2013-04-22', '', '10:15:00', '11:30:00', 'sdaf sadf sadf s', '', 'sad fsadf sadf saf sadf ', '', '', '', 'left', 0, 25, '1314', '12', '82', '', 'Monday'),
+(10, '2013-04-25', '', '10:10:00', '11:20:00', 'Class routine of 8th batch(Avonics)', '<p>as sadf sadf sadf s</p>', 'sf sadf adsf sdfa', '', '', '', 'left', 1, 28, '1314', '12', '110', '', 'Thursday');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `eventer_images`
+--
+
+CREATE TABLE IF NOT EXISTS `eventer_images` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `path` varchar(255) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `eventer_images`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `eventer_options`
+--
+
+CREATE TABLE IF NOT EXISTS `eventer_options` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `display_mode` varchar(11) NOT NULL DEFAULT 'interactive',
+  `tech_mode` varchar(4) NOT NULL DEFAULT 'ajax',
+  `color_theme` varchar(5) NOT NULL DEFAULT 'Light',
+  `date_box_width` int(11) NOT NULL DEFAULT '136',
+  `date_box_height` int(11) NOT NULL DEFAULT '91',
+  `date_box_horizontal_space` int(3) NOT NULL DEFAULT '1',
+  `date_box_vertical_space` int(3) NOT NULL DEFAULT '1',
+  `date_box_corner_radius` int(3) NOT NULL DEFAULT '5',
+  `date_box_bg_color` varchar(6) NOT NULL DEFAULT 'FFFFFF',
+  `empty_date_box_alpha` int(3) NOT NULL DEFAULT '50',
+  `today_date_box_bg_color` varchar(6) NOT NULL DEFAULT 'FFFFFF',
+  `date_format` varchar(3) NOT NULL DEFAULT 'USA',
+  `starting_week_day` int(1) NOT NULL DEFAULT '0',
+  `week_day_names_short` varchar(255) NOT NULL DEFAULT 'Mon,Tue,Wed,Thu,Fri,Sat,Sun',
+  `week_day_names_long` varchar(255) NOT NULL DEFAULT 'Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday',
+  `week_day_names_format` varchar(5) NOT NULL DEFAULT 'short',
+  `month_names_short` varchar(255) NOT NULL DEFAULT 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec',
+  `month_names_long` varchar(255) NOT NULL DEFAULT 'January,February,March,April,May,June,July,August,September,October,November,December',
+  `month_names_format` varchar(5) NOT NULL DEFAULT 'long',
+  `show_months_navigation` tinyint(4) NOT NULL DEFAULT '1',
+  `calendar_padding` int(3) NOT NULL DEFAULT '10',
+  `calendar_background_width` varchar(5) NOT NULL DEFAULT '100%',
+  `repeat_events` tinyint(4) NOT NULL DEFAULT '1',
+  `time_zone` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `eventer_options`
+--
+
+INSERT INTO `eventer_options` (`id`, `display_mode`, `tech_mode`, `color_theme`, `date_box_width`, `date_box_height`, `date_box_horizontal_space`, `date_box_vertical_space`, `date_box_corner_radius`, `date_box_bg_color`, `empty_date_box_alpha`, `today_date_box_bg_color`, `date_format`, `starting_week_day`, `week_day_names_short`, `week_day_names_long`, `week_day_names_format`, `month_names_short`, `month_names_long`, `month_names_format`, `show_months_navigation`, `calendar_padding`, `calendar_background_width`, `repeat_events`, `time_zone`) VALUES
+(1, 'interactive', 'ajax', 'Dark', 130, 96, 1, 5, 5, 'FFFFFF', 50, 'FFFFFF', 'USA', 0, 'Mon,Tue,Wed,Thu,Fri,Sat,Sun', 'Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday', 'long', 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec', 'January,February,March,April,May,June,July,August,September,October,November,December', 'short', 1, 1, 'Fixed', 0, 'Asia/Dhaka');

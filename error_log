@@ -1,0 +1,422 @@
+[03-Sep-2012 05:46:19] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[03-Sep-2012 05:46:19] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[03-Sep-2012 06:21:36] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[03-Sep-2012 06:21:36] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[03-Sep-2012 06:22:07] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/vusr.php on line 4
+[03-Sep-2012 06:22:07] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/vusr.php on line 4
+[03-Sep-2012 06:22:07] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/vusr.php on line 5
+[03-Sep-2012 06:22:07] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/vusr.php on line 5
+[03-Sep-2012 06:22:07] PHP Warning:  mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/dbClass.php on line 38
+[03-Sep-2012 06:23:17] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/vusr.php on line 4
+[03-Sep-2012 06:23:17] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/vusr.php on line 4
+[03-Sep-2012 06:23:17] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/vusr.php on line 5
+[03-Sep-2012 06:23:17] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/vusr.php on line 5
+[03-Sep-2012 06:25:26] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/vusr.php on line 4
+[03-Sep-2012 06:25:26] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/vusr.php on line 4
+[03-Sep-2012 06:25:26] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/vusr.php on line 5
+[03-Sep-2012 06:25:26] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/vusr.php on line 5
+[03-Sep-2012 06:25:36] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/vusr.php on line 4
+[03-Sep-2012 06:25:36] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/vusr.php on line 4
+[03-Sep-2012 06:25:36] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/vusr.php on line 5
+[03-Sep-2012 06:25:36] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/vusr.php on line 5
+[03-Sep-2012 06:26:35] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/vusr.php on line 9
+[03-Sep-2012 06:26:35] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/vusr.php on line 9
+[03-Sep-2012 06:26:35] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/vusr.php on line 10
+[03-Sep-2012 06:26:35] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/vusr.php on line 10
+[03-Sep-2012 06:26:44] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/vusr.php on line 9
+[03-Sep-2012 06:26:44] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/vusr.php on line 9
+[03-Sep-2012 06:26:44] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/vusr.php on line 10
+[03-Sep-2012 06:26:44] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/vusr.php on line 10
+[03-Sep-2012 06:27:35] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/dbClass.php:223) in /home/mahfuz/public_html/simt/vusr.php on line 27
+[03-Sep-2012 06:31:25] PHP Fatal error:  Class 'DbClass' not found in /home/mahfuz/public_html/simt/config.php on line 2
+[03-Sep-2012 06:32:27] PHP Warning:  include(topdefault.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/home.php on line 26
+[03-Sep-2012 06:32:27] PHP Warning:  include(topdefault.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/home.php on line 26
+[03-Sep-2012 06:32:27] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'topdefault.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mahfuz/public_html/simt/home.php on line 26
+[03-Sep-2012 06:32:27] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[03-Sep-2012 06:32:27] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[03-Sep-2012 11:36:14] PHP Warning:  mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home/mahfuz/public_html/simt/dbClass.php on line 38
+[03-Sep-2012 14:22:45] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[03-Sep-2012 14:22:45] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[03-Sep-2012 23:53:01] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[03-Sep-2012 23:53:01] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[04-Sep-2012 00:57:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/dbClass.php:233) in /home/mahfuz/public_html/simt/depname.php on line 100
+[04-Sep-2012 01:04:15] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/ins_depname.php on line 11
+[04-Sep-2012 01:05:42] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/ins_depname.php on line 12
+[04-Sep-2012 01:08:00] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/ins_depname.php on line 12
+[04-Sep-2012 01:09:30] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/dbClass.php:233) in /home/mahfuz/public_html/simt/ins_depname.php on line 15
+[04-Sep-2012 02:40:34] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/dbClass.php:233) in /home/mahfuz/public_html/simt/ed_depname.php on line 15
+[04-Sep-2012 03:09:10] PHP Warning:  Missing argument 2 for DbClass::dump_query(), called in /home/mahfuz/public_html/simt/chart_of_acc.php on line 126 and defined in /home/mahfuz/public_html/simt/dbClass.php on line 145
+[04-Sep-2012 03:09:10] PHP Warning:  Missing argument 3 for DbClass::dump_query(), called in /home/mahfuz/public_html/simt/chart_of_acc.php on line 126 and defined in /home/mahfuz/public_html/simt/dbClass.php on line 145
+[04-Sep-2012 03:22:35] PHP Parse error:  syntax error, unexpected T_IS_EQUAL in /home/mahfuz/public_html/simt/ins_chartofacc.php on line 11
+[04-Sep-2012 03:24:57] PHP Parse error:  syntax error, unexpected T_IS_EQUAL in /home/mahfuz/public_html/simt/ins_chartofacc.php on line 11
+[04-Sep-2012 03:25:01] PHP Parse error:  syntax error, unexpected T_IS_EQUAL in /home/mahfuz/public_html/simt/ins_chartofacc.php on line 11
+[04-Sep-2012 03:25:26] PHP Parse error:  syntax error, unexpected T_IS_EQUAL in /home/mahfuz/public_html/simt/ins_chartofacc.php on line 11
+[04-Sep-2012 04:05:31] PHP Warning:  mysql_fetch_array() [<a href='function.mysql-fetch-array'>function.mysql-fetch-array</a>]: The result type should be either MYSQL_NUM, MYSQL_ASSOC or MYSQL_BOTH. in /home/mahfuz/public_html/simt/dbClass.php on line 132
+[04-Sep-2012 04:06:55] PHP Warning:  mysql_fetch_array() [<a href='function.mysql-fetch-array'>function.mysql-fetch-array</a>]: The result type should be either MYSQL_NUM, MYSQL_ASSOC or MYSQL_BOTH. in /home/mahfuz/public_html/simt/dbClass.php on line 132
+[04-Sep-2012 04:08:24] PHP Warning:  mysql_fetch_array() [<a href='function.mysql-fetch-array'>function.mysql-fetch-array</a>]: The result type should be either MYSQL_NUM, MYSQL_ASSOC or MYSQL_BOTH. in /home/mahfuz/public_html/simt/dbClass.php on line 132
+[04-Sep-2012 04:10:49] PHP Warning:  mysql_fetch_array() [<a href='function.mysql-fetch-array'>function.mysql-fetch-array</a>]: The result type should be either MYSQL_NUM, MYSQL_ASSOC or MYSQL_BOTH. in /home/mahfuz/public_html/simt/dbClass.php on line 132
+[04-Sep-2012 04:14:53] PHP Warning:  mysql_fetch_array() [<a href='function.mysql-fetch-array'>function.mysql-fetch-array</a>]: The result type should be either MYSQL_NUM, MYSQL_ASSOC or MYSQL_BOTH. in /home/mahfuz/public_html/simt/dbClass.php on line 132
+[04-Sep-2012 06:16:40] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/view_chart_ofacc.php on line 7
+[04-Sep-2012 13:04:35] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[04-Sep-2012 13:04:35] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[05-Sep-2012 01:26:07] PHP Parse error:  syntax error, unexpected '}' in /home/mahfuz/public_html/simt/view_chart_ofacc.php on line 123
+[05-Sep-2012 01:28:35] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/dbClass.php:233) in /home/mahfuz/public_html/simt/view_chart_ofacc.php on line 120
+[05-Sep-2012 02:11:08] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/search.php on line 19
+[05-Sep-2012 02:11:15] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/search.php on line 19
+[05-Sep-2012 02:11:18] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/search.php on line 19
+[05-Sep-2012 02:11:19] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/search.php on line 19
+[05-Sep-2012 02:11:20] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/search.php on line 19
+[05-Sep-2012 02:11:21] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/search.php on line 19
+[05-Sep-2012 02:11:22] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/search.php on line 19
+[05-Sep-2012 02:13:00] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/search.php on line 19
+[05-Sep-2012 02:13:00] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/search.php on line 19
+[05-Sep-2012 02:13:00] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/search.php on line 19
+[05-Sep-2012 02:13:02] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/search.php on line 19
+[05-Sep-2012 02:13:03] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/search.php on line 19
+[05-Sep-2012 02:13:03] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/search.php on line 19
+[05-Sep-2012 02:13:23] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/search.php on line 19
+[05-Sep-2012 02:13:48] PHP Parse error:  syntax error, unexpected '}' in /home/mahfuz/public_html/simt/search.php on line 22
+[05-Sep-2012 02:14:14] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/mahfuz/public_html/simt/search.php on line 12
+[05-Sep-2012 02:46:36] PHP Fatal error:  Call to a member function connect() on a non-object in /home/mahfuz/public_html/simt/search.php on line 4
+[05-Sep-2012 04:45:33] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/mahfuz/public_html/simt/macclevel.php on line 85
+[06-Sep-2012 01:27:10] PHP Parse error:  syntax error, unexpected T_ELSE in /home/mahfuz/public_html/simt/edit_macclevel.php on line 180
+[06-Sep-2012 01:28:26] PHP Warning:  mysql_fetch_array() [<a href='function.mysql-fetch-array'>function.mysql-fetch-array</a>]: The result type should be either MYSQL_NUM, MYSQL_ASSOC or MYSQL_BOTH. in /home/mahfuz/public_html/simt/dbClass.php on line 132
+[06-Sep-2012 01:58:53] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/mahfuz/public_html/simt/ed_chart_of_acc.php on line 32
+[06-Sep-2012 02:18:20] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting T_VARIABLE or '$' in /home/mahfuz/public_html/simt/edmacclevel.php on line 20
+[06-Sep-2012 03:47:14] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/dbClass.php:249) in /home/mahfuz/public_html/simt/edit_chart_of_acc.php on line 173
+[06-Sep-2012 03:47:40] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[06-Sep-2012 03:47:40] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[06-Sep-2012 04:16:07] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/dbClass.php:249) in /home/mahfuz/public_html/simt/edit_chart_of_acc.php on line 173
+[06-Sep-2012 04:32:39] PHP Parse error:  syntax error, unexpected T_BOOLEAN_OR in /home/mahfuz/public_html/simt/edit_chart_of_acc.php on line 17
+[06-Sep-2012 04:35:00] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/dbClass.php:249) in /home/mahfuz/public_html/simt/chart_of_acc.php on line 166
+[08-Sep-2012 01:06:18] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/dbClass.php:249) in /home/mahfuz/public_html/simt/depname.php on line 131
+[08-Sep-2012 01:13:36] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/dbClass.php:249) in /home/mahfuz/public_html/simt/hostelname.php on line 131
+[08-Sep-2012 05:30:58] PHP Warning:  copy(.stdimage/6.jpg) [<a href='function.copy'>function.copy</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/insertSTD.php on line 51
+[09-Sep-2012 01:08:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[09-Sep-2012 01:08:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[09-Sep-2012 03:59:29] PHP Warning:  copy() [<a href='function.copy'>function.copy</a>]: Filename cannot be empty in /home/mahfuz/public_html/simt/insertSTD.php on line 42
+[09-Sep-2012 04:04:01] PHP Warning:  copy() [<a href='function.copy'>function.copy</a>]: Filename cannot be empty in /home/mahfuz/public_html/simt/insertSTD.php on line 51
+[09-Sep-2012 04:05:35] PHP Warning:  copy() [<a href='function.copy'>function.copy</a>]: Filename cannot be empty in /home/mahfuz/public_html/simt/insertSTD.php on line 51
+[09-Sep-2012 04:10:00] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[09-Sep-2012 04:10:00] PHP Warning:  copy() [<a href='function.copy'>function.copy</a>]: Filename cannot be empty in /home/mahfuz/public_html/simt/insertSTD.php on line 51
+[09-Sep-2012 04:11:54] PHP Warning:  copy() [<a href='function.copy'>function.copy</a>]: Filename cannot be empty in /home/mahfuz/public_html/simt/insertSTD.php on line 51
+[09-Sep-2012 04:11:54] PHP Warning:  copy() [<a href='function.copy'>function.copy</a>]: Filename cannot be empty in /home/mahfuz/public_html/simt/insertSTD.php on line 55
+[09-Sep-2012 04:37:09] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[09-Sep-2012 04:38:24] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[09-Sep-2012 04:56:32] PHP Warning:  Invalid argument supplied for foreach() in /home/mahfuz/public_html/simt/stdinfo.php on line 13
+[09-Sep-2012 04:57:58] PHP Warning:  Invalid argument supplied for foreach() in /home/mahfuz/public_html/simt/stdinfo.php on line 13
+[09-Sep-2012 04:59:09] PHP Warning:  Invalid argument supplied for foreach() in /home/mahfuz/public_html/simt/stdinfo.php on line 13
+[09-Sep-2012 05:02:54] PHP Warning:  Invalid argument supplied for foreach() in /home/mahfuz/public_html/simt/stdinfo.php on line 13
+[09-Sep-2012 05:04:23] PHP Warning:  Invalid argument supplied for foreach() in /home/mahfuz/public_html/simt/stdinfo.php on line 13
+[09-Sep-2012 05:05:36] PHP Warning:  Invalid argument supplied for foreach() in /home/mahfuz/public_html/simt/stdinfo.php on line 13
+[09-Sep-2012 05:07:26] PHP Warning:  Invalid argument supplied for foreach() in /home/mahfuz/public_html/simt/stdinfo.php on line 13
+[09-Sep-2012 05:50:40] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[10-Sep-2012 00:52:08] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[10-Sep-2012 00:52:08] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[10-Sep-2012 01:54:23] PHP Parse error:  syntax error, unexpected $end in /home/mahfuz/public_html/simt/upload.php on line 25
+[10-Sep-2012 02:02:36] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[10-Sep-2012 02:03:20] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[10-Sep-2012 02:04:19] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[10-Sep-2012 02:05:02] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[10-Sep-2012 02:06:26] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[10-Sep-2012 02:06:50] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[10-Sep-2012 02:07:52] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[10-Sep-2012 02:09:39] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[10-Sep-2012 02:52:05] PHP Parse error:  syntax error, unexpected $end in /home/mahfuz/public_html/simt/insertSTD.php on line 92
+[11-Sep-2012 01:36:23] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[11-Sep-2012 01:36:23] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[11-Sep-2012 04:58:57] PHP Parse error:  syntax error, unexpected '=' in /home/mahfuz/public_html/simt/insertSTD.php on line 134
+[12-Sep-2012 14:29:01] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[12-Sep-2012 14:29:01] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[13-Sep-2012 01:15:59] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[13-Sep-2012 01:15:59] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[14-Sep-2012 14:34:55] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[14-Sep-2012 14:34:55] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[14-Sep-2012 14:59:41] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/insertEXE.php on line 13
+[14-Sep-2012 14:59:41] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/insertEXE.php on line 14
+[14-Sep-2012 14:59:41] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/insertEXE.php on line 15
+[14-Sep-2012 14:59:41] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/insertEXE.php on line 16
+[14-Sep-2012 14:59:41] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/insertEXE.php on line 17
+[14-Sep-2012 14:59:41] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/insertEXE.php on line 18
+[14-Sep-2012 14:59:41] PHP Warning:  mysql_real_escape_string() expects at most 2 parameters, 4 given in /home/mahfuz/public_html/simt/insertEXE.php on line 27
+[14-Sep-2012 14:59:41] PHP Warning:  mysql_real_escape_string() expects at most 2 parameters, 4 given in /home/mahfuz/public_html/simt/insertEXE.php on line 27
+[14-Sep-2012 15:07:07] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/insertEXE.php on line 13
+[14-Sep-2012 15:07:07] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/insertEXE.php on line 14
+[14-Sep-2012 15:07:07] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/insertEXE.php on line 15
+[14-Sep-2012 15:07:07] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/insertEXE.php on line 16
+[14-Sep-2012 15:07:07] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/insertEXE.php on line 17
+[14-Sep-2012 15:07:07] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/insertEXE.php on line 18
+[14-Sep-2012 15:52:56] PHP Parse error:  syntax error, unexpected T_STRING in /home/mahfuz/public_html/simt/manage_student.php on line 122
+[14-Sep-2012 15:54:28] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/mahfuz/public_html/simt/search_std.php on line 13
+[15-Sep-2012 01:45:35] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[15-Sep-2012 01:45:35] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[15-Sep-2012 01:54:18] PHP Warning:  copy(uploads/) [<a href='function.copy'>function.copy</a>]: failed to open stream: Is a directory in /home/mahfuz/public_html/simt/insSTD.php on line 360
+[16-Sep-2012 01:47:04] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[16-Sep-2012 01:47:04] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[16-Sep-2012 02:51:13] PHP Warning:  copy(uploads/) [<a href='function.copy'>function.copy</a>]: failed to open stream: Is a directory in /home/mahfuz/public_html/simt/insSTD.php on line 360
+[17-Sep-2012 01:06:33] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[17-Sep-2012 01:06:33] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[17-Sep-2012 03:18:26] PHP Parse error:  syntax error, unexpected $end in /home/mahfuz/public_html/simt/edstd.php on line 71
+[17-Sep-2012 03:32:03] PHP Warning:  copy() [<a href='function.copy'>function.copy</a>]: Filename cannot be empty in /home/mahfuz/public_html/simt/edstd.php on line 57
+[17-Sep-2012 04:11:35] PHP Parse error:  syntax error, unexpected T_BOOLEAN_OR in /home/mahfuz/public_html/simt/del_std.php on line 22
+[18-Sep-2012 01:40:54] PHP Parse error:  syntax error, unexpected T_ELSE in /home/mahfuz/public_html/simt/manage_student.php on line 166
+[18-Sep-2012 01:45:33] PHP Parse error:  syntax error, unexpected '<' in /home/mahfuz/public_html/simt/manage_student.php on line 169
+[18-Sep-2012 02:17:45] PHP Warning:  Missing argument 2 for DbClass::dump_query(), called in /home/mahfuz/public_html/simt/manage_student.php on line 210 and defined in /home/mahfuz/public_html/simt/dbClass.php on line 144
+[18-Sep-2012 02:17:45] PHP Warning:  Missing argument 3 for DbClass::dump_query(), called in /home/mahfuz/public_html/simt/manage_student.php on line 210 and defined in /home/mahfuz/public_html/simt/dbClass.php on line 144
+[18-Sep-2012 02:17:45] PHP Warning:  Missing argument 2 for DbClass::dump_query(), called in /home/mahfuz/public_html/simt/manage_student.php on line 232 and defined in /home/mahfuz/public_html/simt/dbClass.php on line 144
+[18-Sep-2012 02:17:45] PHP Warning:  Missing argument 3 for DbClass::dump_query(), called in /home/mahfuz/public_html/simt/manage_student.php on line 232 and defined in /home/mahfuz/public_html/simt/dbClass.php on line 144
+[18-Sep-2012 02:17:45] PHP Warning:  Missing argument 2 for DbClass::dump_query(), called in /home/mahfuz/public_html/simt/manage_student.php on line 210 and defined in /home/mahfuz/public_html/simt/dbClass.php on line 144
+[18-Sep-2012 02:17:45] PHP Warning:  Missing argument 3 for DbClass::dump_query(), called in /home/mahfuz/public_html/simt/manage_student.php on line 210 and defined in /home/mahfuz/public_html/simt/dbClass.php on line 144
+[18-Sep-2012 02:19:50] PHP Parse error:  syntax error, unexpected ',' in /home/mahfuz/public_html/simt/manage_student.php on line 210
+[20-Sep-2012 00:14:18] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[20-Sep-2012 00:14:18] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:14:18] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:14:18] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 1
+[20-Sep-2012 00:14:18] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/mahfuz/public_html/simt/home.php:1) in /home/mahfuz/public_html/simt/home.php on line 1
+[20-Sep-2012 00:14:18] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/home.php:1) in /home/mahfuz/public_html/simt/home.php on line 109
+[20-Sep-2012 00:14:18] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:14:18] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:14:36] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 1
+[20-Sep-2012 00:14:36] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/mahfuz/public_html/simt/home.php:1) in /home/mahfuz/public_html/simt/home.php on line 1
+[20-Sep-2012 00:14:36] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/home.php:1) in /home/mahfuz/public_html/simt/home.php on line 109
+[20-Sep-2012 00:14:36] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:14:36] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:14:42] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[20-Sep-2012 00:14:42] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:14:42] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:15:25] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[20-Sep-2012 00:15:25] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:15:25] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:15:25] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 1
+[20-Sep-2012 00:15:25] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/mahfuz/public_html/simt/home.php:1) in /home/mahfuz/public_html/simt/home.php on line 1
+[20-Sep-2012 00:15:25] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/home.php:1) in /home/mahfuz/public_html/simt/home.php on line 109
+[20-Sep-2012 00:15:25] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:15:25] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:16:37] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 1
+[20-Sep-2012 00:16:37] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/mahfuz/public_html/simt/home.php:1) in /home/mahfuz/public_html/simt/home.php on line 1
+[20-Sep-2012 00:16:37] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/home.php:1) in /home/mahfuz/public_html/simt/home.php on line 109
+[20-Sep-2012 00:16:37] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:16:37] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:39:26] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[20-Sep-2012 00:39:26] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:39:26] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:39:35] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[20-Sep-2012 00:39:35] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:39:35] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:39:36] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[20-Sep-2012 00:39:36] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:39:36] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:39:47] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[20-Sep-2012 00:39:47] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:39:47] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:39:48] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[20-Sep-2012 00:39:48] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:39:48] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:41:02] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[20-Sep-2012 00:41:02] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:41:02] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:41:02] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[20-Sep-2012 00:41:02] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:41:02] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:41:16] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[20-Sep-2012 00:41:16] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:41:16] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:41:17] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[20-Sep-2012 00:41:17] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:41:17] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:43:07] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[20-Sep-2012 00:43:07] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/mahfuz/public_html/simt/vusr.php:2) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[20-Sep-2012 00:43:07] PHP Fatal error:  Can't use function return value in write context in /home/mahfuz/public_html/simt/include/function.php on line 36
+[20-Sep-2012 00:43:07] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:43:07] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:44:41] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[20-Sep-2012 00:44:41] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:44:41] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:44:42] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[20-Sep-2012 00:44:42] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:44:42] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:47:58] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[20-Sep-2012 00:47:58] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:47:58] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:47:59] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[20-Sep-2012 00:47:59] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:47:59] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:48:15] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[20-Sep-2012 00:48:15] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:48:15] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:48:16] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[20-Sep-2012 00:48:16] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:48:16] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:56:27] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[20-Sep-2012 00:56:27] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:56:27] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:56:27] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[20-Sep-2012 00:56:27] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:56:27] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:56:50] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[20-Sep-2012 00:56:50] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:56:50] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:56:58] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[20-Sep-2012 00:56:58] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:56:58] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 00:56:58] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[20-Sep-2012 00:56:59] PHP Warning:  Unknown: open(/tmp/sess_3fd8067f49289370ee87315240e87fce, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[20-Sep-2012 00:56:59] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Sep-2012 01:52:44] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/semesterwisesubject.php on line 147
+[20-Sep-2012 02:11:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/dbClass.php:249) in /home/mahfuz/public_html/simt/macclevel.php on line 177
+[20-Sep-2012 03:37:09] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/show_subcat.php on line 4
+[20-Sep-2012 03:37:09] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/show_subcat.php on line 4
+[20-Sep-2012 03:39:56] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/show_subcat.php on line 8
+[20-Sep-2012 03:39:56] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/show_subcat.php on line 8
+[20-Sep-2012 03:41:51] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/show_subcat.php on line 8
+[20-Sep-2012 03:41:51] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/show_subcat.php on line 8
+[20-Sep-2012 03:57:47] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/show_subcat.php on line 8
+[20-Sep-2012 03:57:47] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/show_subcat.php on line 8
+[20-Sep-2012 03:58:02] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/show_subcat.php on line 8
+[20-Sep-2012 03:58:02] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/show_subcat.php on line 8
+[20-Sep-2012 03:59:16] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/show_subcat.php on line 8
+[20-Sep-2012 03:59:16] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/show_subcat.php on line 8
+[20-Sep-2012 04:01:15] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/show_subcat.php on line 8
+[20-Sep-2012 04:01:15] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/show_subcat.php on line 8
+[20-Sep-2012 04:04:35] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/dbClass.php on line 74
+[20-Sep-2012 04:04:35] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/dbClass.php on line 74
+[20-Sep-2012 04:05:58] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/dbClass.php on line 74
+[20-Sep-2012 04:05:58] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/dbClass.php on line 74
+[20-Sep-2012 04:06:01] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/dbClass.php on line 74
+[20-Sep-2012 04:06:01] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/dbClass.php on line 74
+[23-Sep-2012 02:27:22] PHP Parse error:  syntax error, unexpected '}' in /home/mahfuz/public_html/simt/insBatch.php on line 23
+[29-Sep-2012 02:38:40] PHP Parse error:  syntax error, unexpected T_BREAK, expecting ',' or ';' in /home/mahfuz/public_html/simt/add_admission_fees.php on line 182
+[02-Oct-2012 02:01:17] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/managecourseinformation.php on line 110
+[02-Oct-2012 02:03:42] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/managecourseinformation.php on line 110
+[02-Oct-2012 02:03:45] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/managecourseinformation.php on line 110
+[02-Oct-2012 02:03:46] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/managecourseinformation.php on line 110
+[02-Oct-2012 02:03:49] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/managecourseinformation.php on line 110
+[02-Oct-2012 02:03:50] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/managecourseinformation.php on line 110
+[02-Oct-2012 02:03:51] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/managecourseinformation.php on line 110
+[02-Oct-2012 02:03:53] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/managecourseinformation.php on line 110
+[02-Oct-2012 02:03:54] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/managecourseinformation.php on line 110
+[02-Oct-2012 02:03:55] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/managecourseinformation.php on line 110
+[02-Oct-2012 02:04:02] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/mahfuz/public_html/simt/managecourseinformation.php on line 110
+[02-Oct-2012 02:20:35] PHP Parse error:  syntax error, unexpected T_BREAK, expecting ',' or ';' in /home/mahfuz/public_html/simt/edit_admissionfees.php on line 307
+[02-Oct-2012 02:33:45] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mahfuz/public_html/simt/dbClass.php:249) in /home/mahfuz/public_html/simt/edit_courseinfo.php on line 166
+[04-Oct-2012 01:16:09] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[04-Oct-2012 01:16:09] PHP Warning:  Unknown: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[04-Oct-2012 01:16:09] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[04-Oct-2012 01:16:09] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[04-Oct-2012 01:16:09] PHP Warning:  Unknown: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[04-Oct-2012 01:16:09] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[04-Oct-2012 01:16:24] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[04-Oct-2012 01:16:24] PHP Warning:  Unknown: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[04-Oct-2012 01:16:24] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[04-Oct-2012 01:16:24] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[04-Oct-2012 01:16:24] PHP Warning:  Unknown: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[04-Oct-2012 01:16:24] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[04-Oct-2012 01:16:39] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[04-Oct-2012 01:16:39] PHP Warning:  Unknown: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[04-Oct-2012 01:16:39] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[04-Oct-2012 01:17:47] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[04-Oct-2012 01:17:47] PHP Warning:  Unknown: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[04-Oct-2012 01:17:47] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[04-Oct-2012 01:17:47] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[04-Oct-2012 01:17:48] PHP Warning:  Unknown: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[04-Oct-2012 01:17:48] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[04-Oct-2012 01:17:58] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/vusr.php on line 2
+[04-Oct-2012 01:17:58] PHP Warning:  Unknown: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[04-Oct-2012 01:17:58] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[04-Oct-2012 01:17:58] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in /home/mahfuz/public_html/simt/home.php on line 2
+[04-Oct-2012 01:17:58] PHP Warning:  Unknown: open(/tmp/sess_dedf451c3b24d2f337b780e961f1744f, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[04-Oct-2012 01:17:58] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[04-Oct-2012 02:28:17] PHP Fatal error:  Call to a member function get_row() on a non-object in /home/mahfuz/public_html/simt/del_depname.php on line 44
+[10-Oct-2012 01:28:58] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/showin.php on line 33
+[10-Oct-2012 01:28:58] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/showin.php on line 33
+[10-Oct-2012 01:29:05] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/showin.php on line 33
+[10-Oct-2012 01:29:05] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/showin.php on line 33
+[14-Oct-2012 05:15:56] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[14-Oct-2012 05:15:56] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[15-Oct-2012 05:01:56] PHP Fatal error:  Call to a member function select() on a non-object in /home/mahfuz/public_html/simt/semesterwisesubject.php on line 179
+[15-Oct-2012 05:06:39] PHP Fatal error:  Call to undefined method DbClass::runquery() in /home/mahfuz/public_html/simt/semesterwisesubject.php on line 185
+[15-Oct-2012 05:08:52] PHP Warning:  mysql_fetch_array() [<a href='function.mysql-fetch-array'>function.mysql-fetch-array</a>]: The result type should be either MYSQL_NUM, MYSQL_ASSOC or MYSQL_BOTH. in /home/mahfuz/public_html/simt/dbClass.php on line 131
+[15-Oct-2012 05:10:48] PHP Warning:  mysql_fetch_array() [<a href='function.mysql-fetch-array'>function.mysql-fetch-array</a>]: The result type should be either MYSQL_NUM, MYSQL_ASSOC or MYSQL_BOTH. in /home/mahfuz/public_html/simt/dbClass.php on line 131
+[15-Oct-2012 05:11:35] PHP Warning:  mysql_fetch_array() [<a href='function.mysql-fetch-array'>function.mysql-fetch-array</a>]: The result type should be either MYSQL_NUM, MYSQL_ASSOC or MYSQL_BOTH. in /home/mahfuz/public_html/simt/dbClass.php on line 131
+[17-Oct-2012 03:04:10] PHP Fatal error:  Call to undefined method DbClass::runquery() in /home/mahfuz/public_html/simt/semesterwisesubject.php on line 181
+[17-Oct-2012 03:05:22] PHP Warning:  mysql_fetch_array() [<a href='function.mysql-fetch-array'>function.mysql-fetch-array</a>]: The result type should be either MYSQL_NUM, MYSQL_ASSOC or MYSQL_BOTH. in /home/mahfuz/public_html/simt/dbClass.php on line 131
+[17-Oct-2012 03:17:32] PHP Fatal error:  Call to a member function dump_query() on a non-object in /home/mahfuz/public_html/simt/semesterassignedsub.php on line 12
+[17-Oct-2012 03:17:42] PHP Fatal error:  Call to a member function dump_query() on a non-object in /home/mahfuz/public_html/simt/semesterassignedsub.php on line 12
+[17-Oct-2012 03:17:44] PHP Fatal error:  Call to a member function dump_query() on a non-object in /home/mahfuz/public_html/simt/semesterassignedsub.php on line 12
+[17-Oct-2012 03:17:46] PHP Fatal error:  Call to a member function dump_query() on a non-object in /home/mahfuz/public_html/simt/semesterassignedsub.php on line 12
+[17-Oct-2012 03:17:48] PHP Fatal error:  Call to a member function dump_query() on a non-object in /home/mahfuz/public_html/simt/semesterassignedsub.php on line 12
+[17-Oct-2012 03:17:50] PHP Fatal error:  Call to a member function dump_query() on a non-object in /home/mahfuz/public_html/simt/semesterassignedsub.php on line 12
+[23-Oct-2012 04:50:46] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[23-Oct-2012 04:50:46] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[23-Oct-2012 04:51:07] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[23-Oct-2012 04:51:07] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[23-Oct-2012 04:51:16] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[23-Oct-2012 04:51:16] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[05-Nov-2012 01:57:24] PHP Warning:  include(show0.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 422
+[05-Nov-2012 01:57:24] PHP Warning:  include(show0.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 422
+[05-Nov-2012 01:57:24] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'show0.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 422
+[05-Nov-2012 01:57:24] PHP Warning:  include(show1.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 433
+[05-Nov-2012 01:57:24] PHP Warning:  include(show1.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 433
+[05-Nov-2012 01:57:24] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'show1.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 433
+[05-Nov-2012 01:57:24] PHP Warning:  include(show2.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 422
+[05-Nov-2012 01:57:24] PHP Warning:  include(show2.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 422
+[05-Nov-2012 01:57:24] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'show2.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 422
+[05-Nov-2012 01:57:27] PHP Warning:  include(show0.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 422
+[05-Nov-2012 01:57:27] PHP Warning:  include(show0.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 422
+[05-Nov-2012 01:57:27] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'show0.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 422
+[05-Nov-2012 01:57:27] PHP Warning:  include(show1.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 433
+[05-Nov-2012 01:57:27] PHP Warning:  include(show1.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 433
+[05-Nov-2012 01:57:27] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'show1.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 433
+[05-Nov-2012 01:57:27] PHP Warning:  include(show2.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 422
+[05-Nov-2012 01:57:27] PHP Warning:  include(show2.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 422
+[05-Nov-2012 01:57:27] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'show2.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 422
+[08-Nov-2012 02:04:11] PHP Parse error:  syntax error, unexpected '(', expecting T_VARIABLE or '$' in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 215
+[08-Nov-2012 02:04:51] PHP Parse error:  syntax error, unexpected T_INC in /home/mahfuz/public_html/simt/semesterwisesubjectassaign.php on line 215
+[12-Nov-2012 01:37:58] PHP Parse error:  syntax error, unexpected '}' in /home/mahfuz/public_html/simt/mark_dis_subjectlist.php on line 97
+[12-Nov-2012 01:38:53] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/mahfuz/public_html/simt/mark_dis_subjectlist.php on line 63
+[13-Nov-2012 01:23:20] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/mahfuz/public_html/simt/mark_dis_subjectlist.php on line 94
+[13-Nov-2012 02:06:26] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/mahfuz/public_html/simt/mark_dis_subjectlist.php on line 95
+[13-Nov-2012 02:59:30] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/mahfuz/public_html/simt/mark_dis_subjectlist.php on line 99
+[13-Nov-2012 02:59:45] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/mahfuz/public_html/simt/mark_dis_subjectlist.php on line 99
+[13-Nov-2012 03:01:02] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/mahfuz/public_html/simt/mark_dis_subjectlist.php on line 99
+[13-Nov-2012 03:13:23] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/mahfuz/public_html/simt/mark_dis_subjectlist.php on line 99
+[13-Nov-2012 03:32:16] PHP Parse error:  syntax error, unexpected T_ELSE in /home/mahfuz/public_html/simt/ins_semesterwisesubject.php on line 28
+[14-Nov-2012 00:03:28] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/showin.php on line 140
+[14-Nov-2012 00:03:28] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/showin.php on line 140
+[14-Nov-2012 00:04:40] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/showin.php on line 140
+[14-Nov-2012 00:04:40] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/showin.php on line 140
+[14-Nov-2012 00:06:54] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/showin.php on line 140
+[14-Nov-2012 00:06:54] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/showin.php on line 140
+[14-Nov-2012 00:12:31] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/showin.php on line 140
+[14-Nov-2012 00:12:31] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/showin.php on line 140
+[15-Nov-2012 00:41:39] PHP Parse error:  syntax error, unexpected ';' in /home/mahfuz/public_html/simt/ins_semesterwisesubject.php on line 16
+[15-Nov-2012 00:47:26] PHP Parse error:  syntax error, unexpected ';' in /home/mahfuz/public_html/simt/ins_semesterwisesubject.php on line 16
+[15-Nov-2012 00:47:38] PHP Parse error:  syntax error, unexpected ';' in /home/mahfuz/public_html/simt/ins_semesterwisesubject.php on line 16
+[15-Nov-2012 00:56:19] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/mahfuz/public_html/simt/ins_semesterwisesubject.php on line 16
+[15-Nov-2012 03:06:24] PHP Parse error:  syntax error, unexpected ';' in /home/mahfuz/public_html/simt/dep_sub_val.php on line 31
+[15-Nov-2012 03:07:05] PHP Parse error:  syntax error, unexpected ';' in /home/mahfuz/public_html/simt/dep_sub_val.php on line 31
+[15-Nov-2012 03:26:41] PHP Parse error:  syntax error, unexpected ';' in /home/mahfuz/public_html/simt/dep_sub_val.php on line 31
+[15-Nov-2012 03:27:46] PHP Parse error:  syntax error, unexpected ';' in /home/mahfuz/public_html/simt/dep_sub_val.php on line 31
+[20-Nov-2012 00:53:29] PHP Parse error:  syntax error, unexpected ';' in /home/mahfuz/public_html/simt/dep_sub_val.php on line 31
+[20-Nov-2012 01:05:52] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/dep_sub_val.php on line 13
+[20-Nov-2012 01:05:52] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/dep_sub_val.php on line 14
+[20-Nov-2012 01:05:52] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/dep_sub_val.php on line 15
+[20-Nov-2012 01:05:52] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/dep_sub_val.php on line 16
+[20-Nov-2012 01:05:52] PHP Warning:  mysql_real_escape_string() expects parameter 1 to be string, array given in /home/mahfuz/public_html/simt/dep_sub_val.php on line 17
+[21-Nov-2012 02:18:15] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[21-Nov-2012 02:18:15] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[21-Nov-2012 02:18:26] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mahfuz'@'localhost' (using password: NO) in /home/mahfuz/public_html/simt/left.php on line 32
+[21-Nov-2012 02:18:26] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mahfuz/public_html/simt/left.php on line 32
+[24-Nov-2012 00:51:41] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/mahfuz/public_html/simt/edit_access_level.php on line 14
+[24-Nov-2012 01:29:54] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/mahfuz/public_html/simt/dbClass.php on line 79
+[24-Nov-2012 02:02:28] PHP Parse error:  syntax error, unexpected $end in /home/mahfuz/public_html/simt/home.php on line 114
+[26-Nov-2012 03:14:56] PHP Fatal error:  Call to undefined function  sha5() in /home/mahfuz/public_html/simt/edit_user.php on line 111
+[26-Nov-2012 03:15:08] PHP Fatal error:  Call to undefined function  sha5() in /home/mahfuz/public_html/simt/edit_user.php on line 111
+[26-Nov-2012 04:30:40] PHP Fatal error:  Call to undefined function  sha5() in /home/mahfuz/public_html/simt/edit_user.php on line 111
+[27-Nov-2012 23:48:05] PHP Parse error:  syntax error, unexpected T_ELSE in /home/mahfuz/public_html/simt/vusr.php on line 34
+[27-Nov-2012 23:48:53] PHP Parse error:  syntax error, unexpected T_ELSE in /home/mahfuz/public_html/simt/vusr.php on line 34
+[27-Nov-2012 23:50:17] PHP Parse error:  syntax error, unexpected T_ECHO, expecting T_CASE or T_DEFAULT or '}' in /home/mahfuz/public_html/simt/vusr.php on line 23
+[27-Nov-2012 23:50:51] PHP Parse error:  syntax error, unexpected T_ECHO, expecting T_CASE or T_DEFAULT or '}' in /home/mahfuz/public_html/simt/vusr.php on line 23
+[27-Nov-2012 23:51:21] PHP Parse error:  syntax error, unexpected T_ECHO, expecting T_CASE or T_DEFAULT or '}' in /home/mahfuz/public_html/simt/vusr.php on line 23
+[27-Nov-2012 23:51:27] PHP Parse error:  syntax error, unexpected T_ECHO, expecting T_CASE or T_DEFAULT or '}' in /home/mahfuz/public_html/simt/vusr.php on line 23
+[27-Nov-2012 23:52:11] PHP Parse error:  syntax error, unexpected T_ECHO, expecting T_CASE or T_DEFAULT or '}' in /home/mahfuz/public_html/simt/vusr.php on line 23

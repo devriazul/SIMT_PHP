@@ -1,0 +1,12 @@
+
+#menuSystem		{ position: center; left: 9px; top: 155px; z-index: 1;}
+#menuSystem table	{ font-family: verdana,geneva,sans serif; font-size: 10pt; border-collapse:collapse;}
+#menuSystem table td	{ padding:0px; }
+
+#mainTable table 	{ border:0px outset #336699; border-collapse:collapse; }
+#mainTable th          	{ background-color: #CCDDFF; padding-left: 3px; padding-right: 3px; width:160; text-align:left; color:#000099}
+#mainTable table td	{ background-color: #FFFFFF; padding-left: 3px; padding-right: 3px;  padding-bottom: 0px; padding-top: 1px; text-align:left;}
+
+#mainTable a       	{ color: #005984; padding-left: 3px; padding-right: 3px; font-family: verdana,geneva,sans serif; font-size: 8pt; text-decoration: none }
+#mainTable a:link      	{ color: #005984; padding-left: 3px; padding-right: 3px; font-family: verdana,geneva,sans serif; font-size: 8pt; text-decoration: none }
+#mainTable a:hover     	{ color: #FFFFFF; padding-left: 3px; padding-right: 3px; background-color:#003366; font-family: verdana,geneva,sans serif; font-size: 8pt; text-decoration: none; display:block; }

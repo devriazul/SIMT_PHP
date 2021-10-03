@@ -1,0 +1,194 @@
+-- phpMyAdmin SQL Dump
+-- version 3.3.9
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Apr 20, 2013 at 09:53 AM
+-- Server version: 5.5.8
+-- PHP Version: 5.3.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `simt_local`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fixed_dep`
+--
+
+CREATE TABLE IF NOT EXISTS `fixed_dep` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `aid` int(10) NOT NULL,
+  `accno` int(10) NOT NULL,
+  `drate` int(10) NOT NULL,
+  `pyear` int(10) NOT NULL,
+  `ddate` date NOT NULL,
+  `methodtype` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
+
+--
+-- Dumping data for table `fixed_dep`
+--
+
+INSERT INTO `fixed_dep` (`id`, `aid`, `accno`, `drate`, `pyear`, `ddate`, `methodtype`) VALUES
+(9, 603, 603, 23350, 6, '2013-04-02', 'Straight Line'),
+(13, 604, 604, 425000, 13, '2013-04-02', 'Straight Line'),
+(15, 603, 603, 10, 0, '2013-04-06', 'Diminishing'),
+(16, 604, 604, 15, 0, '2013-04-06', 'Diminishing'),
+(17, 605, 605, 20, 0, '2013-04-06', 'Diminishing');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_2ndjournal`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_2ndjournal` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `accno` bigint(20) NOT NULL,
+  `groupname` int(10) NOT NULL,
+  `accname` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `amountdr` float NOT NULL,
+  `amountcr` float NOT NULL,
+  `voucherid` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `vouchertype` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `paytype` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `vdate` date DEFAULT NULL,
+  `parentid` int(10) NOT NULL,
+  `masteraccno` int(10) NOT NULL,
+  `drcr` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+  `storedstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `opby` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=27 ;
+
+--
+-- Dumping data for table `tbl_2ndjournal`
+--
+
+INSERT INTO `tbl_2ndjournal` (`id`, `accno`, `groupname`, `accname`, `amountdr`, `amountcr`, `voucherid`, `vouchertype`, `paytype`, `vdate`, `parentid`, `masteraccno`, `drcr`, `storedstatus`, `opby`) VALUES
+(1, 616, 615, 'Cash', 250000, 0, 'PV/-2013-03-24-01', 'P', 'cash', '2013-03-24', 615, 0, '', 'I', 'moin'),
+(2, 606, 603, 'Land1', 0, 250000, 'PV/-2013-03-24-01', 'P', 'cash', '2014-03-24', 603, 616, '', 'I', 'moin'),
+(3, 616, 615, 'Cash', 350000, 0, 'PV/-2013-03-24-02', 'P', 'cash', '2013-03-24', 615, 0, '', 'I', 'moin'),
+(4, 607, 603, 'Land2', 0, 350000, 'PV/-2013-03-24-02', 'P', 'cash', '2014-03-24', 603, 616, '', 'I', 'moin'),
+(5, 616, 615, 'Cash', 1050000, 0, 'PV/-2013-03-24-03', 'P', 'cash', '2013-03-24', 615, 0, '', 'I', 'moin'),
+(6, 609, 604, 'Market1', 0, 1050000, 'PV/-2013-03-24-03', 'P', 'cash', '2013-03-24', 604, 616, '', 'I', 'moin'),
+(7, 616, 615, 'Cash', 0, 150000, 'RV/-2013-03-24-01', 'R', 'cash', '2013-03-24', 615, 0, '', 'I', 'moin'),
+(8, 606, 603, 'Land1', 150000, 0, 'RV/-2013-03-24-01', 'R', 'cash', '2013-03-24', 603, 616, '', 'I', 'moin'),
+(9, 616, 615, 'Cash', 25000, 0, 'PV/-2013-03-25-04', 'P', 'cash', '2013-03-25', 615, 0, '', 'I', 'moin'),
+(10, 612, 605, 'Table', 0, 25000, 'PV/-2013-03-25-04', 'P', 'cash', '2013-03-25', 605, 616, '', 'I', 'moin'),
+(11, 616, 615, 'Cash', 17500, 0, 'PV/-2013-03-25-05', 'P', 'cash', '2013-03-25', 615, 0, '', 'I', 'moin'),
+(12, 613, 605, 'Chair', 0, 17500, 'PV/-2013-03-25-05', 'P', 'cash', '2013-03-25', 605, 616, '', 'I', 'moin'),
+(13, 616, 615, 'Cash', 0, 10000, 'RV/-2013-03-25-02', 'R', 'cash', '2013-03-25', 615, 0, '', 'I', 'moin'),
+(14, 609, 604, 'Market1', 10000, 0, 'RV/-2013-03-25-02', 'R', 'cash', '2013-03-25', 604, 616, '', 'I', 'moin'),
+(15, 616, 615, 'Cash', 0, 3750, 'RV/-2013-03-25-03', 'R', 'cash', '2013-03-25', 615, 0, '', 'I', 'moin'),
+(16, 612, 605, 'Table', 3750, 0, 'RV/-2013-03-25-03', 'R', 'cash', '2013-03-25', 605, 616, '', 'I', 'moin'),
+(21, 607, 603, 'Land2', 0, 350000, 'RV/-2013-04-07-06', 'R', 'cash', '2013-04-07', 603, 0, '', 'I', 'moin'),
+(22, 255, 6, 'ART1213006 Shorif Hossain ', 350000, 0, 'RV/-2013-04-07-06', 'R', 'cash', '2013-04-07', 199, 607, '', 'I', 'moin'),
+(23, 609, 604, 'Market1', 0, 500000, 'RV/-2013-04-07-07', 'R', 'cash', '2012-04-07', 604, 0, '', 'I', 'moin'),
+(24, 318, 6, 'ART1213009 Mst. Farzana Akter ', 500000, 0, 'RV/-2013-04-07-07', 'R', 'cash', '2013-04-07', 199, 609, '', 'I', 'moin'),
+(25, 610, 604, 'Market2', 0, 5000000, 'RV/-2013-04-08-08', 'R', 'cash', '2013-04-08', 604, 0, '', 'I', 'moin'),
+(26, 311, 6, 'ART1213007 Saiful Islam ', 5000000, 0, 'RV/-2013-04-08-08', 'R', 'cash', '2013-04-08', 199, 610, '', 'I', 'moin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_masterjournal`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_masterjournal` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `voucherid` varchar(100) NOT NULL,
+  `voucherdate` date NOT NULL,
+  `vouchertype` varchar(50) NOT NULL,
+  `voucherexpl` varchar(300) NOT NULL,
+  `preparedby` varchar(50) NOT NULL,
+  `paytype` varchar(50) NOT NULL,
+  `chequeno` varchar(50) NOT NULL,
+  `chequedate` date NOT NULL,
+  `accountno` varchar(50) NOT NULL,
+  `bankname` varchar(100) NOT NULL,
+  `mrno` varchar(50) NOT NULL,
+  `opby` varchar(50) NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `voucherid` (`voucherid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+
+--
+-- Dumping data for table `tbl_masterjournal`
+--
+
+INSERT INTO `tbl_masterjournal` (`id`, `voucherid`, `voucherdate`, `vouchertype`, `voucherexpl`, `preparedby`, `paytype`, `chequeno`, `chequedate`, `accountno`, `bankname`, `mrno`, `opby`, `opdate`, `storedstatus`) VALUES
+(1, 'PV/-2013-03-24-01', '2013-03-24', 'P', 'hhhhhhhhhhhhhhh', 'moin', 'cash', '', '0000-00-00', '616', '', '', 'moin', '2013-03-24', 'I'),
+(2, 'PV/-2013-03-24-02', '2013-03-24', 'P', 'ggggggggggg', 'moin', 'cash', '', '0000-00-00', '616', '', '', 'moin', '2013-03-24', 'I'),
+(3, 'PV/-2013-03-24-03', '2013-03-24', 'P', 'bbbbbbbbbbbbbbbbbbb', 'moin', 'cash', '', '0000-00-00', '616', '', '', 'moin', '2013-03-24', 'I'),
+(4, 'RV/-2013-03-24-01', '2013-03-24', 'R', 'mmmmmmmmmmm', 'moin', 'cash', '', '0000-00-00', '616', '', '', 'moin', '2013-03-24', 'I'),
+(5, 'PV/-2013-03-25-04', '2013-03-25', 'P', 'bbbbbbbb', 'moin', 'cash', '', '0000-00-00', '616', '', '', 'moin', '2013-03-25', 'I'),
+(6, 'PV/-2013-03-25-05', '2013-03-25', 'P', 'nnnnnnnnn', 'moin', 'cash', '', '0000-00-00', '616', '', '', 'moin', '2013-03-25', 'I'),
+(7, 'RV/-2013-03-25-02', '2013-03-25', 'R', 'jjjjjjjjjjjj', 'moin', 'cash', '', '0000-00-00', '616', '', '', 'moin', '2013-03-25', 'I'),
+(8, 'RV/-2013-03-25-03', '2013-03-25', 'R', 'hhhhhhhhhhhhhhh', 'moin', 'cash', '', '0000-00-00', '616', '', '', 'moin', '2013-03-25', 'I'),
+(9, 'RV/-2013-04-07-04', '2013-04-07', 'R', 'bbbbbbbbbbb', 'moin', 'cash', '', '0000-00-00', '255', '', '', 'moin', '2013-04-07', 'I'),
+(10, 'RV/-2013-04-07-05', '2013-04-07', 'R', 'bbbbbbbbbbbb', 'moin', 'cash', '', '0000-00-00', '318', '', '', 'moin', '2013-04-07', 'I'),
+(11, 'RV/-2013-04-07-06', '2013-04-07', 'R', 'bbbbbbbbbbbbb', 'moin', 'cash', '', '0000-00-00', '607', '', '', 'moin', '2013-04-07', 'I'),
+(12, 'RV/-2013-04-07-07', '2013-04-07', 'R', 'nnnnnnnnnn', 'moin', 'cash', '', '0000-00-00', '609', '', '', 'moin', '2013-04-07', 'I'),
+(13, 'RV/-2013-04-08-08', '2013-04-08', 'R', 'ccccccccc', 'moin', 'cash', '', '0000-00-00', '610', '', '', 'moin', '2013-04-08', 'I');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_seconderyjournal`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_seconderyjournal` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `accno` bigint(20) NOT NULL,
+  `amount` float NOT NULL,
+  `corraccno` bigint(20) NOT NULL,
+  `comments` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `voucherid` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `invno` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `custid` int(11) NOT NULL,
+  `storedstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `tbl_seconderyjournal`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_tmpjurnal`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_tmpjurnal` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `accno` bigint(20) NOT NULL,
+  `groupname` int(10) NOT NULL,
+  `accname` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `amountdr` float NOT NULL,
+  `amountcr` float NOT NULL,
+  `voucherid` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `vouchertype` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `paytype` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `vdate` date DEFAULT NULL,
+  `parentid` int(10) NOT NULL,
+  `masteraccno` int(10) NOT NULL,
+  `drcr` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+  `storedstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `opby` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `tbl_tmpjurnal`
+--
+

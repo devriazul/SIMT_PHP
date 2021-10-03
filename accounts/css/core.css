@@ -1,0 +1,82 @@
+
+body {
+	font-family:'Trebuchet MS',Tahoma,Sans-serif;
+	text-align:center;
+	padding:30px 0;
+}
+#wrapper {
+	width:800px;
+	margin:0 auto;
+	text-align:left;
+	font-size:10px;
+}
+#wrap {
+	width:800px;
+	margin:0 auto;
+	text-align:left;
+	font-size:10px;
+}
+.tbl_repeat {
+	width:100%;	
+	float:left;	padding:5px 5px;
+
+}
+.tbl_rep {
+	width:100%;	
+	float:left;	padding:5px 5px;
+
+}
+
+th,td {
+	text-align:left;
+	vertical-align:top;
+
+}
+th {
+	background:#efefef;	
+
+}
+p#lab{
+  margin:2px;
+  padding-left:5px;
+  padding:3px;
+}
+#plab{
+   margin-left:3px;
+   padding-top:3px;
+}     
+.col_1 {
+	width:15%;
+}
+.ta_r {
+	text-align:center;
+	padding:5px 3px;
+
+}
+#form_journal {
+	width:100%;
+	clear:both;
+	margin-bottom:30px;
+	float:left;
+}
+.field {
+	padding:3px;
+	border:solid 1px #aaa;
+	float:left;
+	margin-right:5px;
+}
+.field_medium {
+	width:250px;
+}
+.field_small {
+	width:50px;
+}
+.button {
+	height:18px;
+	padding:3px 15px 0 15px;
+	display:block;
+	float:left;
+	background:#efefef;
+	border:solid 1px #ccc;
+	text-decoration:none;
+}

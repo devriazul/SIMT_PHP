@@ -1,0 +1,225 @@
+-- phpMyAdmin SQL Dump
+-- version 3.3.9
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Sep 02, 2012 at 11:36 AM
+-- Server version: 5.5.8
+-- PHP Version: 5.3.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `simtedu`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_accdtl`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_accdtl` (
+  `id` int(10) NOT NULL,
+  `acid` int(10) NOT NULL,
+  `dtlname` varchar(100) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_accdtl`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_access`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_access` (
+  `id` int(10) NOT NULL,
+  `accname` varchar(100) NOT NULL,
+  `userid` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_access`
+--
+
+INSERT INTO `tbl_access` (`id`, `accname`, `userid`) VALUES
+(1, 'login', 'moin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_company`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_company` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(200) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `phone` varchar(200) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `contactperson` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `tbl_company`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_department`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_department` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(200) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  `description` varchar(500) NOT NULL,
+  `opby` varchar(200) NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `tbl_department`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_hostel`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_hostel` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(200) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  `address` varchar(500) NOT NULL,
+  `noofseats` int(11) NOT NULL,
+  `opby` varchar(50) NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `code` (`code`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `tbl_hostel`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_login`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_login` (
+  `id` int(10) NOT NULL,
+  `userid` varchar(100) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `emailid` varchar(100) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `accid` int(10) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `emailid` (`emailid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_login`
+--
+
+INSERT INTO `tbl_login` (`id`, `userid`, `username`, `emailid`, `password`, `accid`) VALUES
+(0, 'moin', 'moinuddin', 'moinuddin7@gmail.com', '123456', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_menucat`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_menucat` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `status` varchar(20) NOT NULL,
+  `toppos` varchar(10) NOT NULL,
+  `rating` int(11) NOT NULL,
+  `opdate` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `tbl_menucat`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_menuscat`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_menuscat` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `cid` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `status` varchar(30) NOT NULL,
+  `opdate` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `tbl_menuscat`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_softadmin`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_softadmin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `status` varchar(30) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `tbl_softadmin`
+--
+
+INSERT INTO `tbl_softadmin` (`id`, `userid`, `password`, `status`) VALUES
+(1, 'a', 'a', 'active');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_softtrace`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_softtrace` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sectionname` varchar(200) NOT NULL,
+  `sdate` date NOT NULL,
+  `edate` date NOT NULL,
+  `flag` int(11) NOT NULL,
+  `opdate` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `tbl_softtrace`
+--
+

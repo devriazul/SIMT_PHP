@@ -1,0 +1,376 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background:url(images/bg-grain.jpg);
+	height:100%;
+	margin:0;
+	padding:0;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+	color:#636363;
+}
+
+p {
+	font-size: 14px;
+	margin:0 0 20px 0;
+}
+
+strong {
+	font-weight:bold;	
+}
+
+div#container {
+	min-height:100%;
+	position:relative;
+}
+
+div#header {
+	height:100px;
+	padding:10px;
+	border-top:5px solid #CF3B06;
+}
+
+#product-title {
+	float:left;
+	font-size:40px;
+	line-height:60px;
+	color:#CF3B06;
+	margin:15px 0 0 10px;
+	text-shadow:1px 1px 1px #fff;
+}
+
+div.login {
+	float:right;
+}
+
+div#menu-wrapper {
+	float:left;
+	width:200px;
+	height:100%;
+	padding:10px;
+}
+
+ul.menu li {
+	background:#f5f5f5;
+	border-top:1px solid #eaeaea;
+	margin:0 0 1px 0;
+}
+
+ul.menu li.menu-item-last {
+	border-bottom:none;
+}
+
+ul.menu li a {
+	font-weight:bold;
+	color:#636466;
+	display:block;
+	padding:10px 5px 10px 15px;
+	text-decoration:none;
+}
+
+ul.menu li a:hover {
+	background:#fff;
+	color:#f15c27;
+}
+
+div#content {
+	padding:10px;
+	min-height:100%;
+	margin-left:220px;
+}
+
+div.content-header {
+	background:#F5F5F5;
+	height:40px;
+	margin:0 0 10px 0;
+	padding:10px 20px;
+	box-shadow:0 1px 1px #DBCDC7;
+	border-top:1px solid #FFFFFF;
+	/*border-radius:5px;*/
+	overflow:hidden;
+}
+
+div.content-header h1.title {
+	color:#636363;
+    font-size:24px;
+    font-weight:normal;
+    line-height:40px;
+	float:left;
+}
+
+div.content-header a.header-action {
+	color: #CF3B06;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.content-header a.add-action {
+	background:url(images/add_icon.png) no-repeat left center;
+	padding:0 0 0 17px;	
+}
+
+div.content-header a.add-action:hover {
+	background:url(images/add_icon_over.png) no-repeat left center;
+	padding:0 0 0 17px;	
+}
+
+div.content-header p {
+	line-height:40px;
+	margin:0;
+}
+
+div.add-new-item {
+	float:right;
+	line-height:40px;
+}
+
+table.rows {
+	min-width:780px;
+	width:100%;
+}
+
+table.rows thead tr {
+	background:#dbcdc7;
+	color:#636363;
+	font-weight:bold;	
+}
+
+table.rows thead td {
+	line-height:24px;
+	padding:13px 10px;
+}
+
+td.center {
+	text-align:center;	
+}
+
+table.rows tbody tr {
+	background:url(images/border_line.jpg) repeat-x left bottom;
+}
+
+table.rows tbody td {
+	line-height:24px;
+	padding:10px;
+}
+
+table.rows tfoot tr {
+	background:#DBCDC7;
+}
+
+table.rows tfoot td {
+	font-weight:bold;
+	line-height:24px;
+	padding:13px 10px;
+}
+
+table.rows tfoot td span {
+	margin:0 20px 0 0;
+	padding-right:20px;
+	border-right:1px solid #e4e4e4;	
+}
+
+table.rows tfoot td a {
+	color:#CF3B06;
+	text-decoration:none;
+}
+
+table.rows tfoot td a:hover {
+	text-decoration:underline;
+}
+
+td.topalign {
+	vertical-align:top;	
+}
+
+.textfield {
+	width:500px;
+	height:20px;
+	border:1px solid #CCC;
+	background:#fff;
+	padding:10px;
+}
+
+.textarea {
+	width:500px;
+	height:200px;
+	border:1px solid #CCC;
+	background:#fff;
+	padding:10px;
+}
+
+.images-list {
+	width:520px;
+}
+
+ul.grid {
+	
+}
+
+ul.grid li.grid-item {
+	width:220px;
+	height:190px;
+	overflow:hidden;
+	float:left;
+	margin:0 20px 20px 0;
+	border:10px solid #DBCDC7;
+}
+
+ul.grid li.grid-item-last {
+	margin:0 0 20px 0;
+}
+
+ul.grid li.grid-item div.image-wrapper {
+	width:220px;
+	height:140px;
+	overflow:hidden;
+}
+
+ul.grid li.grid-item a {
+	color:#CF3B06;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+ul.grid li.grid-item a:hover {
+	text-decoration:underline;
+}
+
+ul.grid li.grid-item img {
+	
+}
+
+ul.grid li.grid-item div.panel {
+	height:40px;
+	background:#DBCDC7;
+	color:#636363;
+	padding:5px;
+	font-weight:bold;
+	line-height:40px;
+}
+
+ul.grid li.grid-item p.image-name {
+	float:left;
+	width:170px;
+	margin:0;
+}
+
+div.buttons {
+	float:right;	
+}
+
+div#footer {
+	background:#0066CC;
+	position:absolute;
+	bottom:0;
+	width:100%;	
+}
+
+input[type="text"], input[type="password"] {
+	background:url(images/form_field_bg.png) no-repeat;
+	font-size:14px;
+	line-height:20px;
+	color:#636363;
+	width:380px;
+	height:20px;
+	border:none;
+	padding:10px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+	box-shadow:0 0 8px #FFFFFF;
+}
+
+input[type="submit"] {
+	background:url(images/btn.png) no-repeat;
+	width:111px;
+	height:37px;
+	cursor:pointer;
+	border:none;
+	display:block;
+	font-weight:bold;
+	color:#636363;
+	text-shadow:0 0 1px #fff;
+	padding:0 0 3px 0;
+}
+
+input[type="submit"]:hover {
+	background:url(images/btn_over.png) no-repeat;
+	color:#cf3b06;
+}
+
+a.logout {
+	font-weight:bold;
+	color:#cf3b06;
+	text-decoration:none;
+}
+
+a.logout:hover {
+	text-decoration:underline;
+}
+
+
+
+
+#swfupload-control p{ font-size:14px; line-height:20px; }
+#log{ margin:0; padding:0; width:500px;}
+#log li{ list-style-position:inside; margin:2px; border:1px solid #ccc; padding:10px; font-size:12px;
+	font-family:Arial, Helvetica, sans-serif; color:#333; background:#fff; position:relative;}
+#log li .progressbar{ border:1px solid #333; height:5px; background:#fff; }
+#log li .progress{ background:#999; width:0%; height:5px; }
+#log li p{ margin:0; line-height:18px; }
+#log li.success{ border:1px solid #339933; background:#ccf9b9; }
+#log li span.cancel{ position:absolute; top:5px; right:5px; width:20px; height:20px;
+	background:url('js/swfupload/cancel.png') no-repeat; cursor:pointer; }

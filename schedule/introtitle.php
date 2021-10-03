@@ -1,0 +1,1 @@
+<P align="center"><h3 align="center" style="color:#666666; font:Verdana, Arial, Helvetica, sans-serif; ">Welcome to Intregrated Institute Management System (IIMS)</h3></P>

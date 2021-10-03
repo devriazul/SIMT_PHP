@@ -1,0 +1,33 @@
+DELIMITER //
+CREATE TRIGGER `schedule_map_backup` AFTER INSERT ON `tbl_schedule_map`
+ FOR EACH ROW BEGIN
+       INSERT INTO `simtdb`.`tbl_schedule_map_backup` (`mapyear`, `deptid`, `semesterid`, `section`, `routineforid`, `guidefaultyid`, `courseid`, `theory`, `practical`, `dyid`, `interval_fid`, `interval_toid`, `vnuid`, `facultyid`, `shortName`, `orderid`) 
+       VALUES (NEW.mapyear, NEW.deptid, NEW.semesterid, NEW.section, NEW.routineforid, NEW.guidefaultyid, NEW.courseid, NEW.theory, NEW.practical, NEW.dyid, NEW.interval_fid, NEW.interval_toid, NEW.vnuid, NEW.facultyid, NEW.shortName, NEW.orderid);
+   END
+//
+DELIMITER ;
+
+
+
+
+
+DELIMITER //
+CREATE TRIGGER `schedule_map_teacher_backup` AFTER INSERT ON `tbl_schedule_map_teacher`
+ FOR EACH ROW BEGIN
+
+       INSERT INTO `simtdb`.`tbl_schedule_map_teacher_backup` (`mapyear`, `deptid`, `semesterid`, `section`, `routineforid`, `guidefaultyid`, `courseid`, `theory`, `practical`, `dyid`, `interval_fid`, `interval_toid`, `vnuid`, `facultyid`, `shortName`, `orderid`) 
+       VALUES (NEW.mapyear, NEW.deptid, NEW.semesterid, NEW.section, NEW.routineforid, NEW.guidefaultyid, NEW.courseid, NEW.theory, NEW.practical, NEW.dyid, NEW.interval_fid, NEW.interval_toid, NEW.vnuid, NEW.facultyid, NEW.shortName, NEW.orderid);
+   END
+//
+DELIMITER ;
+
+
+
+DELIMITER //
+CREATE TRIGGER `schedule_map_venue` AFTER INSERT ON `tbl_schedule_map_venue`
+ FOR EACH ROW BEGIN
+       INSERT INTO `simtdb`.`tbl_schedule_map_venue_backup` (`mapyear`, `deptid`, `semesterid`, `section`, `routineforid`, `guidefaultyid`, `courseid`, `theory`, `practical`, `dyid`, `interval_fid`, `interval_toid`, `vnuid`, `facultyid`, `shortName`, `orderid`) 
+       VALUES (NEW.mapyear, NEW.deptid, NEW.semesterid, NEW.section, NEW.routineforid, NEW.guidefaultyid, NEW.courseid, NEW.theory, NEW.practical, NEW.dyid, NEW.interval_fid, NEW.interval_toid, NEW.vnuid, NEW.facultyid, NEW.shortName, NEW.orderid);
+   END
+//
+DELIMITER ;

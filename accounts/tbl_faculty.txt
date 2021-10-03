@@ -1,0 +1,71 @@
+-- phpMyAdmin SQL Dump
+-- version 3.3.9
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Feb 07, 2013 at 10:54 AM
+-- Server version: 5.5.8
+-- PHP Version: 5.3.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `simt_edu`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_faculty`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_faculty` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `facultyid` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `fname` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `mname` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `sex` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `dob` date NOT NULL,
+  `mstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `bloodgroup` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `address` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `deptid` int(11) NOT NULL,
+  `designationid` int(11) NOT NULL,
+  `joiningdate` date NOT NULL,
+  `expartincourse` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `eduqualification` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+  `expyear` int(10) NOT NULL,
+  `expmonth` int(10) NOT NULL,
+  `contactno` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `type` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `payscaleid` int(11) NOT NULL,
+  `extraclassrate` float NOT NULL,
+  `opby` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `facultyid` (`facultyid`),
+  KEY `fk_deptid` (`deptid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `tbl_faculty`
+--
+
+INSERT INTO `tbl_faculty` (`id`, `facultyid`, `password`, `name`, `fname`, `mname`, `sex`, `dob`, `mstatus`, `bloodgroup`, `address`, `deptid`, `designationid`, `joiningdate`, `expartincourse`, `eduqualification`, `expyear`, `expmonth`, `contactno`, `type`, `payscaleid`, `extraclassrate`, `opby`, `opdate`, `storedstatus`) VALUES
+(1, 'F 001', '3211545', 'Md. Adel Khan', 'Md. Anish', 'Mrs. Hamida', 'Male', '2013-01-02', 'Married', 'AB+', 'Mirpur', 6, 2, '2013-01-02', 'CSE', 'Hons', 1, 5, '1010010100', 'Full Time', 1, 0, 'moin', '2013-01-02', 'I'),
+(2, 'F 002', '478965', 'Moinuddin Ahmed', 'Xxxx', 'Eeeeeeeeee', 'Male', '2013-01-03', 'Married', 'AB-', 'Mirpur', 6, 6, '2013-01-03', '', 'Egdfh', 1, 2, '5556777777', 'Full Time', 4, 0, 'moin', '2013-01-03', 'U'),
+(3, 'F 010', '343d9040a671c45832ee5381860e2996', 'Fgfg f gfg', 'Tttt', 'Gfgg', 'Male', '2013-02-06', 'Married', 'fghfgh', 'Fghgf ', 6, 1, '2013-02-06', 'Gfh', 'Gfhfgh', 0, 1, '3321125', 'Full Time', 1, 0, 'moin', '2013-02-06', 'I'),
+(4, 'F 011', '072c5e7123816518025f55fb8250182f', 'Ffff', 'Hjhh', ' hkdfgfdj', 'Male', '2013-02-07', 'Married', 'ab+', 'Dgdfag', 6, 1, '2013-02-07', 'Dfgdfg', 'Dfgdfg', 1, 2, '0147852223', 'Full Time', 2, 0, 'moin', '2013-02-07', 'I');
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `tbl_faculty`
+--
+ALTER TABLE `tbl_faculty`
+  ADD CONSTRAINT `fk_deptid` FOREIGN KEY (`deptid`) REFERENCES `tbl_department` (`id`);

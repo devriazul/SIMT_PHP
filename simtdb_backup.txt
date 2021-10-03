@@ -1,0 +1,1398 @@
+-- phpMyAdmin SQL Dump
+-- version 3.3.9
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Jan 29, 2013 at 06:55 AM
+-- Server version: 5.5.8
+-- PHP Version: 5.3.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `simtdb`
+--
+CREATE DATABASE `simtdb` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `simtdb`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `eventer_admin`
+--
+
+CREATE TABLE IF NOT EXISTS `eventer_admin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `events_per_page` int(11) NOT NULL DEFAULT '10',
+  `status` tinyint(4) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `eventer_admin`
+--
+
+INSERT INTO `eventer_admin` (`id`, `username`, `password`, `email`, `events_per_page`, `status`) VALUES
+(1, 'admin', '$1$mb3.1V1.$gE.Nks9twXiR3v9mvM0gQ1', 'moinuddin7@gmail.com', 10, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `eventer_events`
+--
+
+CREATE TABLE IF NOT EXISTS `eventer_events` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `start_date` varchar(10) NOT NULL,
+  `end_date` varchar(10) NOT NULL,
+  `start_time` varchar(25) NOT NULL,
+  `end_time` varchar(25) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` text,
+  `venue` varchar(100) NOT NULL,
+  `link` varchar(255) NOT NULL,
+  `icon` varchar(100) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  `image_alignment` varchar(6) NOT NULL DEFAULT 'left',
+  `status` tinyint(4) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `start_date` (`start_date`,`end_date`,`start_time`,`end_time`,`title`,`venue`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+
+--
+-- Dumping data for table `eventer_events`
+--
+
+INSERT INTO `eventer_events` (`id`, `start_date`, `end_date`, `start_time`, `end_time`, `title`, `description`, `venue`, `link`, `icon`, `image`, `image_alignment`, `status`) VALUES
+(1, '2012-11-28', '2012-11-30', '10:15:00', '12:15:00', 'sdfsd', '<p>sdf sadf sadf sadf sadf sadf</p>', 'afsdfsdfsd', '', '', '312.jpg', 'left', 1),
+(2, '2012-11-28', '2012-11-28', '10:15:00', '12:15:00', 'sdfsdf saf ', '<p><strong>s sdf d</strong>fgdfg dfg dfshgfh fgh f,af asdf sadf sadf</p>', 'd dsfgdsfg dfsg fgh dfh', 'anv', '', '306.jpg', 'left', 1),
+(3, '2012-11-28', '2012-11-28', '10:15:00', '12:15:00', 'ggdfgdfgsaf sdf sfs', '<p>sdf sadf sadf sadf sdf sdf</p>', 'afsdfsdfsd', '', '', 'Sunset.jpg', 'left', 1),
+(5, '2012-11-28', '2012-11-28', '10:15:00', '12:15:00', 'sdfsd', '<p>da dsaf sdaf sadf sdf</p>', 'afsdfsdfsd', '', '', '312.jpg', 'left', 1),
+(6, '2012-12-31', '2012-12-31', '10:15:00', '11:15:00', 'dsfsdfasd', '<p>dsg sdaf sadfsd</p>', 'sdaf sadf', '', '', '312.jpg', 'left', 1),
+(7, '2013-01-02', '2013-01-02', '10:10:00', '11:15:00', 'english', '', '125', '', '', '312.jpg', 'left', 1),
+(8, '2013-01-02', '2013-01-02', '11:20:00', '12:20:00', 'bangla', '', '135', '', '', '306.jpg', 'left', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `eventer_images`
+--
+
+CREATE TABLE IF NOT EXISTS `eventer_images` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `path` varchar(255) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `eventer_images`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `eventer_options`
+--
+
+CREATE TABLE IF NOT EXISTS `eventer_options` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `display_mode` varchar(11) NOT NULL DEFAULT 'interactive',
+  `tech_mode` varchar(4) NOT NULL DEFAULT 'ajax',
+  `color_theme` varchar(5) NOT NULL DEFAULT 'Light',
+  `date_box_width` int(11) NOT NULL DEFAULT '136',
+  `date_box_height` int(11) NOT NULL DEFAULT '91',
+  `date_box_horizontal_space` int(3) NOT NULL DEFAULT '1',
+  `date_box_vertical_space` int(3) NOT NULL DEFAULT '1',
+  `date_box_corner_radius` int(3) NOT NULL DEFAULT '5',
+  `date_box_bg_color` varchar(6) NOT NULL DEFAULT 'FFFFFF',
+  `empty_date_box_alpha` int(3) NOT NULL DEFAULT '50',
+  `today_date_box_bg_color` varchar(6) NOT NULL DEFAULT 'FFFFFF',
+  `date_format` varchar(3) NOT NULL DEFAULT 'USA',
+  `starting_week_day` int(1) NOT NULL DEFAULT '0',
+  `week_day_names_short` varchar(255) NOT NULL DEFAULT 'Mon,Tue,Wed,Thu,Fri,Sat,Sun',
+  `week_day_names_long` varchar(255) NOT NULL DEFAULT 'Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday',
+  `week_day_names_format` varchar(5) NOT NULL DEFAULT 'short',
+  `month_names_short` varchar(255) NOT NULL DEFAULT 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec',
+  `month_names_long` varchar(255) NOT NULL DEFAULT 'January,February,March,April,May,June,July,August,September,October,November,December',
+  `month_names_format` varchar(5) NOT NULL DEFAULT 'long',
+  `show_months_navigation` tinyint(4) NOT NULL DEFAULT '1',
+  `calendar_padding` int(3) NOT NULL DEFAULT '10',
+  `calendar_background_width` varchar(5) NOT NULL DEFAULT '100%',
+  `repeat_events` tinyint(4) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `eventer_options`
+--
+
+INSERT INTO `eventer_options` (`id`, `display_mode`, `tech_mode`, `color_theme`, `date_box_width`, `date_box_height`, `date_box_horizontal_space`, `date_box_vertical_space`, `date_box_corner_radius`, `date_box_bg_color`, `empty_date_box_alpha`, `today_date_box_bg_color`, `date_format`, `starting_week_day`, `week_day_names_short`, `week_day_names_long`, `week_day_names_format`, `month_names_short`, `month_names_long`, `month_names_format`, `show_months_navigation`, `calendar_padding`, `calendar_background_width`, `repeat_events`) VALUES
+(1, 'interactive', 'ajax', 'Light', 180, 200, 1, 1, 5, 'FFFFFF', 50, 'FFFFFF', 'USA', 0, 'Mon,Tue,Wed,Thu,Fri,Sat,Sun', 'Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday', 'long', 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec', 'January,February,March,April,May,June,July,August,September,October,November,December', 'short', 1, 20, '100%', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products`
+--
+
+CREATE TABLE IF NOT EXISTS `products` (
+  `id` int(10) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  `price` float NOT NULL,
+  `qty` int(10) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `name`, `price`, `qty`) VALUES
+(1, 'Lux', 40, 4),
+(1, 'Lux', 40, 4),
+(1, 'Lux', 40, 4),
+(1, 'Lux', 30, 3);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_accchart`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_accchart` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `accno` bigint(20) NOT NULL,
+  `accname` varchar(1000) NOT NULL,
+  `parentid` int(11) NOT NULL,
+  `display` varchar(1000) NOT NULL,
+  `type` varchar(300) NOT NULL,
+  `ob` float NOT NULL,
+  `opby` varchar(50) NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `accno` (`accno`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=36 ;
+
+--
+-- Dumping data for table `tbl_accchart`
+--
+
+INSERT INTO `tbl_accchart` (`id`, `accno`, `accname`, `parentid`, `display`, `type`, `ob`, `opby`, `opdate`, `storedstatus`) VALUES
+(1, 1, 'Capital Account', -1, 'Capital Account', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(2, 2, 'Current Assests', -1, 'Current Assests', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(3, 101, 'Reserves & Surplus (Retained Earnings)', 1, 'Capital Account/Reserves & Surplus (Retained Earnings)', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(4, 102, 'Suscepense A/C', 1, 'Capital Account/Suscepense A/C', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(5, 10201, 'Shamima Rahman Admin', 4, 'Capital Account/Suscepense A/C/Shamima Rahman Admin', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(6, 201, 'Bank Accounts', 2, 'Current Assests/Bank Accounts', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(7, 20101, 'Prime Bank Ltd', 6, 'Current Assests/Bank Accounts/Prime Bank Ltd', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(8, 20102, 'UCBL', 6, 'Current Assests/Bank Accounts/UCBL', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(9, 202, 'Cash In Hand', 2, 'Current Assests/Cash In Hand', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(10, 20201, 'Cash', 9, 'Current Assests/Cash In Hand/Cash', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(11, 20202, 'Salary', 9, 'Current Assests/Cash In Hand/Salary', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(12, 203, 'Deposits (Assets)', 2, 'Current Assests/Deposits (Assets)', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(13, 20301, 'Advance to Others', 12, 'Current Assests/Deposits (Assets)/Advance to Others', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(14, 2030101, 'Advance Rahim', 13, 'Current Assests/Deposits (Assets)/Advance to Others/Advance Rahim', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(15, 204, 'Loans & Advances (Assets)', 2, 'Current Assests/Loans & Advances (Assets)', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(16, 20401, 'Advance to Manik', 15, 'Current Assests/Loans & Advances (Assets)/Advance to Manik', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(17, 20402, 'Car Load Paid', 15, 'Current Assests/Loans & Advances (Assets)/Car Load Paid', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(18, 20403, 'Loan Paid to Medical', 15, 'Current Assests/Loans & Advances (Assets)/Loan Paid to Medical', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(19, 20404, 'Loan to Bogra', 15, 'Current Assests/Loans & Advances (Assets)/Loan to Bogra', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(20, 20405, 'Loan to Bogra Lab', 15, 'Current Assests/Loans & Advances (Assets)/Loan to Bogra Lab', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(21, 20406, 'Loan to Dinajpur', 12, 'Current Assests/Deposits (Assets)/Loan to Dinajpur', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(22, 20407, 'Loan to Jamalpur', 12, 'Current Assests/Deposits (Assets)/Loan to Jamalpur', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(23, 20408, 'Loan to Mymansingh', 12, 'Current Assests/Deposits (Assets)/Loan to Mymansingh', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(24, 20409, 'Loan to Medical', 12, 'Current Assests/Deposits (Assets)/Loan to Medical', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(25, 20410, 'Loan to Medical', 12, 'Current Assests/Deposits (Assets)/Loan to Medical', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(26, 20411, 'Loan to Textile', 12, 'Current Assests/Deposits (Assets)/Loan to Textile', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(27, 20412, 'Transfer to Bogra', 12, 'Current Assests/Deposits (Assets)/Transfer to Bogra', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(28, 205, 'Provision for Doubtful Debts', 2, 'Current Assests/Provision for Doubtful Debts', 'Balance Sheet', 0, 'moin', '2012-11-28', 'I'),
+(29, 20501, 'ARO1112001 MAMUNUR RASHED', 28, 'Current Assests/Provision for Doubtful Debts/ARO1112001 MAMUNUR RASHED', 'Balance Sheet', 0, 'moin', '2012-11-28', 'I'),
+(30, 20502, 'ARO1112002 SAJIB HOSSAIN', 28, 'Current Assests/Provision for Doubtful Debts/ARO1112002 SAJIB HOSSAIN', 'Balance Sheet', 0, 'moin', '2012-11-28', 'I'),
+(31, 20503, 'ART0910323 AHNAF HAMID SHAHRIAR', 28, 'Current Assests/Provision for Doubtful Debts/ART0910323 AHNAF HAMID SHAHRIAR', 'Trading Account', 0, 'moin', '2012-11-28', 'I'),
+(32, 20504, 'ART1011004 FARJANA BHUIYA', 28, 'Current Assests/Provision for Doubtful Debts/ART1011004 FARJANA BHUIYA', 'Balance Sheet', 0, 'moin', '2012-11-28', 'I'),
+(33, 20505, 'ART1011017 MD LALIN', 28, 'Current Assests/Provision for Doubtful Debts/ART1011017 MD LALIN', 'Balance Sheet', 0, 'moin', '2012-11-28', 'I'),
+(34, 20506, 'ART1112002 MOTALAB', 28, 'Current Assests/Provision for Doubtful Debts/ART1112002 MOTALAB', 'Balance Sheet', 0, 'moin', '2012-11-28', 'I'),
+(35, 20507, 'ART1112004 MD RABBI AL AMIN', 28, 'Current Assests/Provision for Doubtful Debts/ART1112004 MD RABBI AL AMIN', 'Balance Sheet', 0, 'moin', '2012-11-28', 'I');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_accdtl`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_accdtl` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `userid` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `flname` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `ins` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+  `upd` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+  `delt` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+  `storedstatus` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `userid_2` (`userid`,`flname`),
+  KEY `userid` (`userid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=41 ;
+
+--
+-- Dumping data for table `tbl_accdtl`
+--
+
+INSERT INTO `tbl_accdtl` (`id`, `userid`, `flname`, `ins`, `upd`, `delt`, `storedstatus`) VALUES
+(1, 'moin', 'chart_of_acc.php', 'y', 'y', 'y', ''),
+(3, 'moin', 'depname.php', 'y', 'y', 'y', ''),
+(4, 'moin', 'view_chart_ofacc.php', 'y', 'y', 'y', ''),
+(5, 'rana', 'chart_of_acc.php', 'y', 'n', 'n', ''),
+(7, 'moin', 'macclevel.php', 'y', 'y', 'y', ''),
+(10, 'moin', 'hostelname.php', 'y', 'y', 'y', ''),
+(11, 'moin', 'stdinfo.php', 'y', 'y', 'y', ''),
+(12, 'moin', 'opbal.php', 'y', 'y', 'n', ''),
+(13, 'moin', 'managecourseinformation.php', 'y', 'y', 'y', ''),
+(14, 'moin', 'semesterinfo.php', 'y', 'y', 'y', ''),
+(15, 'moin', 'manage_student.php', 'y', 'y', 'y', ''),
+(16, 'moin', 'Semesterwisesubject.php', 'y', 'y', 'y', ''),
+(17, 'moin', 'Add_admission_fees.php', 'y', 'y', 'y', ''),
+(18, 'moin', 'batchinfo.php', 'y', 'y', 'y', ''),
+(19, 'moin', 'Manage_admissionfees.php', 'y', 'y', 'y', ''),
+(21, 'moin', 'Semesterwisesubjectassaign.php', 'y', 'y', 'y', ''),
+(22, 'moin', 'System_access_level.php', 'y', 'y', 'y', ''),
+(23, 'moin', 'add_userinfo.php', 'y', 'y', 'y', ''),
+(24, 'moin', 'dep_sub_mark_distribution.php', 'y', 'y', 'y', ''),
+(31, 'moin', 'Sdf dsff', 'y', 'y', 'y', 'D'),
+(32, 'admin', 'add_jurnal.php', 'y', 'y', 'y', ''),
+(33, 'moin', 'managedesignation.php', 'y', 'y', 'y', ''),
+(34, 'moin', 'managepayscale.php', 'y', 'y', 'y', ''),
+(35, 'moin', 'managestaffinfo.php', 'y', 'y', 'y', ''),
+(36, 'moin', 'managefacultyinfo.php', 'y', 'y', 'y', ''),
+(37, 'moin', 'manageleave.php', 'y', 'y', 'y', ''),
+(38, 'moin', 'Managehostelseatdetails.php', 'y', 'y', 'y', ''),
+(39, 'moin', 'allocatehostelseatdetails.php', 'y', 'y', 'y', ''),
+(40, 'moin', 'manageallocatehostel.php', 'y', 'y', 'y', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_access`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_access` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `accname` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `description` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `accname` (`accname`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=40 ;
+
+--
+-- Dumping data for table `tbl_access`
+--
+
+INSERT INTO `tbl_access` (`id`, `accname`, `description`) VALUES
+(1, 'Administrator', 'All Powerfull'),
+(2, 'Accounts', 'Authenticated for Accounts Operation'),
+(37, 'Teacher', 'Authenticated for all faculty modules'),
+(38, 'Student', 'Authenticated for all student modules'),
+(39, 'Library', 'Library access for library related employee. ');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_batch`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_batch` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `batchname` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `depcode` int(10) NOT NULL,
+  `session` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `opby` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `depcode` (`depcode`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=32 ;
+
+--
+-- Dumping data for table `tbl_batch`
+--
+
+INSERT INTO `tbl_batch` (`id`, `batchname`, `depcode`, `session`, `opby`, `opdate`, `storedstatus`) VALUES
+(16, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(17, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(18, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(19, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(20, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(21, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(22, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(23, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(24, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(25, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(26, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(27, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(28, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(29, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(30, '4th', 7, '1415', 'moin', '2012-12-20', 'U'),
+(31, '4th', 6, '1415 ', 'moin', '2012-12-20', 'U');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_company`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_company` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(200) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `phone` varchar(200) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `contactperson` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `tbl_company`
+--
+
+INSERT INTO `tbl_company` (`id`, `name`, `address`, `phone`, `email`, `contactperson`) VALUES
+(1, 'Saic Institute of Management & Technology', 'Mirpur, Section-06, Dhaka', '9112012', 'info@simt.edu.com', 'Md. Shafiq');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_courses`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_courses` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `coursecode` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `coursename` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `departmentid` int(11) NOT NULL,
+  `credit` int(11) NOT NULL,
+  `theory` int(11) NOT NULL,
+  `practical` int(11) NOT NULL,
+  `cont_assess_t` int(10) NOT NULL,
+  `f_exam_t` int(10) NOT NULL,
+  `cont_assess_p` int(10) NOT NULL,
+  `f_exam_p` int(10) NOT NULL,
+  `description` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `opby` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `coursecode` (`coursecode`),
+  KEY `fk_dpid` (`departmentid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=28 ;
+
+--
+-- Dumping data for table `tbl_courses`
+--
+
+INSERT INTO `tbl_courses` (`id`, `coursecode`, `coursename`, `departmentid`, `credit`, `theory`, `practical`, `cont_assess_t`, `f_exam_t`, `cont_assess_p`, `f_exam_p`, `description`, `opby`, `opdate`, `storedstatus`) VALUES
+(1, 'CSE-001', 'Information Technology', 6, 3, 2, 0, 0, 0, 0, 0, 'xxxxxxxxxxxaaaaa', 'moin', '2012-09-12', 'U'),
+(3, 'CSE-003', 'Analog Electronics', 6, 4, 0, 0, 0, 0, 0, 0, 'xxxxxxxxxx', 'moin', '2012-09-12', 'U'),
+(5, 'CSE-005', 'Mathematics-I', 8, 4, 3, 3, 0, 0, 0, 0, 'N/A', 'moin', '2012-09-17', 'U'),
+(6, 'CSE-006', 'Engineering', 8, 2, 2, 0, 0, 0, 0, 0, 'N/A', 'moin', '2012-09-17', 'I'),
+(7, '1011', 'Engineering Drawing', 11, 2, 0, 0, 0, 0, 0, 0, 'N/A', 'moin', '2012-10-02', 'U'),
+(8, '1012', 'Engineering Materials', 11, 3, 2, 0, 0, 0, 0, 0, 'N/A', 'moin', '2012-10-02', 'I'),
+(9, '5712', 'English-I', 11, 2, 2, 0, 0, 0, 0, 0, 'N/A', 'moin', '2012-10-02', 'I'),
+(10, '5911', 'Mathematics-I', 11, 4, 3, 0, 0, 0, 0, 0, 'N/A', 'moin', '2012-10-02', 'I'),
+(11, '5913', 'Chemistry', 11, 4, 3, 0, 0, 0, 0, 0, 'N/A', 'moin', '2012-10-02', 'I'),
+(12, '6711', 'Architectural Graphics', 11, 6, 2, 0, 0, 0, 0, 0, 'N/A', 'moin', '2012-10-02', 'U'),
+(13, '7011', 'Basic Workshop Practice', 11, 2, 0, 0, 0, 0, 0, 0, 'N/A', 'moin', '2012-10-02', 'I'),
+(14, '5722', 'English-II', 11, 3, 2, 0, 0, 0, 0, 0, 'N/A', 'moin', '2012-10-02', 'I'),
+(15, '5812', 'Physical Education & Life Skill Development', 11, 1, 0, 0, 0, 0, 0, 0, 'N/A', 'moin', '2012-10-02', 'I'),
+(16, '5912', 'Physics-I', 11, 4, 3, 0, 0, 0, 0, 0, 'N/A', 'moin', '2012-10-02', 'I'),
+(17, '5921', 'Mathematics-II', 11, 4, 3, 0, 0, 0, 0, 0, 'N/A', 'moin', '2012-10-02', 'I'),
+(18, '6121', 'Architectural Design & Planning-I', 11, 4, 2, 0, 0, 0, 0, 0, 'N/A', 'moin', '2012-10-02', 'I'),
+(19, '6621', 'Computer Application-I', 11, 2, 4, 20, 0, 0, 0, 0, 'N/A', 'moin', '2012-10-02', 'U'),
+(23, 'DFDSWER', 'Fgfg', 11, 22, 12, 0, 0, 0, 0, 0, '', 'moin', '2012-12-06', 'D'),
+(24, 'FGGHFDG', 'Dfgrt', 11, 22, 33, 0, 0, 0, 0, 0, 'dsfdfs sdf', 'moin', '2012-12-06', 'D'),
+(25, 'DSG DSF', 'Sdf dfg df', 6, 22, 22, 22, 0, 0, 0, 0, 'ds sdf sdf', 'moin', '2012-12-06', 'D'),
+(26, 'SDF SDF', 'Dfg dfg', 6, 22, 22, 22, 0, 0, 0, 0, 'sd dfg dfg dfg df', 'moin', '2012-12-06', 'D'),
+(27, 'EEE', 'Electrical Engineering', 6, 20, 4, 5, 10, 40, 20, 30, 'The subject have to done by student.', 'moin', '2012-12-26', 'D');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_dep_mark_dis`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_dep_mark_dis` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `crid` int(10) NOT NULL,
+  `crcode` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `t` int(10) NOT NULL,
+  `p` int(10) NOT NULL,
+  `c` int(10) NOT NULL,
+  `cont_assess_t` int(10) NOT NULL,
+  `f_exam_t` int(10) NOT NULL,
+  `cont_assess_p` int(10) NOT NULL,
+  `f_exam_p` int(10) NOT NULL,
+  `total_val` int(10) NOT NULL,
+  `depid` int(10) NOT NULL,
+  `sesssion` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `year` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `semesterid` int(10) NOT NULL,
+  `storedstatus` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `crid` (`crid`,`crcode`,`depid`,`sesssion`,`year`,`semesterid`),
+  KEY `fk_semesterid` (`semesterid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=99 ;
+
+--
+-- Dumping data for table `tbl_dep_mark_dis`
+--
+
+INSERT INTO `tbl_dep_mark_dis` (`id`, `crid`, `crcode`, `t`, `p`, `c`, `cont_assess_t`, `f_exam_t`, `cont_assess_p`, `f_exam_p`, `total_val`, `depid`, `sesssion`, `year`, `semesterid`, `storedstatus`) VALUES
+(77, 5, 'CSE-005', 3, 0, 4, 1, 1, 1, 1, 4, 8, '1213', '2012', 2, ''),
+(78, 6, 'CSE-006', 2, 0, 2, 1, 1, 1, 1, 4, 8, '1213', '2012', 2, ''),
+(81, 7, '1011', 0, 0, 2, 0, 0, 0, 0, 0, 11, '1617', '2016', 2, ''),
+(82, 8, '1012', 2, 0, 3, 1, 0, 0, 1, 2, 11, '1617', '2016', 2, ''),
+(83, 11, '5913', 3, 0, 4, 0, 1, 3, 0, 4, 11, '1617', '2016', 2, ''),
+(84, 12, '6711', 2, 0, 4, 0, 0, 0, 0, 0, 11, '1617', '2016', 2, ''),
+(85, 16, '5912', 3, 0, 4, 0, 0, 0, 0, 0, 11, '1617', '2016', 2, ''),
+(91, 7, '1011', 0, 0, 2, 1, 1, 0, 0, 2, 11, '2425', '2024', 2, ''),
+(92, 8, '1012', 2, 0, 3, 0, 0, 0, 0, 0, 11, '2425', '2024', 2, ''),
+(93, 11, '5913', 3, 0, 4, 2, 0, 2, 0, 4, 11, '2425', '2024', 2, ''),
+(94, 12, '6711', 2, 0, 4, 0, 0, 0, 0, 0, 11, '2425', '2024', 2, ''),
+(95, 13, '7011', 0, 0, 2, 0, 0, 0, 0, 0, 11, '2425', '2024', 2, ''),
+(96, 15, '5812', 0, 0, 1, 4, 0, 3, 0, 7, 11, '2425', '2024', 2, ''),
+(97, 17, '5921', 3, 0, 4, 0, 0, 0, 0, 0, 11, '2425', '2024', 2, ''),
+(98, 19, '6621', 0, 0, 2, 0, 0, 0, 0, 0, 11, '2425', '2024', 2, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_department`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_department` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(200) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  `admissionfee` int(11) NOT NULL,
+  `labfee` int(11) NOT NULL,
+  `libraryfee` int(11) NOT NULL,
+  `idcardfee` int(11) NOT NULL,
+  `regifee` int(11) NOT NULL,
+  `onetimefee` int(11) NOT NULL,
+  `noofsemester` int(11) NOT NULL,
+  `semesterfee` int(11) NOT NULL,
+  `noofmonths` int(11) NOT NULL,
+  `tuitionfee` int(11) NOT NULL,
+  `credit` int(11) NOT NULL,
+  `description` text NOT NULL,
+  `opby` varchar(200) NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `code` (`code`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
+
+--
+-- Dumping data for table `tbl_department`
+--
+
+INSERT INTO `tbl_department` (`id`, `code`, `name`, `admissionfee`, `labfee`, `libraryfee`, `idcardfee`, `regifee`, `onetimefee`, `noofsemester`, `semesterfee`, `noofmonths`, `tuitionfee`, `credit`, `description`, `opby`, `opdate`, `storedstatus`) VALUES
+(6, 'CSE', 'Computer Science & Engineering', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'abc', 'moin', '2012-09-27', 'I'),
+(7, 'CV', 'Civil Engineering', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'a', 'moin', '2012-09-27', 'I'),
+(8, 'CS', 'Computer Science', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'a', 'moin', '2012-09-27', 'I'),
+(9, 'BBA', 'Bachelor of Business Administration', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'a', 'moin', '2012-09-27', 'I'),
+(10, 'MBA', 'Masters of Business Administration', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'a', 'moin', '2012-09-27', 'U'),
+(11, 'ART', 'Architecture Technology', 120, 210, 301, 740, 510, 651, 152, 541, 544, 400, 40, 'Architecture Technology', 'moin', '2012-10-02', 'U'),
+(12, 'XXX', 'Ccccc', 220, 210, 312, 314, 318, 369, 789, 654, 321, 789, 40, 'xxxxxxxx', 'moin', '2012-10-02', 'U'),
+(13, 'FFFFFCCCCCC', 'Dsffdgfdgdfg', 222, 222, 222, 222, 222, 222, 222, 2222, 22, 222222, 44, 'dfg dfsg dfgs dfs', 'moin', '2012-12-18', 'U'),
+(14, 'TTTDXXXX', 'Dfggfh fgh fgh ', 222, 222, 222, 222, 222, 222, 222, 222, 222, 222, 444, 'dsdf sdf sadf sadf sd', 'moin', '2012-12-18', 'D'),
+(15, 'EEERRRRRWW', 'Dsfg dfg dh fgh', 333, 333, 333, 333, 333, 333, 333, 333, 333, 333, 333, 'dd sadf dfgdfsg dfg df fds ', 'moin', '2012-12-18', 'U'),
+(16, 'SDFSDF', 'Sdafsdf', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'sdf sadf sdf', 'moin', '2013-01-28', 'D'),
+(17, 'SDF SDAF', 'Sdf sadf as', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'sfsaf sdf', 'moin', '2013-01-28', 'D');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_designation`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_designation` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(200) NOT NULL,
+  `description` varchar(200) NOT NULL,
+  `opby` varchar(10) NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(10) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+
+--
+-- Dumping data for table `tbl_designation`
+--
+
+INSERT INTO `tbl_designation` (`id`, `name`, `description`, `opby`, `opdate`, `storedstatus`) VALUES
+(1, 'Manager', 'he will monitor all the projects', 'moin', '2012-12-27', 'I'),
+(2, 'Asst. Manager', 'N/A', 'moin', '2012-12-27', 'I'),
+(3, 'Accountant (Head)', 'N/A', 'moin', '2012-12-27', 'U'),
+(4, 'Jr. Accountant', 'N/A', 'moin', '2012-12-27', 'I'),
+(5, 'It Manager', 'N/A', 'moin', '2012-12-27', 'I'),
+(6, 'Asst. It Incharge', 'N/A', 'moin', '2012-12-27', 'I'),
+(7, 'Aaa', 'dddd', 'moin', '2012-12-29', 'I'),
+(8, 'Qqqqqqqq', 'dddddddddd', 'moin', '2012-12-29', 'D'),
+(9, 'Vvvvvvvvv', 'N/A', 'moin', '2012-12-29', 'U'),
+(10, 'Rrrrrrrr', 'dfdfdf', 'moin', '2012-12-29', 'D');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_educationalq`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_educationalq` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `stdtid` int(10) NOT NULL,
+  `stdid` varchar(120) COLLATE utf8_unicode_ci NOT NULL,
+  `exstid` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `nexemination` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `group1` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `board` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `passyear` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `cgpas` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `gcsubject` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `tcgpa` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `opdate` date NOT NULL,
+  `opby` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `storedstatus` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_stdtid` (`stdtid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `tbl_educationalq`
+--
+
+INSERT INTO `tbl_educationalq` (`id`, `stdtid`, `stdid`, `exstid`, `nexemination`, `group1`, `board`, `passyear`, `cgpas`, `gcsubject`, `tcgpa`, `opdate`, `opby`, `storedstatus`) VALUES
+(1, 31, 'HSCSE0708001', '', 'S.S.C', 'Science', 'Comilla', '2001', '5 ', 'GM', '5', '2012-12-26', 'moin', 'I'),
+(2, 32, 'HSCSE0506001', '', 'S.S.S', 'Science', 'Comilla', '1999', '73', 'GM', '5', '2012-12-26', 'moin', 'I'),
+(3, 32, 'HSCSE0506001', '', 'd', 'd', 'd', '2010', '3', 'GM', '4', '2013-01-27', 'moin', 'I'),
+(4, 35, 'cse435345', '', 'a', 'a', 'c', '2009', '3', 'GM', '3', '2013-01-27', 'moin', 'D'),
+(5, 36, 'HSCSE0910001', '', 'a', 'a', 'c', '2009', '4', 'GM', '4', '2013-01-27', 'moin', 'I');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_faculty`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_faculty` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `facultyid` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `fname` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `mname` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `address` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `dob` date NOT NULL,
+  `designation` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `joiningdate` date NOT NULL,
+  `expartincourse` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `eduqualification` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+  `experience` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contactno` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `type` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `payscaleid` int(11) NOT NULL,
+  `extraclassrate` float NOT NULL,
+  `opby` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `facultyid` (`facultyid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `tbl_faculty`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_feescollection`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_feescollection` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `stdid` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `stid` int(10) NOT NULL,
+  `edate` date NOT NULL,
+  `eyear` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `frommonth` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `tomonth` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `tuitionfee` int(4) NOT NULL,
+  `admissionfeetext` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `admissionfee` int(11) NOT NULL,
+  `latefee` int(4) NOT NULL,
+  `semesterfeetext` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `semesterfee` int(4) NOT NULL,
+  `registrationfee` int(4) NOT NULL,
+  `formfillupfee` int(4) NOT NULL,
+  `fieldtrainingfee` int(4) NOT NULL,
+  `idcardfee` int(4) NOT NULL,
+  `libraryfee` int(4) NOT NULL,
+  `admissionform` int(4) NOT NULL,
+  `testimonialtext` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `testimonialfee` int(4) NOT NULL,
+  `midtremtesttext` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `midtremtestfee` int(4) NOT NULL,
+  `marksheetfee` int(4) NOT NULL,
+  `labfee` int(4) NOT NULL,
+  `others` int(4) NOT NULL,
+  `inwords` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `opby` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=28 ;
+
+--
+-- Dumping data for table `tbl_feescollection`
+--
+
+INSERT INTO `tbl_feescollection` (`id`, `stdid`, `stid`, `edate`, `eyear`, `frommonth`, `tomonth`, `tuitionfee`, `admissionfeetext`, `admissionfee`, `latefee`, `semesterfeetext`, `semesterfee`, `registrationfee`, `formfillupfee`, `fieldtrainingfee`, `idcardfee`, `libraryfee`, `admissionform`, `testimonialtext`, `testimonialfee`, `midtremtesttext`, `midtremtestfee`, `marksheetfee`, `labfee`, `others`, `inwords`, `opby`, `opdate`, `storedstatus`) VALUES
+(24, 'HSCSE1112001', 0, '2012-10-04', '2012', '10', '10', 0, '', 0, 0, '', 0, 0, 0, 0, 0, 0, 0, '', 0, '', 0, 0, 0, 0, '', 'moin', '2012-10-04', 'I'),
+(22, 'HSCSE1112001', 0, '2012-09-30', '2012', '01', '12', 300, 'Admission', 200, 200, 'Semesterfee', 200, 200, 200, 200, 200, 200, 200, 'testimonialfee', 200, 'Midtermfee', 200, 200, 200, 200, '', 'moin', '2012-12-06', 'I'),
+(25, 'HSCSE1112001', 27, '2012-10-08', '2012', '03', '09', 200, 'Admission', 20000, 3000, 'Semesterfee', 2000, 230, 230, 230, 2340, 230, 230, 'Certificatefee', 230, 'Midtermfee', 2440, 320, 250, 260, '', 'moin', '2012-10-08', 'I'),
+(26, 'CS1112001', 28, '2012-11-12', '2012', '11', '11', 0, '', 0, 0, '', 0, 0, 0, 0, 0, 0, 0, '', 0, '', 0, 0, 0, 0, '', 'moin', '2012-11-12', 'I'),
+(27, 'HSCSE1112001', 27, '2012-12-05', '2013', '01', '02', 110, 'Admission', 5000, 60, 'Semesterfee', 4000, 400, 60, 60, 60, 60, 60, 'testimonialfee', 60, 'Midtermfee', 60, 60, 60, 60, '', 'moin', '2012-12-05', 'I');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_filelink`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_filelink` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `menuname` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `filename` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `status` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `tbl_filelink`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_hostel`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_hostel` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(200) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  `address` varchar(500) NOT NULL,
+  `noofseats` int(11) NOT NULL,
+  `opby` varchar(50) NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `code` (`code`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=37 ;
+
+--
+-- Dumping data for table `tbl_hostel`
+--
+
+INSERT INTO `tbl_hostel` (`id`, `code`, `name`, `address`, `noofseats`, `opby`, `opdate`, `storedstatus`) VALUES
+(1, 'HS001', 'Dhaka city hostel', 'Dhaka,Kolabagan', 150, 'moin', '2012-09-04', 'U'),
+(2, 'HS002AAAAAA', 'Ctg city hostelaaaaaa', 'ctg,olonkar11122222', 6000, 'moin', '2012-09-04', 'I'),
+(3, '8002', 'Narayngonj city hostel', 'Narayngonj sodor', 200, 'moin', '2012-09-08', 'I'),
+(4, '32432', 'Fewrwe', 'sdfsdf', 333, 'moin', '2012-09-08', 'D'),
+(5, 'H1', 'Chatra Nibush', 'Mirpur, Dhaka', 50, 'moin', '2012-09-11', 'D'),
+(6, 'BOGURA-0012', 'Bogura Hostel1', 'Bogura1', 60, 'moin', '2012-11-11', 'U'),
+(7, 'SDSDS', 'Sdsd', 'sdsd sd', 33, 'moin', '2012-12-13', 'D'),
+(8, 'DFDFDFDF', 'Fgfgfg', 'sdfsdaf sdf sd', 44, 'moin', '2012-12-18', 'I'),
+(9, 'FGFGFWERWEWE', 'Dfdfdf', 'sdfsdaf sdaf', 33, 'moin', '2012-12-18', 'I'),
+(10, 'DSFG FDG FDSSSSS', 'Gsfsdf sdf', 'sdfsaf sadf sadf sdfa', 444, 'moin', '2012-12-18', 'U'),
+(11, 'SDF SDFA', 'Sdaf asdf ', 'sadf sadf adsfa ', 10, 'moin', '2012-12-22', 'D'),
+(12, 'SDF ASDAF ', 'Sdaf sdaf sd', 'af sadf sdaf asdf', 10, 'moin', '2012-12-22', 'D'),
+(13, 'SDF SADF SDA', 'Fsdf sdaf sdf', 'sdf sadf sdaf ds', 10, 'moin', '2012-12-22', 'D'),
+(14, 'SSDAF SDF S', 'F sadf sdaf ', 'sdfa sdaf sdf', 10, 'moin', '2012-12-22', 'D'),
+(15, 'SDF SDF', ' sdf sdaf sda', 'f sdaf sdf sd', 10, 'moin', '2012-12-22', 'D'),
+(16, 'SDF SADF SADF SD', 'Sdaf sadf sadf', 'sdf sdaf sdaf sdf', 10, 'moin', '2012-12-22', 'I'),
+(17, 'SDF ASDF SADF SD', 'Sdf sdaf sdaf', 'sdf sdf sdaf asdf s', 10, 'moin', '2012-12-22', 'I'),
+(18, 'SDF SDAF SDF', 'Dsf sdf sdf ', 'dsf sadf sdf sdf ', 10, 'moin', '2012-12-22', 'I'),
+(20, 'SDF DSF SDFA SDF SDF', 'Sdf sdf ', 'sdf sd fsdaf ', 5, 'moin', '2012-12-22', 'I'),
+(21, 'SADASDASD', 'Asdasdasd', 'sadasdasdasd', 10, 'moin', '2012-12-22', 'I'),
+(22, 'SDFA SDAFSDF', 'Sdfsdf sd', 'fsdf asdf sdf', 7, 'moin', '2012-12-22', 'I'),
+(23, 'FDG DSFG DFG', 'Dfg dsfg dsfg ', 'dfsg dsfg dsfg sd', 6, 'moin', '2012-12-22', 'I'),
+(24, 'SDFSDF SDF SDF', 'Sdf sadf sadf', 'sdf sdaf sdf sdfa ', 6, 'moin', '2012-12-22', 'I'),
+(25, 'DSF SDAF ', 'Sdf sdaf sdfa sd', 'sdfa sadf sadf sdf', 8, 'moin', '2012-12-22', 'I'),
+(26, 'SDAF SDAFSD', 'F sdaf asdf', ' sdaf asadf sdaf sd', 6, 'moin', '2012-12-22', 'I'),
+(27, 'DG DFSG', 'Dfg dfsg', 'dfg dsfg dfsg ', 6, 'moin', '2012-12-22', 'I'),
+(28, 'SDFA SDAF SDF', 'Sdf sadf sdf ', 'sdf sdaf sdaf sdaf', 5, 'moin', '2012-12-22', 'I'),
+(30, 'SDF SADF ASD', 'F sadf dsa', 'f sdaf sdaf sdf', 4, 'moin', '2012-12-22', 'I'),
+(31, 'SDF SADF ', 'Sdaf sadf ', 'dsaf asdf sadf', 6, 'moin', '2012-12-22', 'I'),
+(32, 'SDF SDAF', 'Sdaf sadf ', 'sdf sadf saf ', 5, 'moin', '2012-12-22', 'I'),
+(33, 'GF DFSG DFSG ', 'Gh dfh fgh ', 'fgh fgh dgh dfh dh', 5, 'moin', '2012-12-22', 'I'),
+(34, 'SDFSDAF SADF SD', 'Sdf sadf as', 'f sadf sdaf dsf', 5, 'moin', '2012-12-22', 'I'),
+(35, 'FDSG DFSG DSF', 'Gsdfg dsfg ds', 'fg dsfg dfg dsf', 6, 'moin', '2012-12-22', 'I'),
+(36, 'A', 'A', 'a', 10, 'moin', '2012-12-22', 'I');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_hostelseat`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_hostelseat` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `hostelid` int(10) NOT NULL,
+  `roomno` int(10) NOT NULL,
+  `noofstudent` int(11) NOT NULL,
+  `opby` varchar(200) NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(5) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `tbl_hostelseat_ibfk_1` (`hostelid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `tbl_hostelseat`
+--
+
+INSERT INTO `tbl_hostelseat` (`id`, `hostelid`, `roomno`, `noofstudent`, `opby`, `opdate`, `storedstatus`) VALUES
+(1, 1, 203, 8, 'moin', '2012-12-26', 'U'),
+(2, 1, 204, 0, 'moin', '2012-12-26', 'I'),
+(3, 1, 205, 3, 'moin', '2012-12-26', 'U'),
+(4, 1, 206, 3, 'moin', '2012-12-26', 'U'),
+(5, 6, 201, 3, 'moin', '2013-01-09', 'U'),
+(6, 35, 506, 2, 'moin', '2013-01-13', 'I'),
+(7, 35, 360, 2, 'moin', '2013-01-13', 'U');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_hostelseatdetails`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_hostelseatdetails` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `hostelid` int(11) NOT NULL,
+  `roomid` int(11) NOT NULL,
+  `seatno` int(11) NOT NULL,
+  `price` int(11) NOT NULL,
+  `stdid` varchar(300) NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '0',
+  `opby` varchar(20) NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `seatno` (`seatno`),
+  KEY `hostelid` (`hostelid`),
+  KEY `roomid` (`roomid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
+--
+-- Dumping data for table `tbl_hostelseatdetails`
+--
+
+INSERT INTO `tbl_hostelseatdetails` (`id`, `hostelid`, `roomid`, `seatno`, `price`, `stdid`, `status`, `opby`, `opdate`, `storedstatus`) VALUES
+(1, 1, 1, 5887, 5002, 'HSCSE0708001', 1, 'moin', '2013-01-28', 'U'),
+(2, 1, 2, 8002, 25, '', 1, 'moin', '2013-01-14', 'I'),
+(3, 1, 2, 520, 1100, '', 0, 'moin', '2013-01-15', 'D'),
+(4, 1, 4, 206, 120, '', 0, 'moin', '2013-01-15', 'U'),
+(5, 1, 1, 1, 1100, '', 0, 'moin', '2013-01-16', 'I'),
+(6, 1, 1, 2, 1200, 'CS1112001', 1, 'moin', '2013-01-17', 'U'),
+(7, 1, 4, 3, 1200, '', 0, 'moin', '2013-01-16', 'I'),
+(8, 1, 1, 4, 1200, 'HSCSE1112001', 1, 'moin', '2013-01-17', 'U'),
+(9, 1, 1, 5, 1100, '', 0, 'moin', '2013-01-16', 'I'),
+(10, 1, 1, 6, 1000, '', 0, 'moin', '2013-01-16', 'I'),
+(11, 1, 1, 8, 1200, '80CS1112001', 1, 'moin', '2013-01-19', 'U');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_leave`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_leave` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `code` varchar(20) NOT NULL,
+  `dayscount` int(11) NOT NULL,
+  `status` varchar(10) NOT NULL,
+  `remarks` varchar(100) NOT NULL,
+  `opby` varchar(10) NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(10) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `code` (`code`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `tbl_leave`
+--
+
+INSERT INTO `tbl_leave` (`id`, `name`, `code`, `dayscount`, `status`, `remarks`, `opby`, `opdate`, `storedstatus`) VALUES
+(1, 'Casual Leave', 'CL', 15, 'Active', 'N/A', 'moin', '2013-01-08', 'U'),
+(2, 'Sick Leave', 'SL', 10, 'Active', 'N/A', 'moin', '2013-01-07', 'I'),
+(3, 'Government Holiday', 'GH', 13, 'Active', 'N/A', 'moin', '2013-01-07', 'I'),
+(4, 'Xxxxxxxxx', 'Xx', 0, 'Inactive', 'xxxxxxx', 'moin', '2013-01-08', 'D');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_login`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_login` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `userid` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `emailid` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `accid` int(10) NOT NULL,
+  `storedstatus` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `userid` (`userid`),
+  KEY `accid` (`accid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=38 ;
+
+--
+-- Dumping data for table `tbl_login`
+--
+
+INSERT INTO `tbl_login` (`id`, `userid`, `emailid`, `password`, `accid`, `storedstatus`) VALUES
+(1, 'moin', 'moinuddin7@gmail.com', '82c376f5b2948654a0a3474abc8893cc', 1, ''),
+(2, 'rana', 'rana@gmail.com', 'e10adc3949ba59abbe56e057f20f88', 1, ''),
+(3, 'Rahan786', 'rahan@gmail.com', 'a2a37b85d5af90c52c17ee2449a709', 1, ''),
+(4, 'Ranakhan786', 'ranakhan@gmail.com', 'aa2fa6af39c8d9634f542df7c16e6c', 1, ''),
+(9, 'A', 'a', '289dff07669d7a23de0ef88d2f7129e7', 1, ''),
+(19, 'admin', 'a', '0cc175b9c0f1b6a831c399e269772661', 2, ''),
+(22, 'Dsdfsdfsdf', 'a', 'a', 1, ''),
+(27, 'Q', 'q', 'q', 1, ''),
+(31, 'Rashid', '', '123654', 38, ''),
+(33, 'Sayed', 'sdss', '8888', 38, ''),
+(34, 'Abccccc', 'abc@gmail.com', '25d55ad283aa400af464c76d713c07', 1, ''),
+(35, 'f', 'f@abc.com', 'b5385961c08290e3097e9e4784c65807', 1, ''),
+(36, 'sd', 'sd@abc.com', '6226f7cbe59e99a90b5cef6f94f966fd', 1, ''),
+(37, 'dfdfdfdf', 'abcdddde@abc.com', '934b535800b1cba8f96a5d72f72f1611', 1, 'D');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_masterjournal`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_masterjournal` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `voucherid` varchar(100) NOT NULL,
+  `voucherdate` date NOT NULL,
+  `vouchertype` varchar(50) NOT NULL,
+  `voucherexpl` varchar(300) NOT NULL,
+  `preparedby` varchar(50) NOT NULL,
+  `paytype` varchar(50) NOT NULL,
+  `chequeno` varchar(50) NOT NULL,
+  `chequedate` date NOT NULL,
+  `accountno` varchar(50) NOT NULL,
+  `bankname` varchar(100) NOT NULL,
+  `mrno` varchar(50) NOT NULL,
+  `opby` varchar(50) NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=63 ;
+
+--
+-- Dumping data for table `tbl_masterjournal`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_menucat`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_menucat` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `section` varchar(100) NOT NULL,
+  `status` varchar(20) NOT NULL,
+  `toppos` varchar(10) NOT NULL,
+  `opdate` date NOT NULL,
+  `user` varchar(300) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `tbl_menucat`
+--
+
+INSERT INTO `tbl_menucat` (`id`, `name`, `section`, `status`, `toppos`, `opdate`, `user`) VALUES
+(1, 'Parameter Module', 'Administrator', 'Active', 'y', '0000-00-00', 'moin'),
+(3, 'Accounts', 'Accounts', 'Active', 'y', '0000-00-00', 'admin'),
+(5, 'Accounts Report', 'Accounts', 'Active', 'y', '0000-00-00', 'admin'),
+(6, 'Operations', 'Administrator', 'Active', 'y', '0000-00-00', 'moin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_menuscat`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_menuscat` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `cid` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `status` varchar(30) NOT NULL,
+  `opdate` date NOT NULL,
+  `url` varchar(200) NOT NULL,
+  `morder` int(11) NOT NULL,
+  `user` varchar(300) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=27 ;
+
+--
+-- Dumping data for table `tbl_menuscat`
+--
+
+INSERT INTO `tbl_menuscat` (`id`, `cid`, `name`, `status`, `opdate`, `url`, `morder`, `user`) VALUES
+(1, 1, 'Manage Department', 'Active', '2012-12-23', 'depname.php', 1, 'moin'),
+(2, 1, 'Manage Semester', 'Active', '2012-12-23', 'semesterinfo.php', 2, 'moin'),
+(3, 1, 'Manage Courses', 'Active', '2012-12-23', 'managecourseinformation.php', 3, 'moin'),
+(4, 1, 'Manage Batches', 'Active', '2012-12-23', 'manage_batch.php', 4, 'moin'),
+(5, 1, 'Manage Hostel', 'Active', '2012-12-23', 'hostelname.php', 5, 'moin'),
+(6, 1, 'Manage Students', 'Active', '2012-12-24', 'manage_student.php', 6, 'moin'),
+(7, 1, 'Manage Semester Subjects', 'Active', '2012-12-26', 'semesterwisesubject_search.php', 7, ''),
+(8, 3, 'Chart of Accounts Entry', 'Active', '2012-09-02', 'chart_of_acc.php', 0, ''),
+(9, 3, 'Opening Balance Entry', 'Active', '2012-09-02', 'opbal.php', 0, ''),
+(10, 3, 'Journal Entry', 'Active', '2012-09-02', 'add_jurnal.php', 0, ''),
+(26, 6, 'Allocate Hostelseat', 'Active', '2013-01-28', 'manageallocatehostel.php', 14, 'moin'),
+(14, 8, 'Logout', 'Active', '2012-09-11', 'logout.php', 0, ''),
+(15, 5, 'Chart of Accounts', 'Active', '2012-09-11', '#', 0, ''),
+(16, 5, 'General Journal', 'Active', '2012-09-11', '#', 0, ''),
+(17, 5, 'Ledger Report', 'Active', '2012-09-11', '#', 0, ''),
+(18, 5, 'Trial Balance', 'Active', '2012-09-11', '#', 0, ''),
+(19, 1, 'Manage User Authentication', 'Active', '2012-09-01', 'macclevel.php', 2, 'moin'),
+(20, 1, 'Manage Designation', 'Active', '2013-01-28', 'managedesignation.php', 8, 'moin'),
+(21, 1, 'Manage Payscale', 'Active', '2013-01-28', 'managepayscale.php', 9, 'moin'),
+(22, 1, 'Manage Staff information', 'Active', '2013-01-28', 'managestaffinfo.php', 10, 'moin'),
+(23, 1, 'Manage Faculty information ', 'Active', '2013-01-28', 'managefacultyinfo.php', 11, 'moin'),
+(24, 1, 'Manage Leave', 'Active', '2013-01-28', 'manageleave.php', 12, 'moin'),
+(25, 1, 'Manage Hostelseat', 'Active', '2013-01-28', 'managehostelseatdetails.php', 13, 'moin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_payscale`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_payscale` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `designationid` int(11) NOT NULL,
+  `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `basicpay` float NOT NULL,
+  `houserent` float NOT NULL,
+  `medicalallow` float NOT NULL,
+  `transportallow` float NOT NULL,
+  `otherallow` float NOT NULL,
+  `remarks` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `opby` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `opdate` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `storedstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `payscalename` (`name`),
+  KEY `designationid` (`designationid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `tbl_payscale`
+--
+
+INSERT INTO `tbl_payscale` (`id`, `designationid`, `name`, `basicpay`, `houserent`, `medicalallow`, `transportallow`, `otherallow`, `remarks`, `opby`, `opdate`, `storedstatus`) VALUES
+(1, 7, 'XXXXX', 500, 1200, 22, 39, 66, 'N/A', 'moin', '2012-12-29', 'U'),
+(2, 1, 'Manager', 25000, 3000, 2000, 1000, 500, 'N/A', 'moin', '2012-12-30', 'I'),
+(3, 3, 'Accountant (Head)', 30000, 3000, 2000, 1000, 500, 'N/A', 'moin', '2012-12-30', 'I'),
+(4, 5, 'It Manager', 23000, 2500, 1200, 800, 500, 'N/A', 'moin', '2012-12-30', 'D'),
+(5, 7, 'X', 1, 2, 3, 4, 5, 'n/a', 'moin', '2012-12-31', 'D'),
+(6, 2, 'Astt. Manager', 450, 456, 423, 346, 3456, 'N/A', 'moin', '2012-12-31', 'I');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_seconderyjournal`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_seconderyjournal` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `accno` bigint(20) NOT NULL,
+  `amount` float NOT NULL,
+  `corraccno` bigint(20) NOT NULL,
+  `comments` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `voucherid` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `invno` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `custid` int(11) NOT NULL,
+  `storedstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `tbl_seconderyjournal`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_semester`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_semester` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `session` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `year` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `period` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `totalcredit` int(11) NOT NULL,
+  `description` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `opby` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `tbl_semester`
+--
+
+INSERT INTO `tbl_semester` (`id`, `name`, `session`, `year`, `period`, `totalcredit`, `description`, `opby`, `opdate`, `storedstatus`) VALUES
+(2, 'SPRING (1ST SEMSTER)', '0708', '2012', '6 months', 12, '', 'moin', '2012-09-13', 'U'),
+(3, 'SUMMER (2ND SEMESTER)', '1112', '2012', '6 months', 12, '', 'moin', '2012-09-13', 'U'),
+(4, 'WINTER (3RD SEMESTER)', '1011', '2011', '6 months', 12, 'N/A', 'moin', '2012-09-13', 'U'),
+(5, 'SDF SDF SD', '1516', '2015', '6', 23, 'dfg dfsg dsfg asdf', 'moin', '2013-01-28', 'D');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_semesterwisesubj`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_semesterwisesubj` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `year` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `session` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `semesterid` int(11) NOT NULL,
+  `deptid` int(11) NOT NULL,
+  `courseid` int(11) NOT NULL,
+  `opby` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `year` (`year`,`session`,`semesterid`,`deptid`,`courseid`),
+  KEY `tbl_semesterwisesubj_ibfk_1` (`semesterid`),
+  KEY `tbl_semesterwisesubj_ibfk_2` (`deptid`),
+  KEY `tbl_semesterwisesubj_ibfk_3` (`courseid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=17 ;
+
+--
+-- Dumping data for table `tbl_semesterwisesubj`
+--
+
+INSERT INTO `tbl_semesterwisesubj` (`id`, `year`, `session`, `semesterid`, `deptid`, `courseid`, `opby`, `opdate`, `storedstatus`) VALUES
+(1, '2013', '1314', 2, 11, 7, 'moin', '2012-12-26', 'I'),
+(2, '2013', '1314', 2, 11, 8, 'moin', '2012-12-26', 'I'),
+(3, '2013', '1314', 2, 11, 11, 'moin', '2012-12-26', 'I'),
+(7, '2015', '1516', 2, 6, 1, 'moin', '2012-12-26', 'I'),
+(8, '2015', '1516', 2, 6, 3, 'moin', '2012-12-26', 'I'),
+(9, '2015', '1516', 2, 6, 27, 'moin', '2012-12-26', 'I'),
+(12, '2013', '1314', 2, 11, 13, 'moin', '2013-01-28', 'I'),
+(13, '2013', '1314', 2, 11, 16, 'moin', '2013-01-28', 'I'),
+(14, '2013', '1314', 2, 11, 17, 'moin', '2013-01-28', 'I'),
+(15, '2013', '1314', 3, 8, 5, 'moin', '2013-01-28', 'I'),
+(16, '2013', '1314', 3, 8, 6, 'moin', '2013-01-28', 'I');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_softadmin`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_softadmin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `status` varchar(30) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `tbl_softadmin`
+--
+
+INSERT INTO `tbl_softadmin` (`id`, `userid`, `password`, `status`) VALUES
+(1, 'a', 'a', 'active');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_softtrace`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_softtrace` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sectionname` varchar(200) NOT NULL,
+  `sdate` date NOT NULL,
+  `edate` date NOT NULL,
+  `flag` int(11) NOT NULL,
+  `opdate` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `tbl_softtrace`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_staffinfo`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_staffinfo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `sid` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `pass` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `paddress` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `cellno` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `designationid` int(11) NOT NULL,
+  `etype` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `joindate` date NOT NULL,
+  `payscaleid` int(11) NOT NULL,
+  `remarks` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `opby` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_designationid` (`designationid`),
+  KEY `fk_payscaleid` (`payscaleid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `tbl_staffinfo`
+--
+
+INSERT INTO `tbl_staffinfo` (`id`, `name`, `sid`, `pass`, `paddress`, `cellno`, `designationid`, `etype`, `joindate`, `payscaleid`, `remarks`, `opby`, `opdate`, `storedstatus`) VALUES
+(1, 'Md. Shafiq Ahmed', 'EMP 001', '123456', 'Mirpur', '01741254780', 3, 'Full Time', '2010-12-31', 3, 'N/A', 'moin', '2012-12-31', 'U'),
+(2, 'Md. Abdur Rahman', 'EMP 002', '456321', 'Mirpur', '01714547855', 2, 'Full Time', '2010-12-31', 6, 'N/A', 'moin', '2012-12-31', 'I'),
+(3, 'X', 'EMP 003', 'X', 'Xttt', '66', 7, 'Full Time', '2013-01-01', 1, 'xxx', 'moin', '2013-01-01', 'U'),
+(4, 'Raju', 'EMP 004', '457854', 'Mirpur', '01010101001', 4, 'Full Time', '2013-01-02', 6, 'fdg', 'moin', '2013-01-02', 'I');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_stdinfo`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_stdinfo` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `stdname` varchar(120) COLLATE utf8_unicode_ci NOT NULL,
+  `stdid` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `exstid` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `session` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `deptname` int(10) NOT NULL,
+  `batch` int(10) NOT NULL,
+  `semester` int(10) NOT NULL,
+  `hostel` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `hostelid` int(10) NOT NULL,
+  `seat` int(10) NOT NULL,
+  `fname` varchar(120) COLLATE utf8_unicode_ci NOT NULL,
+  `mname` varchar(120) COLLATE utf8_unicode_ci NOT NULL,
+  `nationality` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `praddress` text COLLATE utf8_unicode_ci NOT NULL,
+  `peraddress` text COLLATE utf8_unicode_ci NOT NULL,
+  `phone` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `sexstatus` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+  `dob` date NOT NULL,
+  `bgroup` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `gname` varchar(120) COLLATE utf8_unicode_ci NOT NULL,
+  `religion` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `img` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `opdate` date NOT NULL,
+  `opby` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `storedstatus` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `stdid` (`stdid`),
+  KEY `deptname` (`deptname`),
+  KEY `batch` (`batch`),
+  KEY `semester` (`semester`),
+  KEY `hostelid` (`hostelid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=37 ;
+
+--
+-- Dumping data for table `tbl_stdinfo`
+--
+
+INSERT INTO `tbl_stdinfo` (`id`, `stdname`, `stdid`, `exstid`, `password`, `session`, `deptname`, `batch`, `semester`, `hostel`, `hostelid`, `seat`, `fname`, `mname`, `nationality`, `praddress`, `peraddress`, `phone`, `sexstatus`, `dob`, `bgroup`, `gname`, `religion`, `img`, `opdate`, `opby`, `storedstatus`) VALUES
+(31, 'Rahana Akter', 'HSCSE0708001', '', '123456', '', 6, 31, 2, '', 1, 0, 'Jahangir Alam', 'Forida Begum', 'Bangladeshi', 'Dhaka', 'Raipur', '01716187302', '', '1983-09-23', 'AB+', 'Moin Uddin', 'Islam', '31.jpg', '2013-01-27', 'moin', 'U'),
+(32, 'Moin', 'HSCSE0506001', '', '1234', '0506', 6, 31, 2, 'HS001', 1, 203, 'Dr.Khairul Alaam', 'Rowsan Ara', 'Bangladeshi', 'Dhak', 'Raipur', '01716187302', 'male', '1981-05-30', 'B+', 'Khairul Alam', 'Islam', '32.jpg', '2012-12-26', 'moin', 'I'),
+(35, 'a', 'cse435345', '', 'a', '', 6, 31, 3, '', 1, 0, 'a', 'b', 'Bangladeshi', 'a', 'a', '234234234', 'femal', '1995-01-08', 'A+', 'a', 'Islam', '33.jpg', '2013-01-27', 'moin', 'U'),
+(36, 'b', 'HSCSE0910001', '', 'b', '0910', 6, 31, 2, 'HS001', 1, 0, 'a', 'b', 'Bangladeshi', 'a', 'a', '23423234', 'male', '1995-01-07', 'A+', 'a', 'Islam', '36.jpg', '2013-01-27', 'moin', 'I');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_studwisesubject`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_studwisesubject` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `studid` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `semesterid` int(11) NOT NULL,
+  `courseid` int(11) NOT NULL,
+  `opby` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `studid` (`studid`),
+  KEY `semesterid` (`semesterid`),
+  KEY `courseid` (`courseid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `tbl_studwisesubject`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_tmpjurnal`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_tmpjurnal` (
+  `id` int(11) NOT NULL,
+  `accno` bigint(20) NOT NULL,
+  `accname` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `amountdr` float NOT NULL,
+  `amountcr` float NOT NULL,
+  `voucherid` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `vouchertype` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `paytype` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `vdate` date DEFAULT NULL,
+  `masteraccno` int(10) NOT NULL,
+  `storedstatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `opby` varchar(200) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tbl_tmpjurnal`
+--
+
+INSERT INTO `tbl_tmpjurnal` (`id`, `accno`, `accname`, `amountdr`, `amountcr`, `voucherid`, `vouchertype`, `paytype`, `vdate`, `masteraccno`, `storedstatus`, `opby`) VALUES
+(1, 7, 'Prime Bank Ltd', 5000, 0, '', 'R', 'cash', '2013-01-27', 0, '', 'admin'),
+(2, 10, 'Cash', 0, 5000, '', 'R', 'cash', '2013-01-27', 7, '', 'admin'),
+(3, 11, 'Salary', 5000, 0, '', 'R', 'cash', '2013-01-27', 0, '', 'admin'),
+(4, 14, 'Advance Rahim', 0, 5000, '', 'R', 'cash', '2013-01-27', 11, '', 'admin');
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `tbl_accdtl`
+--
+ALTER TABLE `tbl_accdtl`
+  ADD CONSTRAINT `tbl_accdtl_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `tbl_login` (`userid`);
+
+--
+-- Constraints for table `tbl_batch`
+--
+ALTER TABLE `tbl_batch`
+  ADD CONSTRAINT `tbl_batch_ibfk_1` FOREIGN KEY (`depcode`) REFERENCES `tbl_department` (`id`);
+
+--
+-- Constraints for table `tbl_courses`
+--
+ALTER TABLE `tbl_courses`
+  ADD CONSTRAINT `fk_dpid` FOREIGN KEY (`departmentid`) REFERENCES `tbl_department` (`id`);
+
+--
+-- Constraints for table `tbl_dep_mark_dis`
+--
+ALTER TABLE `tbl_dep_mark_dis`
+  ADD CONSTRAINT `fk_courseid` FOREIGN KEY (`crid`) REFERENCES `tbl_courses` (`id`),
+  ADD CONSTRAINT `fk_semesterid` FOREIGN KEY (`semesterid`) REFERENCES `tbl_semester` (`id`);
+
+--
+-- Constraints for table `tbl_educationalq`
+--
+ALTER TABLE `tbl_educationalq`
+  ADD CONSTRAINT `fk_stdtid` FOREIGN KEY (`stdtid`) REFERENCES `tbl_stdinfo` (`id`);
+
+--
+-- Constraints for table `tbl_hostelseat`
+--
+ALTER TABLE `tbl_hostelseat`
+  ADD CONSTRAINT `tbl_hostelseat_ibfk_1` FOREIGN KEY (`hostelid`) REFERENCES `tbl_hostel` (`id`);
+
+--
+-- Constraints for table `tbl_hostelseatdetails`
+--
+ALTER TABLE `tbl_hostelseatdetails`
+  ADD CONSTRAINT `tbl_hostelseatdetails_ibfk_1` FOREIGN KEY (`hostelid`) REFERENCES `tbl_hostel` (`id`),
+  ADD CONSTRAINT `tbl_hostelseatdetails_ibfk_2` FOREIGN KEY (`roomid`) REFERENCES `tbl_hostelseat` (`id`);
+
+--
+-- Constraints for table `tbl_login`
+--
+ALTER TABLE `tbl_login`
+  ADD CONSTRAINT `tbl_login_ibfk_1` FOREIGN KEY (`accid`) REFERENCES `tbl_access` (`id`);
+
+--
+-- Constraints for table `tbl_payscale`
+--
+ALTER TABLE `tbl_payscale`
+  ADD CONSTRAINT `tbl_payscale_ibfk_1` FOREIGN KEY (`designationid`) REFERENCES `tbl_designation` (`id`);
+
+--
+-- Constraints for table `tbl_semesterwisesubj`
+--
+ALTER TABLE `tbl_semesterwisesubj`
+  ADD CONSTRAINT `tbl_semesterwisesubj_ibfk_1` FOREIGN KEY (`semesterid`) REFERENCES `tbl_semester` (`id`),
+  ADD CONSTRAINT `tbl_semesterwisesubj_ibfk_2` FOREIGN KEY (`deptid`) REFERENCES `tbl_department` (`id`),
+  ADD CONSTRAINT `tbl_semesterwisesubj_ibfk_3` FOREIGN KEY (`courseid`) REFERENCES `tbl_courses` (`id`);
+
+--
+-- Constraints for table `tbl_staffinfo`
+--
+ALTER TABLE `tbl_staffinfo`
+  ADD CONSTRAINT `fk_designationid` FOREIGN KEY (`designationid`) REFERENCES `tbl_designation` (`id`),
+  ADD CONSTRAINT `fk_payscaleid` FOREIGN KEY (`payscaleid`) REFERENCES `tbl_payscale` (`id`);
+
+--
+-- Constraints for table `tbl_stdinfo`
+--
+ALTER TABLE `tbl_stdinfo`
+  ADD CONSTRAINT `tbl_stdinfo_ibfk_1` FOREIGN KEY (`deptname`) REFERENCES `tbl_department` (`id`),
+  ADD CONSTRAINT `tbl_stdinfo_ibfk_2` FOREIGN KEY (`batch`) REFERENCES `tbl_batch` (`id`),
+  ADD CONSTRAINT `tbl_stdinfo_ibfk_3` FOREIGN KEY (`semester`) REFERENCES `tbl_semester` (`id`),
+  ADD CONSTRAINT `tbl_stdinfo_ibfk_4` FOREIGN KEY (`hostelid`) REFERENCES `tbl_hostel` (`id`);
+
+--
+-- Constraints for table `tbl_studwisesubject`
+--
+ALTER TABLE `tbl_studwisesubject`
+  ADD CONSTRAINT `tbl_studwisesubject_ibfk_1` FOREIGN KEY (`studid`) REFERENCES `tbl_stdinfo` (`stdid`),
+  ADD CONSTRAINT `tbl_studwisesubject_ibfk_2` FOREIGN KEY (`semesterid`) REFERENCES `tbl_semester` (`id`),
+  ADD CONSTRAINT `tbl_studwisesubject_ibfk_3` FOREIGN KEY (`courseid`) REFERENCES `tbl_courses` (`id`);

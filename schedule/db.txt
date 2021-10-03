@@ -1,0 +1,198 @@
+-- phpMyAdmin SQL Dump
+-- version 3.3.9
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Apr 17, 2014 at 02:19 PM
+-- Server version: 5.5.8
+-- PHP Version: 5.3.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `simtnew_1`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_guide_teacher`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_guide_teacher` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `facultyid` varchar(20) NOT NULL,
+  `deptid` int(10) NOT NULL,
+  `ownerid` int(10) NOT NULL,
+  `shortName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `tbl_guide_teacher`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_routine_for`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_routine_for` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `deptid` int(10) NOT NULL,
+  `alias` varchar(50) NOT NULL,
+  `section` varchar(10) NOT NULL,
+  `orderid` tinyint(3) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `deptid` (`deptid`,`alias`,`section`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+
+--
+-- Dumping data for table `tbl_routine_for`
+--
+
+INSERT INTO `tbl_routine_for` (`id`, `deptid`, `alias`, `section`, `orderid`) VALUES
+(6, 18, 'Cmt Lab-2 404', 'A', 1),
+(7, 23, 'Arch-8th', 'B', 2),
+(8, 23, 'Arch-5th', 'A', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_schedule_day`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_schedule_day` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `dyname` varchar(50) NOT NULL,
+  `orderid` tinyint(3) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `dyname` (`dyname`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
+
+--
+-- Dumping data for table `tbl_schedule_day`
+--
+
+INSERT INTO `tbl_schedule_day` (`id`, `dyname`, `orderid`) VALUES
+(15, 'Saturday ', 1),
+(16, 'Sunday', 2),
+(17, 'Monday', 3),
+(18, 'Tuesday', 4),
+(19, 'Wednesday', 5),
+(20, 'Thursday', 6),
+(21, 'Friday', 7);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_schedule_map`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_schedule_map` (
+  `id` int(10) NOT NULL,
+  `rid` int(10) NOT NULL,
+  `gtid` int(10) NOT NULL,
+  `sdid` int(10) NOT NULL,
+  `tin` int(10) NOT NULL,
+  `vid` int(10) NOT NULL,
+  `deptid` int(10) NOT NULL,
+  `coursecode` varchar(100) NOT NULL,
+  `opby` varchar(100) NOT NULL,
+  `opdate` date NOT NULL,
+  `semid` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_schedule_map`
+--
+
+INSERT INTO `tbl_schedule_map` (`id`, `rid`, `gtid`, `sdid`, `tin`, `vid`, `deptid`, `coursecode`, `opby`, `opdate`, `semid`) VALUES
+(0, 0, 0, 1, 0, 0, 0, '', '', '0000-00-00', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_time_interval`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_time_interval` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `intervalName` varchar(30) NOT NULL,
+  `orderid` tinyint(3) NOT NULL,
+  `ordernum` varchar(10) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `intervalName` (`intervalName`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+
+--
+-- Dumping data for table `tbl_time_interval`
+--
+
+INSERT INTO `tbl_time_interval` (`id`, `intervalName`, `orderid`, `ordernum`) VALUES
+(5, '8.00-8.50', 1, 'I'),
+(6, '8.50-9.40', 2, 'II'),
+(7, '9.40-10.30', 3, 'III'),
+(8, '10.30-11.20', 4, 'IV'),
+(9, '11.20-12.10', 5, 'V'),
+(10, '12.10-1.00', 6, 'VI'),
+(11, '1.00-1.50', 7, 'VII'),
+(12, '1.50-2.40', 8, 'VIII'),
+(13, '2.40-3.30', 9, 'XI');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_venue`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_venue` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `venuname` varchar(100) NOT NULL,
+  `roomno` varchar(30) NOT NULL,
+  `orderid` tinyint(3) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `venuname` (`venuname`,`roomno`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+
+--
+-- Dumping data for table `tbl_venue`
+--
+
+INSERT INTO `tbl_venue` (`id`, `venuname`, `roomno`, `orderid`) VALUES
+(1, 'Computer Campus', '402', 0),
+(2, 'Computer Campus', '403', 2),
+(4, 'Computer Campus', '404', 3),
+(5, 'Computer Campus', '405', 4),
+(6, 'Computer Campus', '406', 5),
+(8, 'Computer Campus', '407', 6),
+(9, 'Computer Campus', '408', 7),
+(10, 'Computer Campus', '409', 8),
+(11, 'Computer Campus', '410', 9),
+(12, 'Civil Campus', '401', 1),
+(13, 'Civil Campus', '402', 2),
+(14, 'Civil Campus', '403', 3),
+(16, 'Civil Campus', '404', 3);
+
+CREATE TABLE  `simtnew_1`.`tbl_schedule_map` (
+`id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`mapyear` VARCHAR( 4 ) NOT NULL ,
+`deptid` int(10) not null,
+`semesterid` int(10) not null,
+`section` varchar(5) not null,
+`routineforid` INT( 10 ) NOT NULL ,
+`guidefaultyid` VARCHAR( 30 ) NOT NULL ,
+`courseid` varchar( 20 ) NOT NULL ,
+`dyid` INT( 10 ) NOT NULL ,
+`interval_fid` INT( 10 ) NOT NULL ,
+`interval_toid` INT( 10 ) NOT NULL ,
+`vnuid` INT( 10 ) NOT NULL ,
+`facultyid` VARCHAR( 30 ) NOT NULL ,
+`shortName` varchar(20) NOT NULL,
+`orderid` INT( 10 ) NOT NULL
+) ENGINE = INNODB;
+
+
+ 

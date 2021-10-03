@@ -1,0 +1,26 @@
+single ledger ar view_ledger_consulate_duplicate.php file
+ar query te groupname!=4270 set korte hobe
+
+4270 sudry bad debit
+
+
+Report
+-------
+Group Ledger (Self Head)->group_std_ledger.php
+Ledger Report(Monthly Summery)->monthly_ledger.php
+Group Ledger->group_ledger.php
+Ledger Reports(Single Head)->ledger_report.php
+Trialbalance->trialbalanceReport.php
+Income Statement->Report/incomeStatement.php
+Cash/Bank Book->cash_bankbookRpt.php
+Detail Cash/Bank Book->cash_bankbookDtlRpt.php
+Chart of Accounts Reports->chartAccRpt.php
+Cash/Bank Total Balance->casBankBalanceReport.php
+Ledger Summery->ledger_summery.php
+Trial Balance Summery Report->trialbalanceSummeryReport.php
+
+settings
+---------
+Manage Accounts Group Head->manage_acc_group_head.php
+Manage chart of Accounts Root->manage_root_acc_head.php
+Manage Accounts Head->manage_acc_head.php

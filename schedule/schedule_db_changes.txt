@@ -1,0 +1,65 @@
+CREATE TABLE IF NOT EXISTS `tbl_schedule_map` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `mapyear` varchar(4) NOT NULL,
+  `deptid` int(10) NOT NULL,
+  `semesterid` int(10) NOT NULL,
+  `section` varchar(5) NOT NULL,
+  `routineforid` int(10) NOT NULL,
+  `guidefaultyid` varchar(30) NOT NULL,
+  `courseid` varchar(20) NOT NULL,
+  `theory` int(2) NOT NULL,
+  `practical` int(2) NOT NULL,
+  `dyid` int(10) NOT NULL,
+  `interval_fid` int(10) NOT NULL,
+  `interval_toid` int(10) NOT NULL,
+  `vnuid` int(10) NOT NULL,
+  `facultyid` varchar(30) NOT NULL,
+  `shortName` varchar(20) NOT NULL,
+  `orderid` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+
+CREATE TABLE IF NOT EXISTS `tbl_schedule_map_teacher` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `mapyear` varchar(4) NOT NULL,
+  `deptid` int(10) NOT NULL,
+  `semesterid` int(10) NOT NULL,
+  `section` varchar(5) NOT NULL,
+  `routineforid` int(10) NOT NULL,
+  `guidefaultyid` varchar(30) NOT NULL,
+  `courseid` varchar(20) NOT NULL,
+  `theory` int(2) NOT NULL,
+  `practical` int(2) NOT NULL,
+  `dyid` int(10) NOT NULL,
+  `interval_fid` int(10) NOT NULL,
+  `interval_toid` int(10) NOT NULL,
+  `vnuid` int(10) NOT NULL,
+  `facultyid` varchar(30) NOT NULL,
+  `shortName` varchar(20) NOT NULL,
+  `orderid` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `tbl_schedule_map_section` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `mapyear` varchar(4) NOT NULL,
+  `deptid` int(10) NOT NULL,
+  `semesterid` int(10) NOT NULL,
+  `section` varchar(5) NOT NULL,
+  `routineforid` int(10) NOT NULL,
+  `guidefaultyid` varchar(30) NOT NULL,
+  `courseid` varchar(20) NOT NULL,
+  `theory` int(2) NOT NULL,
+  `practical` int(2) NOT NULL,
+  `dyid` int(10) NOT NULL,
+  `interval_fid` int(10) NOT NULL,
+  `interval_toid` int(10) NOT NULL,
+  `vnuid` int(10) NOT NULL,
+  `facultyid` varchar(30) NOT NULL,
+  `shortName` varchar(20) NOT NULL,
+  `orderid` int(10) NOT NULL,
+  `day_interval_id` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=45 ;
+

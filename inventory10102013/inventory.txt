@@ -1,0 +1,161 @@
+-- phpMyAdmin SQL Dump
+-- version 3.3.9
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Apr 25, 2013 at 09:40 AM
+-- Server version: 5.5.8
+-- PHP Version: 5.3.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `simtdb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_buyproduct`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_buyproduct` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `storeid` varchar(30) NOT NULL,
+  `empid` int(10) NOT NULL,
+  `pid` int(10) NOT NULL,
+  `supid` int(10) NOT NULL,
+  `rqty` int(10) NOT NULL,
+  `aqty` int(10) NOT NULL,
+  `pqty` int(10) NOT NULL,
+  `iqty` int(10) NOT NULL,
+  `reqdate` date NOT NULL,
+  `expdate` date NOT NULL,
+  `appdate` date NOT NULL,
+  `pdate` date NOT NULL,
+  `stock_date` date NOT NULL,
+  `storestatus` varchar(5) NOT NULL,
+  `pstatus` varchar(5) NOT NULL,
+  `porderid` varchar(100) NOT NULL,
+  `pprice` float NOT NULL,
+  `opby` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
+
+--
+-- Dumping data for table `tbl_buyproduct`
+--
+
+INSERT INTO `tbl_buyproduct` (`id`, `storeid`, `empid`, `pid`, `supid`, `rqty`, `aqty`, `pqty`, `iqty`, `reqdate`, `expdate`, `appdate`, `pdate`, `stock_date`, `storestatus`, `pstatus`, `porderid`, `pprice`, `opby`) VALUES
+(18, 'st-0021111', 48, 12, 8, 200, 200, 200, 0, '2013-04-21', '2013-04-28', '2013-05-07', '2013-05-22', '2013-04-24', '', 'P', 'PO-4/22', 0, 'inventory'),
+(19, 'st-0021111', 24, 13, 8, 200, 200, 200, 0, '2013-04-21', '2013-04-22', '2013-04-22', '2013-04-28', '2013-04-24', '', 'P', 'PO-4/22', 0, 'inventory'),
+(20, 'st-0021111', 20, 12, 8, 300, 300, 300, 0, '2013-04-21', '2013-04-22', '2013-04-22', '2013-04-22', '2013-04-24', '', 'P', 'PO-4/22', 0, 'inventory'),
+(21, 'st-0021111', 65, 14, 8, 20, 20, 20, 0, '2013-04-21', '2013-04-22', '2013-04-22', '2013-04-28', '2013-04-24', '', 'P', 'PO-4/22', 0, 'inventory'),
+(22, 'st-0021111', 9, 11, 7, 300, 300, 300, 0, '2013-04-21', '2013-04-22', '2013-04-25', '2013-04-29', '2013-04-24', '', 'P', 'PO-1/21', 0, 'inventory'),
+(23, 'st-0021111', 58, 12, 7, 300, 300, 300, 0, '2013-04-22', '2013-04-27', '2013-04-29', '2013-05-22', '0000-00-00', '', 'P', 'PO-31/22', 0, 'inventory'),
+(24, 'st-0021111', 32, 12, 7, 200, 200, 200, 0, '2013-04-22', '2013-04-27', '2013-05-04', '2013-05-22', '0000-00-00', '', 'P', 'PO-31/22', 0, 'inventory'),
+(25, 'st-0021111', 53, 10, 7, 400, 400, 400, 0, '2013-04-22', '2013-04-25', '2013-05-10', '2013-05-17', '0000-00-00', '', 'P', 'PO-31/22', 0, 'inventory'),
+(26, 'st-0021111', 20, 11, 7, 200, 200, 200, 0, '2013-04-23', '2013-04-23', '2013-04-28', '2013-04-23', '2013-04-24', '', 'P', 'PO-32/22', 0, 'inventory'),
+(27, 'st-0021111', 15, 13, 7, 200, 200, 200, 0, '2013-04-24', '2013-04-25', '2013-04-25', '2013-04-25', '2013-04-24', '', 'P', 'PO-33/24', 30300, 'inventory'),
+(28, 'st-0021111', 20, 10, 7, 200, 200, 200, 0, '2013-04-24', '2013-04-25', '2013-05-01', '2013-05-05', '2013-04-24', '', 'P', 'PO-33/24', 6000, 'inventory');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_product`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_product` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `mname` varchar(200) NOT NULL,
+  `pname` varchar(100) NOT NULL,
+  `packsize` varchar(30) NOT NULL,
+  `prate` float NOT NULL,
+  `urate` float NOT NULL,
+  `qty` int(5) NOT NULL,
+  `prtype` varchar(50) NOT NULL,
+  `opby` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+
+--
+-- Dumping data for table `tbl_product`
+--
+
+INSERT INTO `tbl_product` (`id`, `mname`, `pname`, `packsize`, `prate`, `urate`, `qty`, `prtype`, `opby`) VALUES
+(10, '', 'Pen', '12*6', 0, 0, 0, 'Stationary', ''),
+(11, '', 'Pencil', '12*5', 0, 0, 0, 'House Keeping', ''),
+(12, '', 'Markary Pen', '20*5', 0, 0, 0, 'Stationary', ''),
+(13, '', 'Switch Box', '20*1', 0, 0, 0, 'Lab', ''),
+(14, '', 'Lux Shop', '6*1', 0, 0, 0, 'House Keeping', ''),
+(15, '', 'Welding stik', '1000*1', 0, 0, 0, 'Lab', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_purorder`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_purorder` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `porderid` varchar(50) NOT NULL,
+  `usestatus` varchar(20) NOT NULL,
+  `opby` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `porderid` (`porderid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
+
+--
+-- Dumping data for table `tbl_purorder`
+--
+
+INSERT INTO `tbl_purorder` (`id`, `porderid`, `usestatus`, `opby`) VALUES
+(3, 'PO-1/21', 'FINP', 'inventory'),
+(30, 'PO-4/22', 'FINP', 'inventory'),
+(31, 'PO-31/22', 'FINP', 'inventory'),
+(32, 'PO-32/22', 'FINP', 'inventory'),
+(34, 'PO-33/24', 'INU', 'inventory');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_store`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_store` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `storeid` varchar(20) NOT NULL,
+  `storename` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+
+--
+-- Dumping data for table `tbl_store`
+--
+
+INSERT INTO `tbl_store` (`id`, `storeid`, `storename`) VALUES
+(8, 'st-0021111', 'House Keeping');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_supplier`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_supplier` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `sname` varchar(100) NOT NULL,
+  `sphone` varchar(30) NOT NULL,
+  `saddress` varchar(150) NOT NULL,
+  `semail` varchar(100) NOT NULL,
+  `opby` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+
+--
+-- Dumping data for table `tbl_supplier`
+--
+
+INSERT INTO `tbl_supplier` (`id`, `sname`, `sphone`, `saddress`, `semail`, `opby`) VALUES
+(7, 'abc', '8478213', 'safsadfsadf', 'moinuddin7@gmail.com', ''),
+(8, 'saddf sdaf sadf s', '324242342', 'sf sadf asdf sadf', 'sdaf sadf sf', '');

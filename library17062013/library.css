@@ -1,0 +1,53 @@
+/* CSS Document */
+#tbl_align{
+	margin-left:30px;
+	margin-top:50px;
+}
+#tbl_heading{
+    font-family:"Courier New", Courier, monospace,Verdana;
+	padding-top:5px;
+	font-size:12px;
+	font-weight:bold;
+    height:30px;
+}   
+#align{
+    float:left;
+}
+.input_small{
+   width:50px;
+}
+#tbl-border{
+   border:1px solid #999999;
+   padding:5px;
+}
+td{
+   border-top:1px dashed #CCCCCC;
+}
+#button{
+    margin-left:5px;
+    margin-top:5px;
+	width:50px;
+	height:25px;
+    border:1px solid #66CCFF;
+    font-family:"Courier New", Courier, monospace,Verdana;
+	font-size:13px;
+}      
+#bbutton{
+    margin-left:5px;
+    margin-top:5px;
+	width:50px;
+	height:25px;
+    border:1px solid #66CCFF;
+    font-family:"Courier New", Courier, monospace,Verdana;
+	font-size:13px;
+}            	
+      	
+#button-big{
+    margin-left:5px;
+    margin-top:5px;
+	width:100px;
+	height:25px;
+    border:1px solid #66CCFF;
+    font-family:"Courier New", Courier, monospace,Verdana;
+	font-size:13px;
+}            	

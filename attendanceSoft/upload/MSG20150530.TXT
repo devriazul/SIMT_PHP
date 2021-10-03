@@ -1,0 +1,89 @@
+Index,Time    ,Station        ,Num   ,Name           ,Department,Department:2,UserID                    ,Status              ,Detail      
+0001 ,07:32:17,   001         ,2006  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0002 ,07:56:42,   001         ,0018  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0003 ,08:04:53,   001         ,2101  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0004 ,08:14:44,   001         ,2090  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0005 ,08:19:14,   001         ,2002  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0006 ,08:20:26,   001         ,1052  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0007 ,08:27:01,   001         ,2016  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0008 ,08:27:13,   001         ,2050  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0009 ,08:27:23,   001         ,2023  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0010 ,08:27:51,   001         ,1053  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0011 ,08:29:16,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0012 ,08:29:25,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0013 ,08:29:34,   001         ,1012  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0014 ,08:29:56,   001         ,2104  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0015 ,08:31:11,   001         ,2044  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0016 ,08:32:01,   001         ,2037  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0017 ,08:34:56,   001         ,0024  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0018 ,08:43:43,   001         ,2094  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0019 ,08:43:53,   001         ,2013  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0020 ,08:45:24,   001         ,0035  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0021 ,08:46:19,   001         ,0030  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0022 ,08:47:02,   001         ,2003  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0023 ,08:47:48,   001         ,2096  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0024 ,08:48:57,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0025 ,08:49:01,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0026 ,08:49:04,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0027 ,08:49:08,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0028 ,08:49:12,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0029 ,08:49:16,   001         ,2010  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0030 ,08:49:21,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0031 ,08:49:26,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0032 ,08:49:30,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0033 ,08:49:33,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0034 ,08:49:37,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0035 ,08:49:47,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0036 ,08:49:50,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0037 ,08:49:54,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0038 ,08:49:58,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0039 ,08:50:01,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0040 ,08:50:10,   001         ,2005  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0041 ,08:50:39,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0042 ,08:50:42,   001         ,2069  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0043 ,08:50:49,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0044 ,08:50:54,   001         ,2007  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0045 ,08:51:41,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0046 ,08:51:50,   001         ,2001  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0047 ,08:51:56,   001         ,2011  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0048 ,08:52:02,   001         ,0019  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0049 ,08:52:37,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0050 ,08:52:47,   001         ,0049  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0051 ,08:52:57,   001         ,2072  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0052 ,08:53:43,   001         ,2009  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0053 ,08:56:19,   001         ,0051  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0054 ,08:57:14,   001         ,2058  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0055 ,08:57:40,   001         ,1016  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0056 ,08:58:48,   001         ,2012  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0057 ,08:58:55,   001         ,0063  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0058 ,08:58:59,   001         ,2071  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0059 ,09:01:08,   001         ,2061  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0060 ,09:02:19,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0061 ,09:02:21,   001         ,      ,               ,          ,          ,                          ,(M56)Fingerprint Identify Failed,            
+0062 ,09:02:24,   001         ,1011  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0063 ,09:03:43,   001         ,2107  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0064 ,09:05:08,   001         ,2064  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0065 ,09:05:49,   001         ,2048  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0066 ,09:12:47,   001         ,1007  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0067 ,09:12:56,   001         ,2115  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0068 ,09:26:06,   001         ,1018  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0069 ,09:27:12,   001         ,1003  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0070 ,09:35:04,   001         ,1009  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0071 ,09:38:50,   001         ,2062  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0072 ,09:58:03,   001         ,0014  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0073 ,10:08:19,   001         ,1006  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0074 ,10:46:33,               ,01    ,supervisor     ,          ,          ,                          ,(L20)Login    Client,            
+0075 ,10:47:40,               ,01    ,supervisor     ,          ,          ,                          ,(L21)Logout    Client,            
+0076 ,10:56:45,               ,00    ,guest          ,          ,          ,                          ,(L21)Logout    Client,            
+0077 ,10:57:35,               ,01    ,supervisor     ,          ,          ,                          ,(L20)Login    Client,            
+0078 ,10:58:28,               ,01    ,supervisor     ,          ,          ,                          ,(L21)Logout    Client,            
+0079 ,10:58:47,               ,01    ,supervisor     ,          ,          ,                          ,(L20)Login    Client,            
+0080 ,11:00:16,               ,01    ,supervisor     ,          ,          ,                          ,(L21)Logout    Client,            
+0081 ,11:01:25,               ,01    ,supervisor     ,          ,          ,                          ,(L20)Login    Client,            
+0082 ,11:02:40,   001         ,1007  ,               ,Dep_00    ,Dep2_00   ,                          ,(M39)Access by Finger/Vein,65535:00000 
+0083 ,11:08:33,               ,01    ,supervisor     ,          ,          ,                          ,(L21)Logout    Client,            
+0084 ,11:09:00,               ,01    ,supervisor     ,          ,          ,                          ,(L20)Login    Client,            
+0085 ,11:12:22,               ,01    ,supervisor     ,          ,          ,                          ,(L21)Logout    Client,            
+0086 ,11:14:19,               ,01    ,supervisor     ,          ,          ,                          ,(L20)Login    Client,            
+0087 ,12:16:53,               ,01    ,supervisor     ,          ,          ,                          ,(L21)Logout    Client,            
+0088 ,12:17:25,               ,01    ,supervisor     ,          ,          ,                          ,(L20)Login    Client,

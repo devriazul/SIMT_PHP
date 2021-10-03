@@ -1,0 +1,460 @@
+<?php include("config.php"); ?>
+<?php $sadmin=mysql_query("SELECT*FROM tbl_softadmin WHERE userid='$_SESSION[emagasesid]'") or die(mysql_error());
+	  $sfetch=mysql_fetch_array($sadmin);
+	  ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+
+
+<head>
+
+
+
+<title></title>
+
+
+
+
+
+
+
+<script type="text/javascript" src="dropdowntabfiles/dropdowntabs.js">
+
+
+
+</script>
+
+
+
+
+
+
+
+<!-- CSS for Drop Down Tabs Menu #1 -->
+
+
+
+<link rel="stylesheet" type="text/css" href="dropdowntabfiles/ddcolortabs.css" />
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+
+
+
+
+<div id="colortab" class="ddcolortabs">
+
+
+
+
+
+<?php if($sfetch[userid]==""){ ?>
+
+<ul>
+
+
+
+<li><a href="home.php" title="Home"><span>Home</span></a></li>
+
+
+
+<?php if($ufetch[admin_user]=="y"){?><li><a href="#" title="Admin User" rel="dropmenu1_a"><span>Admin User</span></a></li><?php } ?>
+
+
+
+<?php if($ufetch[category_m]=="y"){?><li><a href="#" title="Category" rel="dropmenu2_a"><span>Category Manager</span></a></li>	<?php } ?>
+
+
+
+<?php if($ufetch[news]=="y"){?><li><a href="#" title="SubCategory" rel="dropmenu3_a"><span>News Manager</span></a></li><?php } ?>	
+
+
+
+<?php if($ufetch[banner]=="y"){?><li><a href="#" title="Sub-SubCategory"  rel="dropmenu4_a"><span>Banner Manager</span></a></li><?php } ?>
+
+
+
+<?php if($ufetch[site]=="y"){?><li><a href="#" title="Product Managment"  rel="dropmenu5_a"><span>Site Manager</span></a></li><?php } ?>	
+
+
+
+<?php if($ufetch[breaking_news]=="y"){?><li><a href="#" title="Discount Coupon"  rel="dropmenu6_a"><span>Bracking News</span></a></li><?php } ?>	
+
+
+
+<?php if($ufetch[bottom]=="y"){?><li><a href="#" title="Delivery Status"  rel="dropmenu7_a"><span>Bottom Manager</span></a></li><?php } ?>	
+
+
+
+<?php if($ufetch[photogallery]=="y"){?><li><a href="#" title="Shipping Cost"  rel="dropmenu8_a"><span>Photo Gallery</span></a></li><?php } ?>	
+
+
+
+<li><a href="logout.php" title="Logout"  rel="dropmenu9_a"><span>Logout</span></a></li>	
+
+
+
+</ul>
+<?php }else{ ?>
+<ul>
+
+
+
+<li><a href="home.php" title="Home"><span>Home</span></a></li>
+
+
+
+<li><a href="#" title="Admin User" rel="dropmenu1_a"><span>Admin User</span></a></li>
+
+
+
+<li><a href="#" title="Category" rel="dropmenu2_a"><span>Category Manager</span></a></li>	
+
+
+
+<li><a href="#" title="SubCategory" rel="dropmenu3_a"><span>News Manager</span></a></li>	
+
+
+
+<li><a href="#" title="Sub-SubCategory"  rel="dropmenu4_a"><span>Banner Manager</span></a></li>	
+
+
+
+<li><a href="#" title="Product Managment"  rel="dropmenu5_a"><span>Site Manager</span></a></li>	
+
+
+
+<li><a href="#" title="Discount Coupon"  rel="dropmenu6_a"><span>Bracking News</span></a></li>	
+
+
+
+<li><a href="#" title="Delivery Status"  rel="dropmenu7_a"><span>Bottom Manager</span></a></li>	
+
+
+
+<li><a href="#" title="Shipping Cost"  rel="dropmenu8_a"><span>Photo Gallery</span></a></li>	
+
+
+
+<li><a href="logout.php" title="Logout"  rel="dropmenu9_a"><span>Logout</span></a></li>	
+
+
+
+</ul>
+<?php } ?>
+</div>
+
+
+
+
+
+
+
+<div class="ddcolortabsline">&nbsp;</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--1st drop down menu -->                                                   
+
+
+
+<div id="dropmenu1_a" class="dropmenudiv_a" style="width: 150px;">
+
+
+
+<a href="add_user.php">- ADD User</a>
+
+
+
+<a href="view_user.php">- View User</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--2nd drop down menu -->                                                
+
+
+
+<div id="dropmenu2_a" class="dropmenudiv_a" style="width: 150px;">
+
+
+
+<a href="add_cat.php">- ADD Category</a>
+
+
+
+<a href="view_cat.php">- View Category</a>
+
+
+
+<a href="add_subcat.php">- ADD Sub Category</a>
+
+
+
+<a href="view_subcat.php">- View Sub Category</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--3rd drop down menu -->                                                
+
+
+
+<div id="dropmenu3_a" class="dropmenudiv_a" style="width: 150px;">
+
+
+
+<a href="add_news.php">- ADD News</a>
+
+
+
+<a href="view_news.php">- View News</a>
+
+
+
+<a href="view_news.php">- Search News</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--4th drop down menu -->                                                
+
+
+
+<div id="dropmenu4_a" class="dropmenudiv_a" style="width: 150px;">
+
+
+
+<a href="add_banner.php">- ADD Banner</a>
+
+
+
+<a href="view_banner.php">- View Banner</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--5th drop down menu -->                                                
+
+
+
+<div id="dropmenu5_a" class="dropmenudiv_a" style="width: 150px;">
+
+
+
+<a href="add_logo.php">- Upload Logo</a>
+
+
+
+<a href="add_title.php">- ADD Title</a>
+
+
+
+<a href="add_keywords.php">- ADD Keywords</a>
+
+
+
+<a href="add_description.php">- ADD Description</a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--6th drop down menu -->                                                
+
+
+
+<div id="dropmenu6_a" class="dropmenudiv_a" style="width: 150px;">
+
+
+
+<a href="add_b_news.php">- ADD Bracking News</a>
+
+
+
+<a href="view_b_news.php">- VIEW Bracking News</a>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--7th drop down menu -->                                                
+
+
+
+<div id="dropmenu7_a" class="dropmenudiv_a" style="width: 150px;">
+
+
+
+<a href="add_b_logo.php">- Bottom Logo</a>
+
+
+
+<a href="add_b_text.php">- ADD Bottom Text</a></div>
+
+
+
+
+
+
+
+<!--8th drop down menu -->                                                
+
+
+
+<div id="dropmenu8_a" class="dropmenudiv_a" style="width: 150px;">
+
+
+
+<a href="add_photo.php">- ADD Photo</a>
+
+
+
+<a href="view_photo.php">- View Photo</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--8th drop down menu --> 
+
+
+
+<div id="dropmenu9_a" class="dropmenudiv_a" style="width: 150px;">
+
+
+
+<a href="logout.php">- Logout</a>
+
+
+
+</div>
+
+
+
+                                       
+
+
+
+<script type="text/javascript">
+
+
+
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+
+
+
+tabdropdown.init("colortab", 0)
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
+
+
+

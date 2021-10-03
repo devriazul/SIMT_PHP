@@ -1,0 +1,1 @@
+<?php echo "20".substr_replace(1011,'-20',-2,-2); ?>

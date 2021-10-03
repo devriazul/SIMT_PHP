@@ -1,0 +1,65 @@
+.style1 {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+.style3 {color: #000000}
+.style4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.style5 {
+	font-family: Calibri;
+	font-size: 12px;
+	font-weight: bold;
+    color:#666666;
+}
+#tblborder{
+  border:1px solid #DFF6FE;
+}
+#tblleft{
+  border:1px solid #DFF6FE;
+}
+#stdtbl{
+  border:1px solid #DFF6FE;
+  padding:5px;
+  margin:9px;
+  }
+.sttd{
+   border-bottom:1px solid #DFF6FE;
+   }
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.style11 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.stars{
+    font:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FF0000;
+}
+#msgerr{
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:12px;
+   color:#FF0000;
+}
+#msgs{
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:12px;
+   color:#009900;
+}
+.formhead{
+ font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+ font-size:14px;
+ padding:3px;
+ font-weight:bold;
+ }

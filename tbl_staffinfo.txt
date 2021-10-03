@@ -1,0 +1,72 @@
+-- phpMyAdmin SQL Dump
+-- version 3.3.9
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Feb 06, 2013 at 11:53 AM
+-- Server version: 5.5.8
+-- PHP Version: 5.3.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `simt_edu`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_staffinfo`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_staffinfo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `sid` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `pass` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `paddress` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `sex` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `cellno` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `designationid` int(11) NOT NULL,
+  `etype` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `joindate` date NOT NULL,
+  `payscaleid` int(11) NOT NULL,
+  `fname` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `mname` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `dob` date NOT NULL,
+  `maritalstatus` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `religion` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `bloodgroup` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `img` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `remarks` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `opby` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `opdate` date NOT NULL,
+  `storedstatus` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_designationid` (`designationid`),
+  KEY `fk_payscaleid` (`payscaleid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `tbl_staffinfo`
+--
+
+INSERT INTO `tbl_staffinfo` (`id`, `name`, `sid`, `pass`, `paddress`, `sex`, `cellno`, `designationid`, `etype`, `joindate`, `payscaleid`, `fname`, `mname`, `dob`, `maritalstatus`, `religion`, `bloodgroup`, `img`, `remarks`, `opby`, `opdate`, `storedstatus`) VALUES
+(1, 'Rana Khan', 'EMP 0001', '', 'Sdfsdf', 'Male', '234234', 1, 'Full Time', '2013-01-30', 1, 'Dsgf', 'Dfgdfg', '2013-01-30', 'Married', 'Islam', 'Ad', '', 'dfgdfg', 'moin', '2013-01-30', 'U'),
+(2, 'Moin', 'EMP 0002', '', 'Kb', 'Male', '01716589632', 1, 'Full Time', '2013-02-04', 1, 'Xxxxxxx', 'Yyyyyyyy', '2013-02-04', 'Married', 'Islam', 'Ab+', '', 'csdfsdfsdf', 'moin', '2013-02-04', 'I'),
+(3, 'Nisha', 'EMP 0003', '', 'Uttura', 'Female', '01745789655', 2, 'Full Time', '2013-02-04', 6, 'Vvvvvvvvv', 'Xxxxxxxxx', '2013-02-04', 'Unmarried', 'Islam', 'A+', '3.jpg', 'edfsdf', 'moin', '2013-02-04', 'I'),
+(4, 'Iqbal', 'EMP 0004', '', 'Sdasd', 'Male', '01741254789', 7, 'Full Time', '2013-02-04', 1, 'Xxx', 'Ffff', '2013-02-04', 'Married', 'Islam', 'Ss+', '4.jpg', 'assd', 'moin', '2013-02-04', 'I'),
+(5, 'Arif', 'EMP 0005', '', 'Hjhh', 'Male', '01978456321', 1, 'Full Time', '2013-02-04', 2, 'Fff', 'Rrrrrrr', '2013-02-04', 'Unmarried', 'Islam', 'Vb+', '5.jpg', 'sdfsdf', 'moin', '2013-02-04', 'I'),
+(6, 'Nazma', 'EMP 0006', '', 'Xcc', 'Female', '00474159852', 1, 'Full Time', '2013-02-04', 1, 'Xxxxxxxxxx', 'Bbbbbbbbbb', '2013-02-04', 'Married', 'Islam', 'Ab+', '6.jpg', 'ddddddddddd', 'moin', '2013-02-04', 'I'),
+(7, 'Gori', 'EMP 0007', '', 'Cc', 'Female', '33333333333', 1, 'Full Time', '2013-02-04', 1, 'Ddddddddd', 'Eeeeeeeeee', '2013-02-04', 'Married', 'Hindu', 'D+', '7.jpg', 'sdfsdf', 'moin', '2013-02-04', 'I');
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `tbl_staffinfo`
+--
+ALTER TABLE `tbl_staffinfo`
+  ADD CONSTRAINT `fk_designationid` FOREIGN KEY (`designationid`) REFERENCES `tbl_designation` (`id`),
+  ADD CONSTRAINT `fk_payscaleid` FOREIGN KEY (`payscaleid`) REFERENCES `tbl_payscale` (`id`);

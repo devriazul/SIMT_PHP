@@ -1,0 +1,49 @@
+public static string Auto_IdStudent(string tblName, string FieldName, string preFix, string Year)
+    {
+        string AId;
+        string Strsql = "Select Max(Convert(int,Substring(" + FieldName + ",7,len(" + FieldName + ")))) from "+tblName+" Where substring(" + FieldName + ",1,6)= '"+ preFix+Year+'-'+"'";
+        
+        
+        
+        //max(cast(substring(Voucher_Id,11,length(Voucher_Id)) as SIGNED int))
+        //---FOR MySQL
+        //string Strsql = "Select Max(CAST(substring(" + FieldName + ",11,length(" + FieldName + ")) as SIGNED int)) from "+tblName+" Where mid(" + FieldName + ",1,10)= '"+ preFix+Year+'-'+"'";
+        
+        DataSet ds = DBTask.ExecuteDataSet(Strsql);
+        try
+        {
+            int id;
+            DataRow row = ds.Tables[0].Rows[0];
+            id = Convert.ToInt32(row[0]);
+            if (id == 0)
+            {
+                AId = preFix + Year + "-1";
+            }
+            else
+            {
+                id=id+1;
+                AId = preFix + Year + "-" + id.ToString();
+            }
+            
+            
+            return AId;
+        }
+        catch
+        {
+            AId = preFix + Year + "-1";
+            return AId;
+        }
+    }
+    public static void AutoGn(TextBox txtVoucherNo,int CompanyId,string VoucherType)
+    { 
+       
+        string Prefix = "";
+        string syear;
+
+
+        syear = DateTime.Today.ToString("MM") + DateTime.Today.ToString("yy");
+        
+        Prefix = "S" + VoucherType;
+
+        txtVoucherNo.Text = AutoIdStudent.Auto_IdStudent("tbl_StudentBasicInfo", "StudentId", Prefix, syear);
+    }

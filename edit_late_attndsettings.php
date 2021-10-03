@@ -1,0 +1,97 @@
+<?php ob_start();
+session_start();
+require_once('dbClass.php');
+include("config.php"); 
+if($myDb->connect($host,$user,$pwd,$db,true))
+{ 
+  $chka="SELECT * From tbl_late_attnd_setting WHERE id='$_GET[id]'";
+  $caq=$myDb->select($chka);
+  $cdata=$myDb->get_row($caq,'MYSQL_ASSOC');
+
+?>  
+
+
+<script language type="text/javascript"> 
+function handleEnter (field, event) {
+		var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+		if (keyCode == 13) {
+			var i;
+			for (i = 0; i < field.form.elements.length; i++)
+				if (field == field.form.elements[i])
+					break;
+			i = (i + 1) % field.form.elements.length;
+			field.form.elements[i].focus();
+			return false;
+		} 
+		else
+		return true;
+	}      
+ 
+ 
+ 
+</script>
+<script language="javascript">
+function checkedq(){
+/*
+     if(document.getElementById("stdintime").value==""){
+         alert('stdintime can not left empty!');
+	     document.getElementById("stdintime").focus();
+	     return false;
+     }
+     if(document.getElementById("stdouttime").value==""){
+         alert('stdouttime can not left empty!');
+	     document.getElementById("stdouttime").focus();
+	     return false;
+     }
+     
+     if(document.getElementById("minallow").value==""){
+         alert('minallow can not left empty!');
+	     document.getElementById("minallow").focus();
+	     return false;
+     }
+	
+     if(document.getElementById("maxallow").value==""){
+         alert('maxallow can not left empty!');
+	     document.getElementById("maxallow").focus();
+	     return false;
+     }
+
+*/
+  }	 	
+
+</script>
+
+
+<form name="MyForm1" action="ed_late_attndsettings.php" method="post" onsubmit="Javascript:return checkedq();">
+
+<table width="500" border="0" align="center" cellpadding="0" cellspacing="0" id="stdtbl">
+  
+  <tr bgcolor="#F5F5F5">
+    <td height="30" colspan="3"><div align="center"><span class="style11">Edit Late Attendance Settings</span></div></td>
+    </tr>
+  <tr>
+    <td width="189" height="30" class="gridTblHead">Section <span class="stars">*</span> </td>
+    <td width="8" height="30" class="gridTblHead">:</td>
+    <td width="233" class="gridTblValue"><?php echo $cdata['section'];?></td>
+    </tr>
+  <tr>
+    <td height="30" class="gridTblHead">Total no. of Days <span class="stars">*</span></td>
+    <td height="30" class="gridTblHead">:</td>
+    <td class="gridTblValue"><input name="nod" id="nod" type="text"  size="0" value="<?php echo $cdata['nod'];?>" onKeyPress="return handleEnter(this, event)" /></td>
+  </tr>
+  <tr>
+    <td height="30" class="gridTblHead">Equal Absent Days <span class="stars">*</span></td>
+    <td height="30" class="gridTblHead">:</td>
+    <td class="gridTblValue"><input name="ed" id="ed" type="text"  size="20" value="<?php echo $cdata['ed'];?>" onKeyPress="return handleEnter(this, event)" /></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>&nbsp;</td>
+    <td><input type="submit" name="Submit" value="Submit" style="color: #999999; font-size: 8pt; font-family: Verdana; border: 1px solid #C0C0C0; background-color: #D9F0FB" />
+<input type="hidden" name="id" id="id" value="<?php echo mysql_real_escape_string($_GET['id']); ?>" /></td>
+    </tr>
+</table>
+</form>
+<?php 
+}
+?>
