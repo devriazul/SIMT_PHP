@@ -1,5 +1,4 @@
 <?php  
-require_once('dbClass.php');
 require_once('ReturnStatus.class.php'); 
 class PagingPage extends ReturnStatus{
   public $page;

@@ -5,7 +5,7 @@ include("config.php");
 require_once('class/ReturnStatus.class.php');
 require_once('class/PagingPage.class.php');
 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
   $chka="SELECT*FROM  tbl_accdtl WHERE flname='book_entry.php' AND userid='$_SESSION[userid]'";

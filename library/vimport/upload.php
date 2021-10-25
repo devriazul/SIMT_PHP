@@ -2,7 +2,7 @@
 if(!$_SESSION[bpaddsesid]){
 				include("adminlogin.php");
 				}else{
-				include("config.php");
+				include("../config.php");
     $target = basename( $_FILES['uploaded']['name']) ; 
 	//copy ($_FILES['uploaded']['tmp_name'], "../upload/".$target);
 	

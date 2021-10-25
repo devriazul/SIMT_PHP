@@ -1,6 +1,6 @@
 <?php require_once('dbClass.php');
 include("config.php");
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 {
 /*$query="select*from tbl_login";
   $r=$myDb->select($query);

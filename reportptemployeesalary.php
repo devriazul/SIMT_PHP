@@ -1,6 +1,6 @@
 <?php
 //PDF USING MULTIPLE PAGES
-//FILE CREATED BY: Carlos José Vásquez Sáez
+//FILE CREATED BY: Carlos Josï¿½ Vï¿½squez Sï¿½ez
 //YOU CAN CONTACT ME: carlos@magallaneslibre.com
 //FROM PUNTA ARENAS, MAGALLANES
 //INOVO GROUP - http://www.inovo.cl
@@ -12,7 +12,7 @@ require('fpdf.php');
 require_once('dbClass.php');
 include("config.php"); 
 require("inwordfinal.php");
-$myDb->connect($host,$user,$pwd,$db,true);
+$myDb->connectDefaultServer()
  
 //Create new pdf file
 $pdf=new FPDF();//'P', 'cm', 'Legal'
@@ -52,7 +52,7 @@ $y_axis_initial = 70;
 
 
     $pdf->SetFont('Arial','',8); 
-	$pdf->Cell(-260,40,'© Saic Institute of Management & Technology. Powered By: DesktopBD',0,0,'C');
+	$pdf->Cell(-260,40,'ï¿½ Saic Institute of Management & Technology. Powered By: DesktopBD',0,0,'C');
 
 	$pdf->SetFont('Arial', 'U', 12);
 	$pdf->Cell(200, -430, 'PART TIME EMPLOYEE SALARY FOR THE MONTH OF: '.$_POST['smonth'].', '.$_POST['syear'],0,'C',0);

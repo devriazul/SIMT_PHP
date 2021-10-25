@@ -5,7 +5,7 @@ require('../fpdf.php');
 //Connect to your database
 require_once('dbClass.php');
 include("config.php"); 
-$myDb->connect($host,$user,$pwd,$db,true);
+$myDb->connectDefaultServer()
 
 class PDF extends FPDF
 {

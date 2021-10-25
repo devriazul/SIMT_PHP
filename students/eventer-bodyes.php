@@ -2,7 +2,7 @@
 //session_start();
 require_once('dbClass.php');
 include("config.php"); 
-$myDb->connect($host,$user,$pwd,$db,true);
+$myDb->connectDefaultServer()
 
 $stdquery = "Select * from tbl_stdinfo Where stdid='$_SESSION[userid]' and storedstatus<>'D'";
 $stdset=$myDb->select($stdquery);

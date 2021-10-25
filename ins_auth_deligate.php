@@ -2,7 +2,7 @@
 session_start();
 require_once('dbClass.php');
 include("config.php"); 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
   $refurl=substr($_SERVER['HTTP_REFERER'],0,strpos($_SERVER['HTTP_REFERER'], '?'));

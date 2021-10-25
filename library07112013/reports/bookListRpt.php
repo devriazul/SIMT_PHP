@@ -1,7 +1,7 @@
 <?php
 require_once('../dbClass.php');
 include("../config.php"); 
-$myDb->connect($host,$user,$pwd,$db,true);
+$myDb->connectDefaultServer()
 
 
 require('../FPDF/fpdf.php');

@@ -2,7 +2,7 @@
 session_start();
 require_once('dbClass.php');
 include("config.php"); 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
   $sname=mysql_real_escape_string($_POST['sname']);

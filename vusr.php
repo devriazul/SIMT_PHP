@@ -1,12 +1,7 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
-$myDb=new DbClass;
-$host='localhost';
-$user='root';
-$pwd='';		//dtbd13adm1n
-$db='simtdb';
-if($myDb->connect($host,$user,$pwd,$db,true))
+require_once('config.php');
+if($myDb->connectDefaultServer())
 {  
   $uname=mysql_real_escape_string($_POST['uname']);
   $password=mysql_real_escape_string(md5($_POST['password']));

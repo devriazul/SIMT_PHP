@@ -8,7 +8,7 @@ $user='root';
 $pwd='dtbd13adm1n';
 $db='simtdb';
 $abc='';
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 {  
   
 	// AJAX JQuery Validation 

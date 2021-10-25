@@ -7,7 +7,7 @@ $user='root';
 $pwd='dtbd13adm1n';
 $db='simtdb';
 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 {  
   $uname=mysql_real_escape_string($_POST['adminid']);
   $password=mysql_real_escape_string(md5($_POST['password']));

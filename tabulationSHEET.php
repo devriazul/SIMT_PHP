@@ -6,7 +6,7 @@ if($_POST['deptid'] == 29 || $_POST['deptid'] == 30 || $_POST['session'] <= 1516
  <!--new code start-->
  <?php 
 	//echo "old logic";
-	if($myDb->connect($host,$user,$pwd,$db,true))
+	if($myDb->connectDefaultServer())
 	{ 
 	  if($_SESSION['userid']){
 	  $chka="SELECT*FROM  tbl_accdtl WHERE flname='studentstabulationsheet.php' AND userid='$_SESSION[userid]'";
@@ -390,7 +390,7 @@ if($_POST['deptid'] == 29 || $_POST['deptid'] == 30 || $_POST['session'] <= 1516
  <!--new code end-->
 <?php } else{
 	//echo "new logic";
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
   $chka="SELECT*FROM  tbl_accdtl WHERE flname='studentstabulationsheet.php' AND userid='$_SESSION[userid]'";

@@ -2,7 +2,7 @@
 session_start();
 require_once('dbClass.php');
 include("config.php"); 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
   $chka="SELECT*FROM  tbl_accdtl WHERE flname='system_access_level.php' AND userid='$_SESSION[userid]'";
@@ -75,7 +75,7 @@ document.forms[0][0].focus();
       </tr>
       <tr>
         <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php"); ?>
-                   <br />
+          ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½<br />
           
           <p>&nbsp;</p>
           <p>&nbsp;</p></td>

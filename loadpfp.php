@@ -3,7 +3,7 @@ ob_start();
 session_start();
 require_once('dbClass.php');
 include("config.php"); 
-$myDb->connect($host,$user,$pwd,$db,true);
+$myDb->connectDefaultServer()
 
 	$efid=mysql_real_escape_string(substr($_GET['efid'],0,1));
 	

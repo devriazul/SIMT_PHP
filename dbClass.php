@@ -14,7 +14,7 @@ class DbClass
 
    public function __construct()
    {
-      $this->host='localhost';
+      $this->host='127.0.0.1:3307';
 	  $this->user='root';
 	  $this->pw='';			//dtbd13adm1n
 	  $this->db='simtdb';			//simt_edu
@@ -54,6 +54,26 @@ class DbClass
 	
 	 return $this->db_link;
   }
+  
+   
+  public function connectDefaultServer($persistant=true)
+  {  
+	  
+   if($persistant)
+	 $this->db_link=@mysql_pconnect($this->host,$this->user,$this->pw) or die("database connection has gone away");
+   else
+	 $this->db_link=mysql_connect($this->host,$this->user,$this->pw) or die("database connection failed");
+	 
+	 
+   if(!($this->db_link)){
+	 $this->last_error=mysql_error();
+	 return false;
+   }
+   if(!$this->select_db($this->db))
+	 return false;
+   
+	return $this->db_link;
+ }
   
   public function select_db($db='')
   {
@@ -423,7 +443,7 @@ $host='localhost';
 require_once('dbClass.php');
 
 $myDb=new DbClass;
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 {
   $query="update user set userid='moin' where id='1'";
   $res=myDb->update_sql($query);

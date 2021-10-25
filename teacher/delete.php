@@ -1,5 +1,5 @@
 <?php include_once("config.php"); // the connection to the database 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
 if(!isset($_GET['submitted'])) { ?>
 	<div style="overflow:hidden; margin:1em;">

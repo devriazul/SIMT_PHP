@@ -1,11 +1,10 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
-include("config.php");
+include("../config.php");
 require_once('class/ReturnStatus.class.php');
 require_once('class/PagingPage.class.php');
 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
   $chka="SELECT*FROM  tbl_accdtl WHERE flname='book_entry.php' AND userid='$_SESSION[userid]'";
@@ -213,7 +212,7 @@ $().ready(function() {
         <td><div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><?php if(isset($_GET['t'])==0){ ?><span style="color:#FF6600; font-weight:bold;"><?php if(isset($_GET['msg'])){ echo $_GET['msg']; }?></span><?php } ?></font></div></td>
       </tr>
       <tr>
-        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?>         <br />
+        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½<br />
          </td><td width="79%" valign="top">
 
 		

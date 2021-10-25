@@ -9,7 +9,7 @@ if(@$deptidF == 29 || @$deptidF == 30 || @$sessionF <= 1516){?>
  <!--new code start-->
  <?php 
 	//echo "old logic"; 
-	if($myDb->connect($host,$user,$pwd,$db,true))
+	if($myDb->connectDefaultServer())
 	{ 
 	  if($_SESSION['userid']){
 	  
@@ -839,7 +839,7 @@ if(@$deptidF == 29 || @$deptidF == 30 || @$sessionF <= 1516){?>
  <!--new code end-->
 <?php } else{
 	//echo "new logic";
-	if($myDb->connect($host,$user,$pwd,$db,true))
+	if($myDb->connectDefaultServer())
 	{ 
 	  if($_SESSION['userid']){
 	  

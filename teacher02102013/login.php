@@ -10,7 +10,7 @@ $user='root';
 $pwd='';
 $db='simt_edu';
 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 {  
   
 // AJAX JQuery Validation 

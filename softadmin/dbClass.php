@@ -418,7 +418,7 @@ $host='localhost';
 require_once('dbClass.php');
 
 $myDb=new DbClass;
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 {
   $query="update user set userid='moin' where id='1'";
   $res=myDb->update_sql($query);

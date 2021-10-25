@@ -1,6 +1,6 @@
  <?php
 //PDF USING MULTIPLE PAGES
-//FILE CREATED BY: Carlos José Vásquez Sáez
+//FILE CREATED BY: Carlos Josï¿½ Vï¿½squez Sï¿½ez
 //YOU CAN CONTACT ME: carlos@magallaneslibre.com
 //FROM PUNTA ARENAS, MAGALLANES
 //INOVO GROUP - http://www.inovo.cl
@@ -11,7 +11,7 @@ require('fpdf.php');
 //Connect to your database
 require_once('dbClass.php');
 include("config.php"); 
-$myDb->connect($host,$user,$pwd,$db,true);
+$myDb->connectDefaultServer()
  
 //Create new pdf file
 $pdf=new FPDF();
@@ -40,7 +40,7 @@ $y_axis_initial = 50;
     //Arial italic 8
     $pdf->SetFont('Arial','B',8);
     //Page number
-    $pdf->Cell(0,10,'Copyright © Saic Institute of Management & Technology. Powered By: DesktopBD.',0,0,'C');
+    $pdf->Cell(0,10,'Copyright ï¿½ Saic Institute of Management & Technology. Powered By: DesktopBD.',0,0,'C');
 
 	//print column titles for the actual page & Date
 	//$pdf->Cell(-70, -600, 'SAIC Institute of Management & Technology',0,'C',0);
@@ -186,7 +186,7 @@ while($row = mysql_fetch_array($result))
 		$y_axis = 30;
         $pdf->AddPage('P');
 	    $pdf->SetFont('Arial','B',8);
-      	$pdf->Cell(190,550,'Copyright © Saic Institute of Management & Technology. Powered By: DesktopBD.',0,0,'C');
+      	$pdf->Cell(190,550,'Copyright ï¿½ Saic Institute of Management & Technology. Powered By: DesktopBD.',0,0,'C');
 
 
         //print column titles for the current page

@@ -2,7 +2,7 @@
 session_start();
 require_once('dbClass.php');
 include("config.php"); 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
 	if($_SESSION['userid']){
   	$vs="SELECT d.name AS departmentname FROM  `tbl_semesterwisesubj` ss INNER JOIN tbl_semester s ON ss.semesterid = s.id INNER JOIN tbl_department d ON ss.deptid = d.id INNER JOIN tbl_courses c ON ss.courseid = c.id INNER JOIN tbl_stdinfo std ON ss.deptid = std.deptname WHERE std.stdid ='$_SESSION[userid]'";
@@ -159,7 +159,7 @@ body {
     <td colspan="2" background="images/bbg.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="1%"><img src="images/bbg.jpg" width="3" height="44" /></td>
-        <td width="99%"><div align="center" class="style7">© Copyright All Rights Reserved. Powered By: DesktopBD</div></td>
+        <td width="99%"><div align="center" class="style7">ï¿½ Copyright All Rights Reserved. Powered By: DesktopBD</div></td>
       </tr>
     </table></td>
   </tr>

@@ -2,7 +2,7 @@
 session_start();
 require_once('dbClass.php');
 include("config.php"); 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
   $chka="SELECT*FROM  tbl_accdtl WHERE flname='manage_settings.php' AND userid='$_SESSION[userid]'";
@@ -614,7 +614,7 @@ document.forms[0][0].focus();
 		<div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><?php if(isset($_GET['t'])==0){ ?><span style="color:#FF6600; font-weight:bold;"><?php if(isset($_GET['msg'])){ echo $_GET['msg']; }?></span><?php } ?></font></div></td>
       </tr>
       <tr>
-        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?> 
+        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?>ï¿½
 		  </td>
 		  <td width="79%" valign="top">
 		  

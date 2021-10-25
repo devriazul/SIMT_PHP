@@ -4,7 +4,7 @@ require_once('dbClass.php');
 require_once('class/productfilter.class.php');
 include("config.php"); 
 $pft=new productfilter();
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
   $pid=mysql_real_escape_string($_POST['pid']);

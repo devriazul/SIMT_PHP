@@ -3,7 +3,7 @@ ob_start();
 session_start();
 require_once('dbClass.php');
 include_once("config.php"); // the connection to the database 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 {
 	$iv="SELECT * FROM tbl_examinitionsettings WHERE id='$_GET[examid]'";
   	$ivq=$myDb->select($iv);

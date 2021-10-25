@@ -1,6 +1,6 @@
 <?php
 //PDF USING MULTIPLE PAGES
-//FILE CREATED BY: Carlos José Vásquez Sáez
+//FILE CREATED BY: Carlos Josï¿½ Vï¿½squez Sï¿½ez
 //YOU CAN CONTACT ME: carlos@magallaneslibre.com
 //FROM PUNTA ARENAS, MAGALLANES
 //INOVO GROUP - http://www.inovo.cl
@@ -11,7 +11,7 @@ require('fpdf.php');
 //Connect to your database
 require_once('dbClass.php');
 include("config.php"); 
-$myDb->connect($host,$user,$pwd,$db,true);
+$myDb->connectDefaultServer()
  
 //Create new pdf file
 $pdf=new FPDF();

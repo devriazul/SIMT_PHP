@@ -1,8 +1,7 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
-include("config.php"); 
-if($myDb->connect($host,$user,$pwd,$db,true))
+include("../config.php"); 
+if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
   $chka="SELECT*FROM  tbl_accdtl WHERE flname='book_entry.php' AND userid='$_SESSION[userid]'";
@@ -172,7 +171,7 @@ if($myDb->connect($host,$user,$pwd,$db,true))
         <td><div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><?php if(isset($_GET['t'])==0){ ?><span style="color:#FF6600; font-weight:bold;"><?php if(isset($_GET['msg'])){ echo $_GET['msg']; }?></span><?php } ?></font></div></td>
       </tr>
       <tr>
-        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?>         <br />
+        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½<br />
           <p>&nbsp;</p>
           <p>&nbsp;</p></td><td width="79%" valign="top">
  <div id="loading"></div>

@@ -1,7 +1,4 @@
 <?php 
-define('REFFER',$_SERVER['DOCUMENT_ROOT'].'/simt/library/');
-
-require_once REFFER.'dbClass.php';
 class ReturnStatus extends dbClass{
   public $conn;
   public $rs=array();
