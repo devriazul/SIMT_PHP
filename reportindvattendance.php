@@ -42,7 +42,7 @@ $y_axis_initial = 50;
     //Arial italic 8
     $pdf->SetFont('Arial','B',8);
     //Page number
-    $pdf->Cell(0,10,'Copyright � Saic Institute of Management & Technology. Powered By: DesktopBD.',0,0,'C');
+    $pdf->Cell(0,10,'Copyright � Saic Institute of Management & Technology. Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>.',0,0,'C');
 
 	//print column titles for the actual page & Date
 	//$pdf->Cell(-70, -600, 'SAIC Institute of Management & Technology',0,'C',0);
@@ -204,7 +204,7 @@ while($row = mysql_fetch_array($result))
 		$y_axis = 30;
         $pdf->AddPage('P');
 	    $pdf->SetFont('Arial','B',8);
-      	$pdf->Cell(190,550,'Copyright � Saic Institute of Management & Technology. Powered By: DesktopBD.',0,0,'C');
+      	$pdf->Cell(190,550,'Copyright � Saic Institute of Management & Technology. Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>.',0,0,'C');
 
 
         //print column titles for the current page

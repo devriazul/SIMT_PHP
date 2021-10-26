@@ -169,7 +169,7 @@ if($myDb->connect($host,$user,$pwd,$db,true))
     <td>&nbsp;</td>
   </tr>
 </table>
-</br><div align="center" style="color:#CCCCCC; font-size:9px; ">Developed By DesktopBd</div>
+</br><div align="center" style="color:#CCCCCC; font-size:9px; ">Developed By <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a></div>
 
 <?php 
    }else{

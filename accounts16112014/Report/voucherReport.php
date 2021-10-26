@@ -315,7 +315,7 @@ Mirpur,Dhaka-1216<br /></h2>
   </tr>
 </table>
 </div>
-<div style=" position:relative; padding:10px;margin-bottom:20px; top:50px; border-top:1px solid #999999;border-bottom:1px solid #999999; text-align:center;">Developed By DesktopBd</div>
+<div style=" position:relative; padding:10px;margin-bottom:20px; top:50px; border-top:1px solid #999999;border-bottom:1px solid #999999; text-align:center;">Developed By <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a></div>
 
 </div>
 </body>

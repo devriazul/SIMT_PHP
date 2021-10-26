@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<span class="style17">Institute Management System, Ver-1.0 <br /><span class="style18"><?php echo date("D, F d Y",time()); ?>
+<span class="style17">Institute Management System, Version:2.0 <br /><span class="style18"><?php echo date("D, F d Y",time()); ?>
     </span></span>
 </body>
 </html>

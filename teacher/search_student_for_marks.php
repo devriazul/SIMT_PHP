@@ -1,6 +1,5 @@
 <?php session_start();
-require_once('dbClass.php');
-include("config.php"); 
+include("../config.php"); 
 if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){

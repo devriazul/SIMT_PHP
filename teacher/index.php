@@ -444,7 +444,7 @@ $(document).ready(function() {
     </div>
   </div>
   <div id="powered_by_div">
-    Powered By: <a href=../../www.desktopbd.com target="_blank" class="themed_text">DesktopBD </a>
+    Powered By: <a href=../../www.<a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>.com target="_blank" class="themed_text"><a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a> </a>
   </div>
 
 </div>

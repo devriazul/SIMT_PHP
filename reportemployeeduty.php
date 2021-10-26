@@ -40,7 +40,7 @@ $y_axis_initial = 60;
     //Arial italic 8
     $pdf->SetFont('Arial','',8);
     //Page number
-    $pdf->Cell(0,40,'Copyright: SAIC Institute of Management & Technology. Powered By: DesktopBD.',0,0,'C');
+    $pdf->Cell(0,40,'Copyright: SAIC Institute of Management & Technology. Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>.',0,0,'C');
 
 	//print column titles for the actual page & Date
 	//$pdf->Cell(-70, -600, 'SAIC Institute of Management & Technology',0,'C',0);

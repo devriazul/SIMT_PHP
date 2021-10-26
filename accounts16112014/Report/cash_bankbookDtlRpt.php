@@ -231,7 +231,7 @@ window.open(url,'liveMatches','directories=no,titlebar=no,toolbar=no,location=no
       <td height="30">&nbsp;</td>
     </tr>
 </table>
-<div style="margin-bottom:20px; color:#CCCCCC;">Developed By DesktopBd</div>
+<div style="margin-bottom:20px; color:#CCCCCC;">Developed By <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a></div>
 </body>
 </html>
 <?php 

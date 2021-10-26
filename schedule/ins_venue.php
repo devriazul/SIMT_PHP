@@ -1,7 +1,11 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
+
+<<<<<<< HEAD
 include("config.php"); 
+=======
+include('../config.php');  
+>>>>>>> f3fe93dba8d28723d8594a1151c137b47a7928b5
 if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){

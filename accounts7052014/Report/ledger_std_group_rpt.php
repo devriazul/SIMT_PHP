@@ -240,7 +240,7 @@ Mirpur,Dhaka-1216<br /></h2>
     <td width="23%" height="30" colspan="2" style="border-top:1px solid #999999; "><div align="right">     <?php $fval=$adr-$acr; if($fval>=0){ echo number_format($fval,2)." Dr"; }else{ echo $fval." Cr"; } ?></div> </td>
     </tr>
 </table>
-<div align="center" style="color:#CCCCCC; font-size:9px; ">Developed By DesktopBd</div>
+<div align="center" style="color:#CCCCCC; font-size:9px; ">Developed By <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a></div>
 
 <?php 
    }else{

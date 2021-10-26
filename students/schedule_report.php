@@ -492,7 +492,7 @@ body {
   <?php $si++;} ?>
 </table>
 <?php } ?>
-<div align="center"><span style="font-family:Verdana, Arial, Helvetica, sans-serif;font-size:9px;color:#CCCCCC;">Developed By : <strong>DesktopBD</strong></span></div>
+<div align="center"><span style="font-family:Verdana, Arial, Helvetica, sans-serif;font-size:9px;color:#CCCCCC;">Developed By : <strong><a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a></strong></span></div>
 
 
           
@@ -506,7 +506,7 @@ body {
     <td colspan="2" background="images/bbg.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="1%"><img src="images/bbg.jpg" width="3" height="44" /></td>
-        <td width="99%"><div align="center" class="style7">� Copyright All Rights Reserved. Powered By: DesktopBD</div></td>
+        <td width="99%"><div align="center" class="style7">� Copyright All Rights Reserved. Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a></div></td>
       </tr>
     </table></td>
   </tr>

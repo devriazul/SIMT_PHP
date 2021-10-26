@@ -1,0 +1,157 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #e3e3e3; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #666666; SCROLLBAR-3DLIGHT-COLOR: #666666; SCROLLBAR-ARROW-COLOR: #666666; SCROLLBAR-TRACK-COLOR: #f2f2f2; SCROLLBAR-DARKSHADOW-COLOR: #cccccc
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+body {
+	background-Image: url(Images/body_bg.gif);
+}
+body,td,th{font-family:Verdana, Arial, Helvetica, sans-serif;
+			font-size:12px;
+			}
+.spacing1 {
+	LETTER-SPACING: 1px
+}
+.nrm01 {
+	FONT: 8pt/10pt verdana
+}
+.nrm02 {
+	FONT: 7pt/10pt verdana
+}
+.link01:link {
+	COLOR: #3366cc;
+}
+.link01:visited {
+	COLOR: #3366cc; TEXT-DECORATION: none
+}
+.link01:hover {
+	COLOR: #CC0000; TEXT-DECORATION: underline
+}
+.link02:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.link02:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.link02:hover {
+	COLOR: #ffffcc; TEXT-DECORATION: underline
+}
+.link03:link {
+	COLOR: #2850a2; TEXT-DECORATION: none
+}
+.link03:visited {
+	COLOR: #2850a2; TEXT-DECORATION: none
+}
+.link03:hover {
+	COLOR: #cc6600; TEXT-DECORATION: underline
+}
+.link04:link {
+	COLOR: #003366; TEXT-DECORATION: none
+}
+.link04:visited {
+	COLOR: #003366; TEXT-DECORATION: none
+}
+.link04:hover {
+	COLOR: #cc6600; TEXT-DECORATION: underline
+}
+.link05:link {
+	COLOR: #346a74; TEXT-DECORATION: none
+}
+.link05:visited {
+	COLOR: #346a74; TEXT-DECORATION: none
+}
+.link05:hover {
+	COLOR: #cc6600; TEXT-DECORATION: underline
+}
+.link06:link {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+.link06:visited {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+.link06:hover {
+	COLOR: #3366cc; TEXT-DECORATION: underline
+}
+.link07:link {
+	COLOR: #669900; TEXT-DECORATION: none
+}
+.link07:visited {
+	COLOR: #669900; TEXT-DECORATION: none
+}
+.link07:hover {
+	COLOR: #CC0000; TEXT-DECORATION: underline
+}
+a:link {
+	color: #0066CC;
+}
+a:visited {
+	color: #0066CC;
+	}
+a:hover {
+	color: #CC0000;
+	text-decoration: none;
+}
+.link08:link {
+	color: #0066CC;text-decoration: none;
+}
+.link08:visited {
+	color: #0066CC; text-decoration: none;
+	}
+.link08:hover {
+	color: #CC0000;
+	text-decoration: underline;
+		}
+SELECT {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma, Verdana, Arial
+}
+INPUT {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma, Verdana, Arial
+}
+TEXTAREA {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma, Verdana, Arial
+}
+.inputCopy {
+	BORDER-RIGHT: ghostwhite 1px solid; BORDER-TOP: gray 1px solid; BORDER-LEFT: gray 1px solid; BORDER-BOTTOM: ghostwhite 1px solid
+}
+.textarea {
+	BORDER-RIGHT: ghostwhite 1px solid; BORDER-TOP: gray 1px solid; BORDER-LEFT: gray 1px solid; BORDER-BOTTOM: ghostwhite 1px solid
+}
+.TextBox {
+	BORDER-RIGHT: ghostwhite 1px solid; BORDER-TOP: gray 1px solid; BORDER-LEFT: gray 1px solid; BORDER-BOTTOM: ghostwhite 1px solid
+}
+.FlatButton {
+	BORDER-RIGHT: gray 1px solid; BORDER-TOP: ghostwhite 1px solid; BORDER-LEFT: ghostwhite 1px solid; BORDER-BOTTOM: gray 1px solid; BACKGROUND-COLOR: buttonface
+}
+.BlackBorder {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid
+}
+.ListHeader {
+	BORDER-RIGHT: gray 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: white 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: white 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: gray 1px solid; BACKGROUND-COLOR: buttonface
+}
+.style14 {color: #999999}
+.style15 {
+	color: #FF9900;
+	font-weight: bold;
+}
+.style35 {font-size: 10px}
+.style37 {color: #0099FF; font-weight: bold; font-size: 10px; }
+.style42 {color: #CC6600}
+.style44 {color: #CC0000}
+.style45 {
+	color: #CC9900;
+	font-weight: bold;
+}
+.style46 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #669900;
+}
+.style47 {color: #000000}
+.style48 {color: #FFFFFF}
+.style1 {color: #CC3300}

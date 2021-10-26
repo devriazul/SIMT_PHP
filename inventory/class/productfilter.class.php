@@ -1,5 +1,5 @@
 <?php 
-require_once("dbClass.php");
+include('../../config.php'); 
 class ProductFilter extends dbClass{
   public $q;
   public $rs;
@@ -18,7 +18,8 @@ class ProductFilter extends dbClass{
   public $cond;
   public $appdate;
   public function __construct(){
-    parent::connect("localhost","root","dtbd13adm1n","simtdb",true);
+    parent::connect("localhost","root","","simtdb",true);
+	
   
   }
   

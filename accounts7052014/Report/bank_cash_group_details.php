@@ -182,7 +182,7 @@ table td{
     <?php $clbal=$oprecf['opbal']+$closf['opbal']; if($clbal<0){ echo "Cr. ".number_format((($clbal)),2); }else{ echo "Dr. ".number_format(($clbal),2); }?></strong></em></td>
   </tr>
   <tr>
-    <td style="color:#CCCCCC; font-size:8px; ">Developed by DesktopBD</td>
+    <td style="color:#CCCCCC; font-size:8px; ">Developed by <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a></td>
     <td align="right">&nbsp;</td>
     <td align="right">&nbsp;</td>
     <td align="right">&nbsp;</td>

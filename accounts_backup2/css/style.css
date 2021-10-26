@@ -1,0 +1,31 @@
+.form_style #textarea {
+	border: 1px solid #CCCCCC;
+}
+
+.form_style #FormSubmit {
+	display: block;
+	background: #003366;
+	border: 1px solid #000066;
+	color: #FFFFFF;
+	margin-top: 5px;
+}
+#responds{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#responds li{
+	list-style: none;
+	padding: 10px;
+	background: #D1CFCE;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	width: 400px;
+	font-family: arial;
+	font-size: 13px;
+}
+.del_wrapper{float:right;}.content_wrapper {
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}

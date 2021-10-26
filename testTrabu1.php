@@ -775,7 +775,7 @@ $refdeptid='';$refstdid='';$refsemesterid='';$refsession='';$refcourseid='';$ref
 	echo "<div style='font-size:10px;width:150px;margin-top:50px;float:left;border-top:1px solid #333333;height:30px;margin-left:140px;'>Signature of the Asst.Controller</div>";
     echo "</div>";
 	echo "<div style=\clear:both;\"></div>";
-	echo "<div style='width:700px; float:left; font-size:8px; color:#ccc;text-align:center'>Developed By DesktopBD ( http://desktopbd.com )</div>";
+	echo "<div style='width:700px; float:left; font-size:8px; color:#ccc;text-align:center'>Developed By <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a> ( http://<a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>.com )</div>";
 
    }  
 }

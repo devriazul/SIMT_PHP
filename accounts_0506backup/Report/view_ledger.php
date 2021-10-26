@@ -265,7 +265,7 @@ if($myDb->connect($host,$user,$pwd,$db,true))
 </table>
 	   	  	
 </div>
-<div style="margin-bottom:20px; border-top:1px solid #999999;border-bottom:1px solid #999999;">Developed By DesktopBd</div>
+<div style="margin-bottom:20px; border-top:1px solid #999999;border-bottom:1px solid #999999;">Developed By <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a></div>
 
 </div>
 </body>

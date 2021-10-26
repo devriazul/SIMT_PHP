@@ -1,6 +1,6 @@
 <?php 
-include("../config.php"); 
-$myDb->connectDefaultServer()
+include("../../config.php"); 
+$myDb->connectDefaultServer();
 require('../FPDF/fpdf.php');
 class PDF extends FPDF
 {

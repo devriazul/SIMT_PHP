@@ -1,5 +1,5 @@
-<?php require_once("dbClass.php");
-include("config.php");
+<?php
+include("../../config.php");
 ini_set("display_error","true");
 
 class Utility extends dbClass{

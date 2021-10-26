@@ -52,7 +52,7 @@ $y_axis_initial = 70;
 
 
     $pdf->SetFont('Arial','',8); 
-	$pdf->Cell(-260,40,'� Saic Institute of Management & Technology. Powered By: DesktopBD',0,0,'C');
+	$pdf->Cell(-260,40,'� Saic Institute of Management & Technology. Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>',0,0,'C');
 
 	$pdf->SetFont('Arial', 'U', 12);
 	$pdf->Cell(200, -430, 'PART TIME EMPLOYEE SALARY FOR THE MONTH OF: '.$_POST['smonth'].', '.$_POST['syear'],0,'C',0);

@@ -249,7 +249,7 @@ if($myDb->connect($host,$user,$pwd,$db,true))
       <td height="30">&nbsp;</td>
     </tr>
 </table>
-<div align="center" style="color:#CCCCCC; font-size:9px; ">Developed By DesktopBd</div>
+<div align="center" style="color:#CCCCCC; font-size:9px; ">Developed By <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a></div>
 <?php //} ?>
 </div>
 <?php //$i++;

@@ -1,7 +1,6 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
-include("config.php"); 
+include("../config.php"); 
 if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
@@ -25,8 +24,7 @@ if($myDb->connectDefaultServer())
 
 
 <div class="data"> 
-
-<?php 
+<?php
      $sdq="
 	 SELECT c.id id,p.pname 'Product Name',c.rqty 'Requisition Qty',c.aqty 'ApproveQty',c.pqty 'PurchaseQty'
 	       FROM tbl_buyproduct c
@@ -34,12 +32,13 @@ if($myDb->connectDefaultServer())
 		   ON p.id=c.pid
 		   order by c.id desc LIMIT $start, $per_page";
 	 $sdep=$myDb->dump_requisition($sdq,'edit_requisition.php','del_requisition.php',$car['upd'],$car['delt'],'add_approve.php','add_purchase.php');
+
 ?>
 
 
 
 <?php 
- /* --------------------------------------------- */
+
  $msg='';
 $query_pag_num = "SELECT count(*) AS count
 	       FROM tbl_buyproduct c

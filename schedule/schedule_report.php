@@ -1,7 +1,7 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
-include("config.php"); 
+
+include('../config.php');  
 if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
@@ -442,7 +442,7 @@ if($myDb->connectDefaultServer())
   <?php $si++;} ?>
 </table>
 <?php } ?>
-<div align="center"><span style="font-family:Verdana, Arial, Helvetica, sans-serif;font-size:9px;color:#CCCCCC;">Developed By : <strong>DesktopBD</strong></span></div>
+<div align="center"><span style="font-family:Verdana, Arial, Helvetica, sans-serif;font-size:9px;color:#CCCCCC;">Developed By : <strong><a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a></strong></span></div>
 
 <?php 
    }else{

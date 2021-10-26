@@ -1,6 +1,5 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
 include("config.php"); 
 if($myDb->connectDefaultServer())
 { 
@@ -15,7 +14,9 @@ if($myDb->connectDefaultServer())
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title><?php include("title.php");?></title>
+<link type="text/css" href="css/jquery-ui-1.8.5.custom.css" rel="Stylesheet" />
 <style type="text/css">
+
 <!--
 @import url("main.css");
 .style12 {font-size: 10px}
@@ -180,7 +181,7 @@ document.forms[0][0].focus();
       </tr>
       <tr>
         <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php"); ?>
-          ���������<br />
+          <br />
           
           <p>&nbsp;</p>
           <p>&nbsp;</p></td>

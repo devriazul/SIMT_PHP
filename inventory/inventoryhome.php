@@ -1,7 +1,6 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
-include("config.php"); 
+include("../config.php"); 
 if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
@@ -49,7 +48,7 @@ if($myDb->connectDefaultServer())
         <td><div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><?php if(isset($_GET['t'])==0){ ?><span style="color:#FF6600; font-weight:bold;"><?php if(isset($_GET['msg'])){ echo $_GET['msg']; }?></span><?php } ?></font></div></td>
       </tr>
       <tr>
-        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?>���������<br />
+        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?><br />
           <p>&nbsp;</p>
           <p>&nbsp;</p></td><td width="79%" valign="top"><blockquote>
           <p>&nbsp;</p>

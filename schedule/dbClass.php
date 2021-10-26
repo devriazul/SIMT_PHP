@@ -16,7 +16,7 @@ class DbClass
    {
       $this->host='localhost';
 	  $this->user='root';
-	  $this->pw='root';
+	  $this->pw='';
 	  $this->db='simtdb';
 	  $this->auto_slashes= true;
 	  
@@ -431,7 +431,7 @@ $pwd='';
 $db='simtedu';
 $host='localhost';
 
-require_once('dbClass.php');
+
 
 $myDb=new DbClass;
 if($myDb->connectDefaultServer())

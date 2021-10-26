@@ -62,7 +62,7 @@ filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565,Direction=180,Str
 <body>
 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td width="90%"><span class="clockStyle">Institute Management System, Ver-1.0</span></td>
+    <td width="90%"><span class="clockStyle">Institute Management System, Version:2.0</span></td>
     <td width="10%"><div class="bckcontent"><div align="right"><span class="clockStyle"><a href="acchome.php"><span class="top">Home</span></a>| <a href="logout.php"><span class="top">Logout </span></a></span></div></div></td>
   </tr>
 </table>

@@ -1,6 +1,5 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
 include("config.php"); 
 if($myDb->connectDefaultServer())
 { 
@@ -84,7 +83,7 @@ document.forms[0][0].focus();
       </tr>
       <tr>
         <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php"); ?>
-          ���������<br />
+          <br />
           
           <p>&nbsp;</p>
           <p>&nbsp;</p></td>

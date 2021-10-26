@@ -1,0 +1,61 @@
+ul.pages
+{
+list-style:none;
+    display: block;
+    overflow: hidden;
+    padding:10px;
+    text-align:center;
+   margin-left: auto;
+   margin-right: auto;
+  width:400px;
+  background-color:#FFFFFF;
+ 
+}
+ul.pages li{
+    float: left;
+    cursor: pointer;
+    padding:3px;
+    margin:1px;
+    background-color: #27baf2;
+    color:white;
+    font-weight: bold;
+    border:1px solid #1f8ab5;
+}
+ul.pages li.active{
+    
+    background-color:#1f8ab5;
+    color:black;
+}
+.search-background1 {
+		display: none;
+		font-size: 13px;
+		font-weight: bold;
+		height:100%;
+		position:absolute;
+		text-align: center;
+		opacity:0.5;filter: alpha(opacity=50) ;
+		text-decoration: none;
+		width:790px;
+		
+	}
+	
+.search-background1 {
+		background-color: #3a3427;
+		color:#FFFFFF;
+		text-shadow: #fff 0px 0px 20px;
+		}
+
+.search-background1 label{	
+position:fixed;
+top:45%;
+left:45%;
+	
+}
+#news{
+width:79%;
+margin:0px auto 0px auto;
+}
+.unline{ border-bottom:solid 1px #b6babe; padding-bottom:15px; margin-bottom:20px;}
+.c2title{font:normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif; font-size: 18px;margin-bottom:2px;border-bottom: 2px solid black;padding-bottom:1px;}
+.c3title{font-size: 16px;margin-top: 2px;}
+.c4title{font-size: 15px;margin-top: 5px;font-weight: bolder;}

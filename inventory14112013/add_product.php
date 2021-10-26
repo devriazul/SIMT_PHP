@@ -317,7 +317,7 @@ document.forms[0][0].focus();
       </tr>
 	  
       <tr>
-        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?>���������<br />
+        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?><br />
 		
           <p>&nbsp;</p>
           <p>&nbsp;</p></td><td valign="top">

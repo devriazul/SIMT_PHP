@@ -1,7 +1,6 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
-include("config.php"); 
+include("../config.php"); 
 if($myDb->connectDefaultServer())
 { 
   $vs="SELECT f.id, f.facultyid, f.password, f.name, f.fname, f.mname, f.sex, f.dob, f.img, f.mstatus, f.bloodgroup, f.address,f.designationid, f.deptid, d.name as designation, f.joiningdate, f.deptid, dp.name as department, f.expartincourse, f.eduqualification, f.expyear, f.expmonth, f.contactno, f.type, f.payscaleid, p.name as payscale FROM `tbl_faculty` f inner join tbl_designation d on f.designationid=d.id inner join tbl_department dp on f.deptid=dp.id inner join tbl_payscale p on f.payscaleid=p.id WHERE f.storedstatus<>'D' and f.facultyid='$_SESSION[userid]'";

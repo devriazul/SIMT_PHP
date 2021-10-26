@@ -44,7 +44,7 @@ $y_axis_initial = 50;
     $pdf->SetFont('Arial','',8);
     //Page number
     //$pdf->Cell(5,0,'Prepared By: ',0,0,'L'); $pdf->Cell(120,0,'Verified By: ',0,0,'R'); $pdf->Cell(140,0,'Approved By: ',0,0,'R');
-    $pdf->Cell(280,10,'� Saic Institute of Management & Technology. Powered By: DesktopBD',0,0,'C');
+    $pdf->Cell(280,10,'� Saic Institute of Management & Technology. Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>',0,0,'C');
 
 /*
 if(($_POST['sexstatus']!="") && ($_POST['semester']=="") && ($_POST['stdstatus'])=="" && ($_POST['section']=="") && ($_POST['session']=="") && ($_POST['stdresultstatus']==""))
@@ -319,7 +319,7 @@ while($row = mysql_fetch_array($result))
 		$y_axis_initial = 30;
 		$y_axis = 30;
         $pdf->AddPage('L');
-      	$pdf->Cell(280,380,'� Saic Institute of Management & Technology. Powered By: DesktopBD.',0,0,'C');
+      	$pdf->Cell(280,380,'� Saic Institute of Management & Technology. Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>.',0,0,'C');
 
         //print column titles for the current page
         $pdf->SetY($y_axis_initial);

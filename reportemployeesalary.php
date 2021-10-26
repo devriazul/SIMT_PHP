@@ -65,7 +65,7 @@ $pdf->Cell(5,30,"Phone: +88 02 8033034, +88 01936005816, +88 01936005817",0,0,'L
 	$pdf->Cell(5,0,'Admin Officer',0,0,'L'); $pdf->Cell(250,0,'Head of Accounts',0,0,'C'); $pdf->Cell(70,0,'Director',0,0,'L');
 */
     $pdf->SetFont('Arial','',8); 
-	$pdf->Cell(100,390,'� Saic Institute of Management & Technology. Powered By: DesktopBD',0,0,'C');
+	$pdf->Cell(100,390,'� Saic Institute of Management & Technology. Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>',0,0,'C');
 
 	//print column titles for the actual page
 	//$pdf->Cell(-70, -600, 'SAIC Institute of Management & Technology',0,'C',0);
@@ -157,7 +157,7 @@ while($row = mysql_fetch_array($result))
 		$pdf->Cell(5,0,'Admin Officer',0,0,'L'); $pdf->Cell(250,0,'Head of Accounts',0,0,'C'); $pdf->Cell(70,0,'Director',0,0,'L');
 */
     	$pdf->SetY(-6);
-     	$pdf->Cell(270,0,'� Saic Institute of Management & Technology. Powered By: DesktopBD.',0,0,'C');
+     	$pdf->Cell(270,0,'� Saic Institute of Management & Technology. Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>.',0,0,'C');
 
         //print column titles for the current page
         $pdf->SetY($y_axis_initial);

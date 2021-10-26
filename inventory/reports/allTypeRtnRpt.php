@@ -2,7 +2,7 @@
 session_start();
 define('APPROOT', getcwd());
 define('CLASSES',$_SERVER['DOCUMENT_ROOT'].'/simtfrmserver/library/');
-include CLASSES.'config.php';
+include CLASSES.'../../config.php';
 require_once CLASSES.'/class/ReturnStatus.class.php';
 if($myDb->connectDefaultServer())
 { 

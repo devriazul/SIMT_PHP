@@ -43,7 +43,7 @@ function Footer()
     // Arial italic 8
     $this->SetFont('Arial','',8);
     // Page number
-    $this->Cell(-150,20,'Copyright: SAIC Institute of Management & Technology. Powered By: DesktopBD.',0,0,'C');
+    $this->Cell(-150,20,'Copyright: SAIC Institute of Management & Technology. Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>.',0,0,'C');
 
 }
 

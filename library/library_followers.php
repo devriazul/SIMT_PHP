@@ -255,8 +255,7 @@ document.forms[0][0].focus();
         <td><img src="images/spaer.gif" width="1" height="1" /></td>
       </tr>
       <tr>
-        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php"); ?>
-          ���������<br />
+        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php"); ?><br />
           
           <p>&nbsp;</p>
           <p>&nbsp;</p></td>

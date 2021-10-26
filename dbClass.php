@@ -14,7 +14,7 @@ class DbClass
 
    public function __construct()
    {
-      $this->host='127.0.0.1:3307';
+      $this->host='localhost';
 	  $this->user='root';
 	  $this->pw='';			//dtbd13adm1n
 	  $this->db='simtdb';			//simt_edu

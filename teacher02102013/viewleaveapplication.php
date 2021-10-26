@@ -148,7 +148,7 @@ if($myDb->connectDefaultServer())
         </tr>
       <tr>
         <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php"); ?>
-          ���������<br />
+          <br />
           
           <p>&nbsp;</p>
           <p>&nbsp;</p></td>

@@ -7,7 +7,7 @@
   <tr>
     <td height="40" bgcolor="#FFFFFF">
 <div align="center"><FONT face=Arial 
-            size=2><SMALL><SMALL>DesktopBD © 2012 · English (US) All rights reserved</SMALL></SMALL></FONT></div></td>
+            size=2><SMALL><SMALL><a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a> ï¿½ 2012 ï¿½ English (US) All rights reserved</SMALL></SMALL></FONT></div></td>
   </tr>
 </table>
 </body>

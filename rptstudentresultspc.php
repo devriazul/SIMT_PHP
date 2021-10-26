@@ -83,7 +83,7 @@ function Header()
     $pdf->SetFont('Arial','',8);
     //Page bottom
 	$pdf->SetTextColor(232, 232, 232);
-    $pdf->Cell(0,10,'Copyright: SAIC Institute of Management & Technology. Powered By: DesktopBD. 12, Kawran Bazar. BDBL Bhaban (6th Floor). Dhaka-1215. Phone: 8189542.',0,0,'C');
+    $pdf->Cell(0,10,'Copyright: SAIC Institute of Management & Technology. Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>. 12, Kawran Bazar. BDBL Bhaban (6th Floor). Dhaka-1215. Phone: 8189542.',0,0,'C');
     //Page number
 	// page no is not defined
 
@@ -253,7 +253,7 @@ while($row = mysql_fetch_array($result))
     	//Page bottom in per page
     	$pdf->SetFont('Arial','',8);
 		$pdf->SetTextColor(232, 232, 232);
-    	$pdf->Cell(-180,510,'Copyright: SAIC Institute of Management & Technology. Powered By: DesktopBD. 12, Kawran Bazar. BDBL Bhaban (6th Floor). Dhaka-1215. Phone: 8189542.',0,0,'C');
+    	$pdf->Cell(-180,510,'Copyright: SAIC Institute of Management & Technology. Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>. 12, Kawran Bazar. BDBL Bhaban (6th Floor). Dhaka-1215. Phone: 8189542.',0,0,'C');
 
     }
 	$pdf->SetTextColor(0, 0, 0);

@@ -1,7 +1,7 @@
 <?php ob_start();
 session_start();
 require_once('class/productfilter.class.php');
-include("config.php"); 
+include("../config.php"); 
 $pft=new ProductFilter();
 if($pft->connect($host,$user,$pwd,$db,true))
 { 

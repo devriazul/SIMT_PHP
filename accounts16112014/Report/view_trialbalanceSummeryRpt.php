@@ -192,7 +192,7 @@ if($myDb->connect($host,$user,$pwd,$db,true))
           <?php  echo 0; }  ?></td>
     </tr>
 </table>
-<div style="margin-bottom:20px; color:#CCCCCC; text-align:center">Developed By DesktopBd</div>
+<div style="margin-bottom:20px; color:#CCCCCC; text-align:center">Developed By <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a></div>
 
 </body>
 </html>

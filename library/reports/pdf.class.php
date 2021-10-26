@@ -1,6 +1,6 @@
 <?php //require_once('../dbClass.php');
-include("../config.php"); 
-$myDb->connectDefaultServer()
+include("../../config.php"); 
+$myDb->connectDefaultServer();
 
 
 require('../FPDF/fpdf.php');

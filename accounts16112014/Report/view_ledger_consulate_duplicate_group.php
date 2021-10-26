@@ -322,7 +322,7 @@ if($myDb->connect($host,$user,$pwd,$db,true))
 </table>
 	   	  	
 </div>
-<div style="color:#999999; font-size:9px;">Developed By DesktopBd</div>
+<div style="color:#999999; font-size:9px;">Developed By <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a></div>
 
 </div>
 </body>

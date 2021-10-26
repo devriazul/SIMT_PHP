@@ -290,7 +290,7 @@ while(($j<=$totalPage)||$j==1){
     </em></td>
   </tr>
 </table>
-<div style="color:#fbfbfb; font-size:9px;margin-top:10px;">Developed By DesktopBd</div>
+<div style="color:#fbfbfb; font-size:9px;margin-top:10px;">Developed By <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a></div>
 <?php 
    }else{
      $msg="Sorry,you are not authorized to access this page";

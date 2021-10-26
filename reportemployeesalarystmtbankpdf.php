@@ -54,7 +54,7 @@ $y_axis_initial = 50;
     $pdf->SetY(-14);
     $pdf->SetFont('Arial','',8); 
 	//$pdf->SetFillColor(255, 255, 255);
-	$pdf->Cell(200,20,'Copyright � Saic Institute of Management & Technology. Powered By: DesktopBD',0,0,'C');
+	$pdf->Cell(200,20,'Copyright � Saic Institute of Management & Technology. Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>',0,0,'C');
 	//$pdf->SetFillColor(232, 232, 232);
 
 /*
@@ -179,7 +179,7 @@ while($row = mysql_fetch_array($result))
     	$pdf->SetY(-6);
 	    $pdf->SetFont('Arial','',8); 
 
-     	$pdf->Cell(200,0,'Copyright � Saic Institute of Management & Technology. Powered By: DesktopBD.',0,0,'C');
+     	$pdf->Cell(200,0,'Copyright � Saic Institute of Management & Technology. Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>.',0,0,'C');
 
         //print column titles for the current page
         $pdf->SetY($y_axis_initial);

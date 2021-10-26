@@ -204,7 +204,7 @@ if($myDb->connectDefaultServer())
     <td colspan="2" align="center">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><span style="font:Calibri; font-size:12px; color:#CCCCCC; ">Powered By: DesktopBD. 12, Kawran Bazar. BDBL Bhaban (6th Floor). Dhaka-1215. Cell: +88 01823015681</span></td>
+    <td colspan="2" align="center"><span style="font:Calibri; font-size:12px; color:#CCCCCC; ">Powered By: <a href="https://riaz.fastitbd.com">(Web Developer) </a><a href="https://www.saicgroupbd.com">Saic Group</a>. 12, Kawran Bazar. BDBL Bhaban (6th Floor). Dhaka-1215. Cell: +88 01823015681</span></td>
   </tr>
 </table>
 </div>

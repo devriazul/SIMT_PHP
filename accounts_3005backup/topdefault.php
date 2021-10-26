@@ -25,7 +25,7 @@
 </head>
 
 <body>
-<span class="style5">Institute Management System, Ver-1.0 <br/><span class="style5"><?php echo date("D, F d Y",time()); ?>
+<span class="style5">Institute Management System, Version:2.0 <br/><span class="style5"><?php echo date("D, F d Y",time()); ?>
     </span></span>
 <br><div  id="clockDisplay" class="style5"></div>
 <script type="text/javascript" language="javascript">

@@ -1,7 +1,7 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
-include("config.php");
+
+include('../config.php'); 
 if($myDb->connectDefaultServer())
 {  
   $uname=mysql_real_escape_string($_POST['uname']);

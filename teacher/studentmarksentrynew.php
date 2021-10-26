@@ -1,8 +1,7 @@
 <?php 
 ob_start();
 session_start();
-require_once('dbClass.php');
-include("config.php"); 
+include("../config.php"); 
 if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
@@ -179,7 +178,7 @@ function showSelected()
       </tr>
       <tr>
         <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php"); ?>
-          ���������<br />
+          <br />
           
           <p>&nbsp;</p>
           <p>&nbsp;</p></td>

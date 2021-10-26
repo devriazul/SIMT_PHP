@@ -1,8 +1,7 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
 require_once('class/productfilter.class.php');
-include("config.php"); 
+include("../config.php"); 
 $pft=new productfilter();
 if($myDb->connectDefaultServer())
 { 
@@ -201,7 +200,7 @@ document.forms[0][0].focus();
       </tr>
 	  
       <tr>
-        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?>���������<br />
+        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?><br />
 		
           <p>&nbsp;</p>
           <p>&nbsp;</p></td><td valign="top">
