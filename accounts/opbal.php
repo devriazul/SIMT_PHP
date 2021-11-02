@@ -1,8 +1,7 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
-include("config.php"); 
-if($myDb->connect($host,$user,$pwd,$db,true))
+include("../config.php"); 
+if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
   $chka="SELECT*FROM  tbl_accdtl WHERE flname='opbal.php' AND userid='$_SESSION[userid]'";
@@ -92,7 +91,7 @@ document.forms[0][0].focus();
       </tr>
       <tr>
         <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php"); ?>
-                   <br />
+          <br />
           
           <p>&nbsp;</p>
           <p>&nbsp;</p></td>

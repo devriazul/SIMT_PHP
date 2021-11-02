@@ -166,66 +166,66 @@ document.forms[0][0].focus();
 
 </head>
 <body>
-<table width="1047" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="1047" height="152" valign="top" background="images/1.jpg"><span class="style17"><?php include("topdefault.php");?>    </span></span></td>
-  </tr>
-  <tr>
-    <td><table width="100%" border="0" cellspacing="0" cellpadding="0" id="tblleft">
+    <table width="1047" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
-        <td height="28" colspan="2" bgcolor="#0C6ED1"><div align="center" class="style1"><?php include("company.php"); ?></div></td>
-        </tr>
-      <tr>
-        <td background="images/leftbg.jpg"><img src="images/leftbg.jpg" width="252" height="3" /></td>
-        <td><img src="images/spaer.gif" width="1" height="1" /></td>
+        <td width="1047" height="152" valign="top" background="images/1.jpg"><span class="style17"><?php include("topdefault.php");?>    </span></span></td>
       </tr>
       <tr>
-        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php"); ?>
-          <br />
-          
-          <p>&nbsp;</p>
-          <p>&nbsp;</p></td>
-        <td width="79%" valign="top">
-<p align="center" ><font face="Arial, Helvetica, sans-serif" size="2"><?php if(isset($_GET['msg'])){ echo $_GET['msg']; }?></font></p>
-<div id="top-search-div"> 
-           <div id="content">
-		   <label>Manage Notice Board </label>
-		   <div class="input">
-		   <form method="post" autocomplete="off" action="managenotice1.php">
-		     <label>Search Form</label>
-			 <label><input type="text" id="searchid" name="searchid" /></label>
-			 <label><input type="submit" name="subs" id="submit-btn" value="Search" /></label>
-			 <label><a href="add_notice.php"><input type="button" name="addbtn" id="submit-btn" value="Add New" /></a></label>
-		   </form>
-		   </div>
-		</div>
-		</div>
-		<br />
-		
-	  <div id="loading"></div>
-        <div id="container">
-		<div class="pagination"></div>
-            <div class="data"></div>
-            
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0" id="tblleft">
+          <tr>
+            <td height="28" colspan="2" bgcolor="#0C6ED1"><div align="center" class="style1"><?php include("company.php"); ?></div></td>
+            </tr>
+          <tr>
+            <td background="images/leftbg.jpg"><img src="images/leftbg.jpg" width="252" height="3" /></td>
+            <td><img src="images/spaer.gif" width="1" height="1" /></td>
+          </tr>
+          <tr>
+            <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php"); ?>
+              <br />
+              
+              <p>&nbsp;</p>
+              <p>&nbsp;</p></td>
+            <td width="79%" valign="top">
+    <p align="center" ><font face="Arial, Helvetica, sans-serif" size="2"><?php if(isset($_GET['msg'])){ echo $_GET['msg']; }?></font></p>
+    <div id="top-search-div"> 
+              <div id="content">
+          <label>Manage Notice Board </label>
+          <div class="input">
+          <form method="post" autocomplete="off" action="managenotice1.php">
+            <label>Search Form</label>
+          <label><input type="text" id="searchid" name="searchid" /></label>
+          <label><input type="submit" name="subs" id="submit-btn" value="Search" /></label>
+          <label><a href="add_notice.php"><input type="button" name="addbtn" id="submit-btn" value="Add New" /></a></label>
+          </form>
+          </div>
         </div>
-				
-	
-	<table width="800px">
-	<tr><Td>
-	</Td></tr></table>
-	</div>
-		
-		
-<p></p>
-</td>
-      </tr>
-	        <tr>
-        <td height="60" colspan="2" valign="middle" bgcolor="#D3F3FE"><?php include("bot.php"); ?></td>
-        </tr>
+        </div>
+        <br />
+        
+        <div id="loading"></div>
+            <div id="container">
+        <div class="pagination"></div>
+                <div class="data"></div>
+                
+            </div>
+            
+      
+      <table width="800px">
+      <tr><Td>
+      </Td></tr></table>
+      </div>
+        
+        
+    <p></p>
+    </td>
+          </tr>
+              <tr>
+            <td height="60" colspan="2" valign="middle" bgcolor="#D3F3FE"><?php include("bot.php"); ?></td>
+            </tr>
 
-    </table></td>
-  </tr>
-</table>
+        </table></td>
+      </tr>
+    </table>
 </body>
 </html>
 <?php 

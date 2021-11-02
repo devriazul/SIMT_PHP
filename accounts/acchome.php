@@ -1,8 +1,7 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
-include("config.php"); 
-if($myDb->connect($host,$user,$pwd,$db,true))
+include("../config.php"); 
+if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
 	  if($_SERVER['REQUEST_METHOD']=="POST"){
@@ -47,7 +46,7 @@ if($myDb->connect($host,$user,$pwd,$db,true))
         <td><div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><?php if(isset($_GET['msg'])) {echo $_GET['msg'];}?></font></div></td>
       </tr>
       <tr>
-        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?>         <br />
+        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?><br />
           <p>&nbsp;</p>
           <p>&nbsp;</p></td><td width="79%" height="300" valign="top"><blockquote>
           <p align="center"><span style=" font-size:18px; font-weight:bold; background-color:#009966; color:#FFFFFF; display:block; padding:5px 10px; text-transform:uppercase;" >Please  select the settings for your desired voucher Entry</span></p>

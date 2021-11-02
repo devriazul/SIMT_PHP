@@ -1,8 +1,7 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
 include("config.php"); 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
   $chka="SELECT*FROM tbl_accdtl WHERE flname='manage_userinfo.php' AND userid='$_SESSION[userid]' and storedstatus<>'D'";
@@ -92,8 +91,7 @@ document.forms[0][0].focus();
         <td><img src="images/spaer.gif" width="1" height="1" /></td>
       </tr>
       <tr>
-        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php"); ?>
-                   <br />
+        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php"); ?><br />
           
           <p>&nbsp;</p>
           <p>&nbsp;</p></td>

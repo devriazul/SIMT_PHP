@@ -1,8 +1,7 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
 include("config.php"); 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
 	if($_SESSION['userid'])
 	{
@@ -148,7 +147,7 @@ if($myDb->connect($host,$user,$pwd,$db,true))
         </tr>
       <tr>
         <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php"); ?>
-                   <br />
+          <br />
           
           <p>&nbsp;</p>
           <p>&nbsp;</p></td>

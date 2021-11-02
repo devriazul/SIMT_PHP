@@ -1,8 +1,7 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
 include("config.php"); 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
   $chka="SELECT * From tbl_late_attnd_setting WHERE id='$_GET[id]'";
   $caq=$myDb->select($chka);

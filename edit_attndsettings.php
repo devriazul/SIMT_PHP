@@ -1,8 +1,7 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
 include("config.php"); 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
   $chka="SELECT ats.*, a.accname From tbl_attendancesettings ats inner join tbl_access a on ats.accid=a.id WHERE ats.id='$_GET[id]'";
   $caq=$myDb->select($chka);

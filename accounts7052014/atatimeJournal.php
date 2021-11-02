@@ -1,8 +1,7 @@
 <?php ob_start();
 session_start();
-require_once('dbClass.php');
 include("config.php"); 
-if($myDb->connect($host,$user,$pwd,$db,true))
+if($myDb->connectDefaultServer())
 { 
   if($_SESSION['userid']){
   $chka="SELECT*FROM  tbl_accdtl WHERE flname='voucherEntry.php' AND userid='$_SESSION[userid]'";
@@ -330,7 +329,7 @@ function handleEnter (field, event) {
         <td><div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><?php if(isset($_GET['msg'])) {echo $_GET['msg'];}?></font></div></td>
       </tr>
       <tr>
-        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?>         <br />
+        <td width="21%" valign="top" background="images/leftbg.jpg"><?php include("left.php");?><br />
           <p>&nbsp;</p>
           <p>&nbsp;</p></td><td width="79%" height="300" valign="top">
 		<div style="width:800px; height:30px; padding:10px; margin-left:5px; border:1px solid #999999;color:#FFFFFF; ">

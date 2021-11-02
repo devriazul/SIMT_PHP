@@ -78,7 +78,7 @@ $(document).ready(function() {
 
       <td width="56" height="21"><div align="right" class="style2 style3 style5">Username:</div></td>
 
-      <td width="228" height="21"><input name="uname" type="text" id="uname" tabindex="1"></td>
+      <td width="228" height="21"><input name="uname" type="text" id="uname" tabindex="1" required></td>
 
       <td width="16">&nbsp;</td>
     </tr>
@@ -92,7 +92,7 @@ $(document).ready(function() {
 
       <td height="21"><div align="right" class="style4 style5"><strong>Password:</strong></div></td>
 
-      <td height="21"><input name="password" type="password" id="password" tabindex="2"></td>
+      <td height="21"><input name="password" type="password" id="password" tabindex="2" required></td>
       <td>&nbsp;</td>
     </tr>
 <!--
